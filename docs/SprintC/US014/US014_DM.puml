@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+!pragma layout smetana
+
+note right of User : "Auth component."
+
+class SNSUser{
+==-strName
+==-strSex
+==-strBirthDate
+==-strAddress
+==-strPhoneNumber
+==-strEmail
+==-snsUserNumber
+==-strCitizenCardNumber
+==-strPassword
+}
+
+class User{
+==-name
+==-email
+==-pwd
+==-roleId
+}
+
+Company "1" -down- "*" SNSUser: knows >
+SNSUser "0..1" -down- "1" User: becomes >
+
+@enduml

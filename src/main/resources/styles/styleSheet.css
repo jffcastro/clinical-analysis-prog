@@ -1,0 +1,79 @@
+.logout-button {
+    -fx-background-radius: 25;
+}
+
+.light-blue {
+    -fx-background-color: #eefaff;
+}
+
+.top-background {
+    -fx-background-color: #00A4E8;
+}
+
+.top-right-background {
+    -fx-background-color: #f6f6f6;
+}
+
+
+.radius-background {
+    -fx-background-color: white;
+    -fx-background-radius: 40;
+}
+
+.transparent {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.buttons {
+    -fx-background-radius: 20;
+    -fx-background-color: linear-gradient(#add1f6, #0094d2);
+    -fx-border-style: solid;
+    -fx-border-radius: 20;
+    -fx-border-color: linear-gradient(#67a0c6, #4a90c6);
+    -fx-text-fill: white;
+}
+
+.buttons:hover {
+    -fx-background-color: linear-gradient(#ffed7b, #e3b64d);
+    -fx-text-fill: #4a5466;
+    -fx-border-color: linear-gradient(#e3d36c, #cba140);
+}
+
+
+
+.select-option-process {
+    -fx-background-color: #f4f4f4;
+}
+
+.dropdown-menu {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .2), 10, 0, 0, 1);
+}
+
+
+.border-radius {
+    -fx-background-radius: 15;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 15px 15px 0px 0px;
+    -fx-padding: 5 0 7px 0;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #142b3e;
+}
+

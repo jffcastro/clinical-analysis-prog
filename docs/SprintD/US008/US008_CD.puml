@@ -1,0 +1,148 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+left to right direction
+
+package UI {
+class RecordVaccineAdministrationUI {
++run()
+-waitingRoomList()
+-userFirstDose()
+-setDosageAndVaccine(vaccineHistory)
+-vaccineAdministrationPrompt(prompt)
+-lotNumber()
+}
+}
+
+package Controller {
+class RecordVaccineAdministrationController {
++vaccineTypeAvailableVaccines();
++getSnsUserInformation(selectedUser);
++snsUserIndexInList(selectedUser);
++userFirstDoseAgeGroup(indexVaccine);
++getUserNumberOfDoses();
++dosageForDose(numberOfDoses, indexVaccine);
++vaccineAdministrationProcess(numberOfDoses, indexVaccine);
++validateLotNumber(lotNumber);
++registerVaccineInVaccineBulletin();
++printRecoveryTime();
++exportDataToFile();
+}
+}
+
+package Dto {
+class VaccineBulletinDto {
++vaccine
++dateTimeOfLastDose
++doseNumber
++lotNumber
+}
+}
+
+package Mapper {
+class VaccineBulletinMapper {
++createScheduledVaccine(scheduledVaccineDto)
+}
+}
+
+package Store {
+class VaccinationCenterStore {
+getVaccinationCenterList
+}
+
+class SnsUserStore {
+getSnsUserList
+}
+}
+package Domain {
+package Model {
+class Company{}
+
+class VaccinationCenter {
+ -id
+ -name
+ -phoneNumber
+ -email
+ -fax
+ -website
+ -openingHour
+ -closingHour
+ -slotDuration
+ -vaccinesPerSlot
+ -road
+ -zipCode
+ -local
+ -centerCoordinatorID
+ -arrivalsList
+ +VaccinationCenter(id, name, phoneNumber, email, fax, website, openingHour, closingHour, slotDuration, vaccinesPerSlot, road, zipCode, local, centerCoordinatorID)
+ +addAppointment(newAppointment)
+ +validateAppointment(scheduledVaccineDto)
+ -centerHasAvailability(appointmentsList, scheduledVaccineDto, center)
+ +validateAppointmentAccordingToAgeGroupAndTimeSinceLastDose(dto, company)
+ +validateAppointmentAccordingToAdminProcess(snsUser, dto, takenVaccine)
+ -getUserAgeGroup(snsUser, administrationProcess)
+ -validateAgeGroup(snsUser, administrationProcess)
+ }
+
+class Vaccine {
+-name;
+-id;
+-brand;
+-adminProcess;
+-vaccineType;
+}
+ class VaccineBulletin {
+-vaccine;
+-dateTimeOfLastDose;
+-doseNumber;
+-lotNumber;
+ }
+
+class SnsUser {
+- name;
+- sex;
+- birthDate;
+- address;
+- phoneNumber;
+- email;
+- userNumber;
+- citizenCardNumber;
+- password;
+- takenVaccines;
++ snsUser(Name, Sex, BirthDate, Address, Number, Email, snsUserNumber, CitizenCardNumber, Password)
++ registerVaccine(TakenVaccine takenVaccine)
+}
+}
+}
+
+'UI
+RecordVaccineAdministrationUI ...> RecordVaccineAdministrationController
+
+RecordVaccineAdministrationController ..> Company
+
+Company "1" -u- "1" SnsUserStore : has >
+Company "1" --u-- "1" VaccinationCenterStore : has >
+
+SnsUserStore "1" -l- "*" SnsUser : has >
+VaccinationCenterStore "1" -- "*" VaccinationCenter : has >
+
+RecordVaccineAdministrationUI ..> VaccineBulletinDto
+RecordVaccineAdministrationController ..> VaccineBulletinDto
+RecordVaccineAdministrationController .r.> VaccineBulletinMapper
+
+VaccineBulletinMapper ..> VaccineBulletinDto
+
+RecordVaccineAdministrationController ..> VaccinationCenter
+
+RecordVaccineAdministrationController ..> VaccineBulletin
+VaccinationCenter "1" -> "*" VaccineBulletin : has >
+
+Company "1" -l- "*" Vaccine : has >
+
+SnsUser .> VaccineBulletin
+
+VaccineBulletinMapper ..> VaccineBulletin
+
+VaccineBulletin "*" ---> "1" Vaccine : is associated to >
+
+@enduml

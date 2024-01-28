@@ -1,0 +1,62 @@
+@startuml
+'https://plantuml.com/class-diagram
+'!pragma layout smetana
+
+class Company
+
+class VaccineType{
+==-description
+==-code
+==-vaccineTechnology
+}
+
+class Vaccine{
+==-brand
+}
+
+class VaccinationCenter{
+==-intID
+==-strName
+==-strPhoneNumber
+==-strEmail
+==-strFax
+==-strWebsite
+==-strOpeningHour
+==-strClosingHour
+==-strSlotDuration
+==-strVaccinesPerSlot
+==-strRoad
+==-strZipCode
+==-strLocal
+==-strCenterCoordinatorID
+}
+
+class CenterCoordinator extends Employee{
+}
+
+class Employee{
+==-id
+==-name
+==-address
+==-phoneNumber
+==-email
+==-citizenCardNumber
+==-password
+}
+
+class MassVaccinationCenter extends VaccinationCenter{
+
+}
+
+class HealthcareCenter extends VaccinationCenter{
+==-strARS
+==-strAGES
+}
+
+Company "1" -down- "*" VaccinationCenter: owns >
+VaccinationCenter "1" -left- "1" CenterCoordinator: has >
+MassVaccinationCenter "1" --down-- "1" VaccineType: administers >
+HealthcareCenter "1" -down- "*" VaccineType: administers >
+Vaccine "*" --left-- "1" VaccineType: is of >
+
+@enduml

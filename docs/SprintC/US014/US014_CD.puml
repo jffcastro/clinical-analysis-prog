@@ -1,0 +1,72 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class LoadCSVUI{
++run()
++runLoadCSV()
++getListOfSNSUsers()
++validateFileFormat(path)
++validateCSVData(values)
++fillSNSUserDto(csvData)
+}
+
+class LoadCSVController{
++createSNSUser(SNSUserDto)
++saveSNSUser(SNSUserDto)
++getSNSUserList()
+}
+
+class Company{
++createSNSUser(SNSUserDto)
++saveSNSUser(SNSUserDto)
++getSNSUserList()
+}
+
+class SNSUserDto{
+-strName
+-strSex
+-strBirthDate
+-strAddress
+-strPhoneNumber
+-strEmail
+-snsUserNumber
+-strCitizenCardNumber
+-strPassword
+}
+
+class SNSUser{
+-strName
+-strSex
+-strBirthDate
+-strAddress
+-strPhoneNumber
+-strEmail
+-snsUserNumber
+-strCitizenCardNumber
+-strPassword
++getSnsUserNumber()
++getStrEmail()
++getStrPhoneNumber()
++getStrCitizenCardNumber()
++validateSNSUser()
++toString()
+}
+
+class Utils{
++passwordGenerator()
+}
+
+class AuthFacade{
++existsUser(email)
++addUserWithRole(name,email,pwd,roleId)
+}
+
+LoadCSVUI ..> LoadCSVController
+LoadCSVController ..> Company
+LoadCSVUI ..> Utils
+LoadCSVUI ..> SNSUserDto
+LoadCSVController ..> SNSUserDto
+Company ..> SNSUserDto
+Company "1" -left-> "*" SNSUser : knows
+Company ..> AuthFacade
+@enduml

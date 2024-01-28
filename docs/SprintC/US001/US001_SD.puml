@@ -1,0 +1,250 @@
+@startuml
+
+autonumber
+
+actor SNSUser as U
+
+participant ":ScheduleVaccineUI" as UI
+participant ":ScheduleVaccineController" as CTRL
+participant "company\n:Company" as C
+participant "vaccinationCenter\n:VaccinationCenter" as VC
+participant "snsUser\n:SnsUser" as SU
+participant "appointmentsList\nList<ScheduledVaccine>" as L
+
+
+activate U
+U -> UI : asks to schedule a vaccine
+activate UI
+
+UI -> CTRL : companyHasNecessaryInfo()
+activate CTRL
+
+CTRL -> C : getSNSUserList().isEmpty()
+activate C
+C ---> CTRL : result (user´s list is or not empty)
+deactivate C
+
+CTRL -> C : getVaccineTypes().isEmpty()
+activate C
+C ---> CTRL : result (vaccine type´s list is or not empty)
+deactivate C
+
+CTRL -> C :  getVaccinationCenters().isEmpty()
+activate C
+C ---> CTRL : result (vaccination center´s list is or not empty)
+deactivate C
+CTRL ---> UI : result (if the company has the necessary info to schedule a vaccine)
+deactivate CTRL
+UI -> CTRL : vaccinationCenterList = getVaccinationCentersNameList()
+activate CTRL
+CTRL -> C : vaccinationCenterList = getVaccinationCenters()
+activate C
+deactivate C
+deactivate CTRL
+
+UI --> U : shows a list with the available vaccination centers
+
+deactivate UI
+U -> UI : selects one vaccination center
+
+
+
+activate UI
+UI -> CTRL : setVaccinationCenter(vaccinationCenterIndex)
+activate CTRL
+CTRL -> C : vaccinationCenter = getVaccinationCenters().get(index)
+activate C
+deactivate C
+deactivate CTRL
+
+
+UI -> CTRL : vaccinationCenterDto = getVaccinationCenterInfo()
+activate CTRL
+ref over CTRL: SD_GetVaccinationCenterInfo.puml
+CTRL --> UI : vaccinationCenterDto
+deactivate CTRL
+
+
+
+UI -> CTRL : vaccineTypesList = getVaccineTypesNameList()
+activate CTRL
+CTRL -> C : vaccineTypesList = getVaccineTypes()
+activate C
+deactivate C
+deactivate CTRL
+
+
+ UI --> U : shows a list with the Vaccine Types available
+deactivate UI
+U -> UI : selects one Vaccine Type
+
+activate UI
+UI -> CTRL : getAvailableDaysListCurrentMonth(availableDaysCurrentMonth)
+activate CTRL
+loop for days left in the month
+
+CTRL -> CTRL : boolean flag = dayHasAvailability(dayBeingChecked)
+alt flag is true
+CTRL -> CTRL :  availableDaysCurrentMonth.add(dayBeingChecked)
+
+activate CTRL
+deactivate CTRL
+end
+end
+activate CTRL
+deactivate CTRL
+deactivate CTRL
+
+
+
+ UI --> U : shows a list with all the available dates for the current month
+deactivate UI
+alt asks to see next month dates
+U -> UI :
+activate UI
+UI -> CTRL : getAvailableDaysListNextMonth(availableDaysCurrentMonth)
+activate CTRL
+loop for days in the month
+
+CTRL -> CTRL : boolean flag = dayHasAvailability(dayBeingChecked)
+alt flag is true
+CTRL -> CTRL :  availableDaysNextMonth.add(dayBeingChecked)
+
+activate CTRL
+deactivate CTRL
+end
+end
+activate CTRL
+deactivate CTRL
+deactivate CTRL
+UI --> U : shows a list with all the available dates for the next month
+deactivate UI
+
+end
+
+U -> UI : selects one date
+activate UI
+note right
+all the data being passed as a parameter below, comes from the vaccinationCenterDto
+end note
+
+
+UI -> CTRL : getAvailableSlotsList(availableSlotsList, slotsPerDay, selectedDate, timeOfTheSlot, slotDuration)
+activate CTRL
+loop for slotsPerDay
+
+CTRL -> CTRL : boolean flag = slotHasAvailability(selectedDate, timeOfTheSlot)
+alt flag is true
+CTRL -> CTRL : availableHours.add(timeOfTheSlot)
+
+activate CTRL
+deactivate CTRL
+end
+end
+activate CTRL
+deactivate CTRL
+deactivate CTRL
+
+
+UI --> U : shows a list with all the slots available
+deactivate UI
+U -> UI : selects one slot
+
+
+
+activate UI
+UI -> CTRL : validateAppointment(scheduleVaccineDto, vaccinationCenter)
+
+activate CTRL
+CTRL -> CTRL : dataIsAllFilled(scheduleVaccineDto)
+activate CTRL
+deactivate CTRL
+CTRL -> C : userIsEligibleForTheAppointment(scheduledVaccineDto)
+activate C
+C ---> CTRL : result (if user is or not elegible for the appointment)
+deactivate C
+
+
+
+
+
+CTRL -> VC : validateAppointmentAccordingToAgeGroupAndTimeSinceLastDose(scheduledVaccineDto)
+activate VC
+VC -> SU : snsUserIndex = getUserIndexInUsersList(scheduledVaccineDto.snsNumber)
+activate SU
+deactivate SU
+VC -> C : snsUser = getSNSUserList().get(snsUserIndex)
+activate C
+deactivate C
+VC -> SU : getTakenVaccines().isNotEmpty()
+activate SU
+SU --> VC : result (if taken vaccine list is or not empty)
+deactivate SU
+VC -> VC : validateAppointmentAccordingToAdminProcess(snsUser, scheduledVaccineDto, takenVaccine)
+activate VC
+deactivate VC
+
+
+VC --> CTRL : result (if appoitment is or not validated)
+deactivate VC
+
+
+CTRL -> VC : centerHasAvailability(scheduledVaccineDto)
+activate VC
+VC ---> CTRL : result (if center is or not available for an appointment)
+deactivate VC
+
+
+CTRL ---> UI : result (if the appointment is or not valid)
+deactivate CTRL
+
+UI ---> U : shows the data and requests confirmation
+deactivate UI
+
+U -> UI : confirms the data
+activate UI
+
+UI -> CTRL : scheduledVaccine(scheduleVaccineDto, vaccinationCenter)
+activate CTRL
+
+
+CTRL -> VC : centerHasAvailability(scheduleVaccineDto)
+
+activate VC
+VC ---> CTRL : result (if the vaccination center has availability or not)
+deactivate VC
+
+
+ref over CTRL : SD_createScheduledVaccine.puml
+
+
+CTRL -> VC : addAppointment(scheduledVaccine)
+activate VC
+
+
+VC -> L : addAppointment(scheduledVaccine)
+activate L
+L --> VC : result (if appointment was added to appointment´s list)
+
+deactivate L
+
+VC --> CTRL : result (if appointment was added to appointment´s list)
+
+deactivate VC
+
+CTRL ---> UI : result (if appointment was added to appointment´s list)
+deactivate CTRL
+UI --> U : informs operation success and shows appointment information
+
+UI -> U : asks if the user wants to receive an SMS with the appointment information
+deactivate UI
+
+U -> UI : authorizes the application to send him an SMS
+activate UI
+UI -> CTRL : printAppointmentToFile(scheduledVaccineDto, vaccinationCenter)
+activate CTRL
+deactivate CTRL
+UI ---> U : informs operation success
+deactivate UI
+deactivate U
+@enduml

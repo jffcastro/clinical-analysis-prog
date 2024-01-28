@@ -1,0 +1,34 @@
+@startuml
+
+autonumber
+
+participant ":App" as A
+participant "Company" as C
+participant "Vaccination Center Store" as VCS
+participant "Vaccination Center" as VC
+
+
+
+
+[o--> A :asks to execute the daily task that records the total of people vaccinated for each vaccination center.
+activate A
+A -> C : runDailyTasks()
+activate C
+
+loop Vaccination Center Total Vaccinated People
+C -> VCS : getVaccinationCenterWithIndex()
+activate VCS
+deactivate VCS
+C->VC :   administeredVaccinesList = getAdministeredVaccines()
+activate VC
+deactivate VC
+
+C -> VC : amountOfVaccinatedPeople = administeredVaccinesListSize()
+
+activate VC
+deactivate VC
+C -> A : Print information to a csv file
+deactivate C
+end
+deactivate A
+@enduml

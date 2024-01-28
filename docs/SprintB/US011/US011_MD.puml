@@ -1,0 +1,16 @@
+@startuml
+
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+class Administrator
+class ListOfEmployees {
+-nurseList: ArrayList
+-receptionistList: ArrayList
+-centreCoordinatorList: ArrayList
+}
+
+Administrator "1" ---- "1" ListOfEmployees : gets >
+
+@enduml

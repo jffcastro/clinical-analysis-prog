@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Administrator
+
+class TypeOfVaccine {
+===-name
+}
+
+Administrator "1" --- "*" TypeOfVaccine: specifies
+
+@enduml

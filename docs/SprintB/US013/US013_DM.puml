@@ -1,0 +1,51 @@
+ @startuml
+
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class Administrator {
+
+}
+
+class Company{}
+
+class Vaccine{
+    -name
+    -id
+    -brand
+}
+
+class AdministrationProcess {
+    -ageLimits
+    -numberOfDoses
+    -vaccineDosage
+    -timeIntervalBetweenVaccines
+
+}
+
+class VaccineType{
+-description
+-code
+-vaccineTechnology
+}
+
+class ApplicationUser {
+    -name
+    -email
+    -password
+    -role
+}
+
+Administrator "1" -- "*" Vaccine: specifies new >
+Administrator "1" -- "*" AdministrationProcess: specifies  >
+Administrator "1" -- "*" VaccineType: specifies  >
+
+Vaccine "1" -- "1" AdministrationProcess: has an >
+Vaccine "1" -- "1" VaccineType: has an >
+ApplicationUser  <|-- Administrator
+
+Company "1" --- "*" Vaccine : storages >
+
+@enduml

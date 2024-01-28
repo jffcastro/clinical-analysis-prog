@@ -1,0 +1,51 @@
+@startuml
+
+autonumber
+actor "SnsUser" as U
+
+activate U
+U -> ":System" : asks to schedule a vaccine
+
+activate ":System"
+":System" --> U : shows a list with the available vaccination centers
+deactivate ":System"
+U -> ":System" : selects one vaccination center
+
+activate ":System"
+
+ ":System" --> U : shows a list with the Vaccine Types available
+
+deactivate ":System"
+
+U -> ":System" : selects one Vaccine Type
+activate ":System"
+
+":System" --> U : shows a list with all the dates available
+deactivate ":System"
+
+U -> ":System" : selects one date
+
+activate ":System"
+":System" --> U : shows a list with all the available slots (times)
+deactivate ":System"
+
+U -> ":System" : selects one slot
+
+
+activate ":System"
+
+":System" --> U : shows all the data and asks for confirmation
+deactivate ":System"
+
+U -> ":System" : confirms the data
+
+activate ":System"
+":System" --> U : informs operation success and asks if the user\nwants to receive an SMS with the appointment info
+deactivate ":System"
+U -> ":System" : confirms that he wants the SMS
+activate ":System"
+":System" ---> U : confirms operation success
+
+deactivate U
+
+@enduml

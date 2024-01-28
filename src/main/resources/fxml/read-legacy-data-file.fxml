@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.gui.ReadLegacyDataFileGUI">
+   <bottom>
+      <FlowPane prefHeight="94.0" prefWidth="1356.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="117.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#back" prefHeight="70.0" prefWidth="165.0" style="-fx-background-color: INDIANRED;" styleClass="logout-button" stylesheets="@../styles/styleSheet.css" text="Back" textFill="ANTIQUEWHITE">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="503.0" prefWidth="751.0">
+               <children>
+                  <Label prefHeight="69.0" prefWidth="199.0" text="Insert the file">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="127.0" prefWidth="637.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#chooseFile" prefHeight="55.0" prefWidth="156.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Choose File">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="637.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="503.0" prefWidth="758.0">
+               <children>
+                  <Label fx:id="lbSort" prefHeight="55.0" prefWidth="101.0" text="Sort by" visible="false">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="637.0">
+                     <children>
+                        <Button fx:id="btArrival" mnemonicParsing="false" onAction="#sortByArrival" prefHeight="56.0" prefWidth="116.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Arrival" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btDeparture" mnemonicParsing="false" onAction="#sortByDeparture" prefHeight="56.0" prefWidth="116.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Departure" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="658.0" />
+                  <Label fx:id="lbChoice" prefHeight="45.0" prefWidth="225.0" text="Choose a option" visible="false">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btAscending" mnemonicParsing="false" onAction="#ascending" prefHeight="56.0" prefWidth="116.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Ascending" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btDescending" mnemonicParsing="false" onAction="#descending" prefHeight="56.0" prefWidth="138.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Descending" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="top-background" stylesheets="@../styles/styleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Read Legacy Data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

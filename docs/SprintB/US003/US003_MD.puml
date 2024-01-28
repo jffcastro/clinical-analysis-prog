@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Receptionist
+
+class SnsUser {
+==-name
+==-address
+==-sex
+==-phoneNumber
+==-email
+==-birthDate
+==-SNS_number
+==-citizenCardNumber
+}
+
+class Company
+
+Company "1" -up- "*" SnsUser: stores >
+Receptionist "1" --- "*" SnsUser: creates >
+
+@enduml

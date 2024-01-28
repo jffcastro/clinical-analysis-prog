@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="485px" preserveAspectRatio="none" style="width:495px;height:485px;background:#FFFFFF;" version="1.1" viewBox="0 0 495 485" width="495px" zoomAndPan="magnify"><defs><filter height="300%" id="f1oxpskyhc89wq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="3" fill="#FEFECE" filter="url(#f1oxpskyhc89wq)" height="75.6719" id="Company" style="stroke:#A80036;stroke-width:1.5;" width="458" x="15" y="201"/><ellipse cx="213.25" cy="217" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M215.25,213.5 Q215.4531,213 215.6875,212.75 Q215.9219,212.5 216.1875,212.5 Q216.6563,212.5 216.9531,212.7813 Q217.25,213.0625 217.25,213.7188 L217.25,215.2813 Q217.25,215.9375 216.9688,216.2188 Q216.6875,216.5 216.25,216.5 Q215.8594,216.5 215.6094,216.3281 Q215.3594,216.1563 215.25,215.7031 Q215.2031,215.3906 215.0313,215.2188 Q214.7188,214.8906 214.1563,214.7031 Q213.5938,214.5 213.0313,214.5 Q212.3281,214.5 211.7344,214.7813 Q211.1563,215.0625 210.7031,215.6875 Q210.25,216.3125 210.25,217.1719 L210.25,218.0938 Q210.25,219.125 211.0938,219.8125 Q211.9375,220.5 213.4375,220.5 Q214.3281,220.5 214.9531,220.2969 Q215.3125,220.1875 215.7188,219.8281 Q215.9844,219.625 216.125,219.5625 Q216.2656,219.5 216.4375,219.5 Q216.7656,219.5 217,219.7656 Q217.25,220.0156 217.25,220.375 Q217.25,220.7188 216.9063,221.125 Q216.4063,221.7188 215.6094,222.0469 Q214.5625,222.5 213.2813,222.5 Q211.7813,222.5 210.5781,221.9063 Q209.6094,221.4375 208.9219,220.4219 Q208.25,219.4063 208.25,218.2031 L208.25,217.1094 Q208.25,215.8594 208.8438,214.7656 Q209.4531,213.6719 210.5,213.0938 Q211.5625,212.5 212.75,212.5 Q213.4688,212.5 214.0938,212.75 Q214.7188,213 215.25,213.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="233.75" y="221.9102">Company</text><line style="stroke:#A80036;stroke-width:1.5;" x1="16" x2="472" y1="233" y2="233"/><line style="stroke:#A80036;stroke-width:1.5;" x1="16" x2="472" y1="241" y2="241"/><ellipse cx="26" cy="252" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="426" x="35" y="256.4189">createSnsUser(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)</text><ellipse cx="26" cy="265.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="432" x="35" y="270.2549">validateSnsUser(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="8" fill="#FEFECE" filter="url(#f1oxpskyhc89wq)" height="158.6875" id="User" style="stroke:#A80036;stroke-width:1.5;" width="117" x="185.5" y="312.5"/><ellipse cx="226.6" cy="328.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M228.6,325 Q228.8031,324.5 229.0375,324.25 Q229.2719,324 229.5375,324 Q230.0063,324 230.3031,324.2813 Q230.6,324.5625 230.6,325.2188 L230.6,326.7813 Q230.6,327.4375 230.3188,327.7188 Q230.0375,328 229.6,328 Q229.2094,328 228.9594,327.8281 Q228.7094,327.6563 228.6,327.2031 Q228.5531,326.8906 228.3813,326.7188 Q228.0688,326.3906 227.5063,326.2031 Q226.9438,326 226.3813,326 Q225.6781,326 225.0844,326.2813 Q224.5063,326.5625 224.0531,327.1875 Q223.6,327.8125 223.6,328.6719 L223.6,329.5938 Q223.6,330.625 224.4438,331.3125 Q225.2875,332 226.7875,332 Q227.6781,332 228.3031,331.7969 Q228.6625,331.6875 229.0688,331.3281 Q229.3344,331.125 229.475,331.0625 Q229.6156,331 229.7875,331 Q230.1156,331 230.35,331.2656 Q230.6,331.5156 230.6,331.875 Q230.6,332.2188 230.2563,332.625 Q229.7563,333.2188 228.9594,333.5469 Q227.9125,334 226.6313,334 Q225.1313,334 223.9281,333.4063 Q222.9594,332.9375 222.2719,331.9219 Q221.6,330.9063 221.6,329.7031 L221.6,328.6094 Q221.6,327.3594 222.1938,326.2656 Q222.8031,325.1719 223.85,324.5938 Q224.9125,324 226.1,324 Q226.8188,324 227.4438,324.25 Q228.0688,324.5 228.6,325 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="246.4" y="333.4102">User</text><line style="stroke:#A80036;stroke-width:1.5;" x1="186.5" x2="301.5" y1="344.5" y2="344.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="191.5" y="359.9189">String name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="191.5" y="373.7549">String address</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="191.5" y="387.5908">String sex</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="191.5" y="401.4268">int phoneNumber</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="191.5" y="415.2627">String email</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="68" x="191.5" y="429.0986">Date birthDate</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="191.5" y="442.9346">int SNS_number</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="191.5" y="456.7705">int citizenCardNumber</text><line style="stroke:#A80036;stroke-width:1.5;" x1="186.5" x2="301.5" y1="463.1875" y2="463.1875"/><!--MD5=[8a993fa9aa1b2840b290da8a02ff1df5]
+class CreateNewSnsUserUI--><rect codeLine="19" fill="#FEFECE" filter="url(#f1oxpskyhc89wq)" height="48" id="CreateNewSnsUserUI" style="stroke:#A80036;stroke-width:1.5;" width="155" x="166.5" y="7"/><ellipse cx="181.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M183.5,19.5 Q183.7031,19 183.9375,18.75 Q184.1719,18.5 184.4375,18.5 Q184.9063,18.5 185.2031,18.7813 Q185.5,19.0625 185.5,19.7188 L185.5,21.2813 Q185.5,21.9375 185.2188,22.2188 Q184.9375,22.5 184.5,22.5 Q184.1094,22.5 183.8594,22.3281 Q183.6094,22.1563 183.5,21.7031 Q183.4531,21.3906 183.2813,21.2188 Q182.9688,20.8906 182.4063,20.7031 Q181.8438,20.5 181.2813,20.5 Q180.5781,20.5 179.9844,20.7813 Q179.4063,21.0625 178.9531,21.6875 Q178.5,22.3125 178.5,23.1719 L178.5,24.0938 Q178.5,25.125 179.3438,25.8125 Q180.1875,26.5 181.6875,26.5 Q182.5781,26.5 183.2031,26.2969 Q183.5625,26.1875 183.9688,25.8281 Q184.2344,25.625 184.375,25.5625 Q184.5156,25.5 184.6875,25.5 Q185.0156,25.5 185.25,25.7656 Q185.5,26.0156 185.5,26.375 Q185.5,26.7188 185.1563,27.125 Q184.6563,27.7188 183.8594,28.0469 Q182.8125,28.5 181.5313,28.5 Q180.0313,28.5 178.8281,27.9063 Q177.8594,27.4375 177.1719,26.4219 Q176.5,25.4063 176.5,24.2031 L176.5,23.1094 Q176.5,21.8594 177.0938,20.7656 Q177.7031,19.6719 178.75,19.0938 Q179.8125,18.5 181,18.5 Q181.7188,18.5 182.3438,18.75 Q182.9688,19 183.5,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="123" x="195.5" y="27.9102">CreateNewSnsUserUI</text><line style="stroke:#A80036;stroke-width:1.5;" x1="167.5" x2="320.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="167.5" x2="320.5" y1="47" y2="47"/><!--MD5=[1bedc12192aa0c7b7006095aa3804406]
+class CreateNewSnsUserController--><rect codeLine="21" fill="#FEFECE" filter="url(#f1oxpskyhc89wq)" height="75.6719" id="CreateNewSnsUserController" style="stroke:#A80036;stroke-width:1.5;" width="474" x="7" y="90"/><ellipse cx="157.25" cy="106" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M159.25,102.5 Q159.4531,102 159.6875,101.75 Q159.9219,101.5 160.1875,101.5 Q160.6563,101.5 160.9531,101.7813 Q161.25,102.0625 161.25,102.7188 L161.25,104.2813 Q161.25,104.9375 160.9688,105.2188 Q160.6875,105.5 160.25,105.5 Q159.8594,105.5 159.6094,105.3281 Q159.3594,105.1563 159.25,104.7031 Q159.2031,104.3906 159.0313,104.2188 Q158.7188,103.8906 158.1563,103.7031 Q157.5938,103.5 157.0313,103.5 Q156.3281,103.5 155.7344,103.7813 Q155.1563,104.0625 154.7031,104.6875 Q154.25,105.3125 154.25,106.1719 L154.25,107.0938 Q154.25,108.125 155.0938,108.8125 Q155.9375,109.5 157.4375,109.5 Q158.3281,109.5 158.9531,109.2969 Q159.3125,109.1875 159.7188,108.8281 Q159.9844,108.625 160.125,108.5625 Q160.2656,108.5 160.4375,108.5 Q160.7656,108.5 161,108.7656 Q161.25,109.0156 161.25,109.375 Q161.25,109.7188 160.9063,110.125 Q160.4063,110.7188 159.6094,111.0469 Q158.5625,111.5 157.2813,111.5 Q155.7813,111.5 154.5781,110.9063 Q153.6094,110.4375 152.9219,109.4219 Q152.25,108.4063 152.25,107.2031 L152.25,106.1094 Q152.25,104.8594 152.8438,103.7656 Q153.4531,102.6719 154.5,102.0938 Q155.5625,101.5 156.75,101.5 Q157.4688,101.5 158.0938,101.75 Q158.7188,102 159.25,102.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="165" x="177.75" y="110.9102">CreateNewSnsUserController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="480" y1="122" y2="122"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="480" y1="130" y2="130"/><ellipse cx="18" cy="141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="448" x="27" y="145.4189">createVaccineType(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)</text><ellipse cx="18" cy="154.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="441" x="27" y="159.2549">saveVaccineType(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)</text><!--MD5=[638b9a33ebaa2c7b50dfb2cbd8460af2]
+link CreateNewSnsUserUI to CreateNewSnsUserController--><path codeLine="29" d="M244,55.32 C244,66.79 244,78.26 244,89.73 " fill="none" id="CreateNewSnsUserUI-CreateNewSnsUserController" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4552c3dd8dfba8d256fbf34b0b3bcfdc]
+link CreateNewSnsUserController to Company--><path codeLine="30" d="M244,166.13 C244,175.98 244,185.84 244,195.69 " fill="none" id="CreateNewSnsUserController-to-Company" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="244,200.84,248,191.84,244,195.84,240,191.84,244,200.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e6529539d61e4fceb49a82d3c9677c38]
+link Company to User--><path codeLine="31" d="M244,277.04 C244,287.02 244,297.01 244,306.99 " fill="none" id="Company-to-User" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="244,312.21,248,303.21,244,307.21,240,303.21,244,312.21" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b0f5a250cdb3bef33ebcf5f6b3ef350a]
+@startuml
+'https://plantuml.com/class-diagram
+
+class Company {
++createSnsUser(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
++validateSnsUser(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
+}
+
+class User {
+String name
+String address
+String sex
+int phoneNumber
+String email
+Date birthDate
+int SNS_number
+int citizenCardNumber
+}
+
+class CreateNewSnsUserUI
+
+class CreateNewSnsUserController{
++createVaccineType(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
++saveVaccineType(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
+}
+
+
+left to right direction
+
+CreateNewSnsUserUI - CreateNewSnsUserController
+CreateNewSnsUserController -> Company
+Company .> User
+
+@enduml
+
+@startuml
+
+class Company {
++createSnsUser(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
++validateSnsUser(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
+}
+
+class User {
+String name
+String address
+String sex
+int phoneNumber
+String email
+Date birthDate
+int SNS_number
+int citizenCardNumber
+}
+
+class CreateNewSnsUserUI
+
+class CreateNewSnsUserController{
++createVaccineType(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
++saveVaccineType(name, address, sex, phoneNumber, email. birthDate, citizenCardNumber)
+}
+
+
+left to right direction
+
+CreateNewSnsUserUI - CreateNewSnsUserController
+CreateNewSnsUserController -> Company
+Company .> User
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

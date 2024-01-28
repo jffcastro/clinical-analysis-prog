@@ -1,0 +1,96 @@
+@startuml
+
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class CenterCoordinator
+
+class Employee {
+-id
+}
+
+class ApplicationUser {
+    -name
+    -email
+    -password
+    -role
+    -address
+    -citizenCardNumber
+}
+
+class VaccinationCenter {
+-id
+-name
+-phoneNumber
+-email
+-fax
+-website
+-openingHour
+-closingHour
+-slotDuration
+-vaccinesPerSlot
+-road
+-zipCode
+-local
+-centerCoordinatorID
+-arrivalsList
+-scheduledVaccineList
+-vaccinesAdministeredList
+}
+
+class Arrival {
+-snsNumber
+-arrivalTime
+
+}
+
+class VaccineType {
+-code
+-description
+-technology
+}
+
+class Departure {
+-snsNumber
+-departureTime
+}
+
+class PerformanceAnalyzer {
+}
+
+class InformationToAnalyze {
+}
+
+
+ApplicationUser <|-- Employee
+
+Employee <|-- CenterCoordinator
+
+PerformanceAnalyzer "1" -- "1" InformationToAnalyze : has >
+
+InformationToAnalyze "1" -- "1" VaccinationCenter : is related to >
+
+InformationToAnalyze "1" -- "*" Arrival : utilizes >
+
+InformationToAnalyze "1" -- "*" Departure : utilizes >
+
+VaccinationCenter "1" -- "*" Arrival : has >
+
+VaccinationCenter "1" -- "*" Departure : has >
+
+CenterCoordinator "1" --> "1" VaccinationCenter : coordinates >
+
+CenterCoordinator "1" --> "1" PerformanceAnalyzer : utilizes >
+
+PerformanceAnalyzer "1" --> "1" VaccinationCenter : analyzes >
+
+Company "1" -- "*" ApplicationUser : has >
+
+Company "1" -- "*" VaccinationCenter : has >
+
+Arrival "*" -- "1" VaccineType : is associated to >
+
+
+@enduml

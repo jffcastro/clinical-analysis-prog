@@ -1,0 +1,129 @@
+@startuml
+
+autonumber
+
+actor CenterCoordinator as CC
+
+participant ":CheckAndExportVacStatsGUI" as UI
+participant ":CheckAndExportVaccinationStatsController" as CTRL
+participant "exportListToFile\n:ExportListToFIle" as EL
+participant "company\n:Company" as C
+participant "vaccinationCentersStore\n:VaccinationCentersStore" as S
+participant "vaccinationCenter\n:VaccinationCenter" as VC
+
+
+activate CC
+CC -> UI :asks to check and export vaccination statistics
+
+activate UI
+
+UI -> CTRL : setVaccinationCenter()
+activate CTRL
+CTRL -> C : getVaccinationCentersStore()
+activate C
+C --> CTRL : returns the store
+deactivate C
+
+CTRL -> S : getVaccinationCenterAssociatedToCoordinator(id)
+activate S
+S --> CTRL : returns the vaccination center
+deactivate S
+
+
+deactivate CTRL
+
+UI --> CC : shows the dates to be selected and asks for one selection
+deactivate UI
+
+
+CC-> UI : selects the first date and the last date
+
+activate UI
+UI -> CTRL : setFirstDate(firstDate)
+activate CTRL
+deactivate CTRL
+UI -> CTRL : setLastDate(lastDate)
+activate CTRL
+deactivate CTRL
+
+
+UI --> CC : request a selection between the option of checking \nstatistics and the option of exporting them
+deactivate UI
+
+
+
+alt check statistics
+CC -> UI : selects to check the statistics
+activate UI
+
+UI -> CTRL : checkIfDatesAreValid()
+activate CTRL
+CTRL --> UI : returns true if both dates are valid
+deactivate CTRL
+
+UI -> CTRL : toCheckVaccinationStatsScene()
+activate CTRL
+
+CTRL --> VC : getVaccinationStatsListBetweenDates(firstDate, lastDate)
+activate VC
+VC -> VC : getVaccinationStatsList()
+activate VC
+deactivate VC
+VC --> CTRL : returns the list of vaccination statistics for the selected dates
+deactivate VC
+
+CTRL --> UI : returns the list of vaccination statistics for the selected dates
+
+deactivate CTRL
+UI -> CC : shows a list with the total number \nof fully vaccinated users per day
+
+deactivate UI
+
+
+
+
+else export statistics
+CC -> UI : selects to check the statistics
+activate UI
+
+UI --> CC : requests the name of the file
+deactivate UI
+CC-> UI : types the name of the file
+activate UI
+UI -> CTRL : exportVaccinationStats(fileName)
+activate CTRL
+CTRL -> VC : vaccinationStats = getVaccinationStatsListBetweenDates(firstDate, lastDate)
+activate VC
+deactivate VC
+CTRL -> EL ** : createExportListToFile(vaccinationStats, fileName, fileType)
+CTRL -> EL : exportList(header)
+activate EL
+EL --> CTRL : returns true if the list was exported successfully
+deactivate EL
+CTRL --> UI : returns true if the list was exported successfully
+deactivate CTRL
+ UI --> CC : informs that the vaccination statistics have been exported
+deactivate UI
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deactivate CC
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+
+title US011 System Sequence Diagram
+autonumber "<b> [00]"
+actor "Administrator" as A
+
+activate A
+A -> ":System" : asks for a list of employees
+activate ":System"
+":System" --> A : shows list of roles and asks to select one
+deactivate ":System"
+
+A -> ":System" : selects one role
+activate ":System"
+":System" --> A : returns the list of employees for that role
+deactivate ":System"
+
+deactivate A
+
+@enduml

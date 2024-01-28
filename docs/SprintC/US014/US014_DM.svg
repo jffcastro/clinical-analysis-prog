@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="491px" preserveAspectRatio="none" style="width:271px;height:491px;background:#FFFFFF;" version="1.1" viewBox="0 0 271 491" width="271px" zoomAndPan="magnify"><defs><filter height="300%" id="fffwhekcvrb3d" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="18" fill="#FEFECE" filter="url(#fffwhekcvrb3d)" height="113.4063" id="User" style="stroke:#A80036;stroke-width:1.5;" width="59" x="55" y="364"/><ellipse cx="70" cy="380" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M72,376.5 Q72.2031,376 72.4375,375.75 Q72.6719,375.5 72.9375,375.5 Q73.4063,375.5 73.7031,375.7813 Q74,376.0625 74,376.7188 L74,378.2813 Q74,378.9375 73.7188,379.2188 Q73.4375,379.5 73,379.5 Q72.6094,379.5 72.3594,379.3281 Q72.1094,379.1563 72,378.7031 Q71.9531,378.3906 71.7813,378.2188 Q71.4688,377.8906 70.9063,377.7031 Q70.3438,377.5 69.7813,377.5 Q69.0781,377.5 68.4844,377.7813 Q67.9063,378.0625 67.4531,378.6875 Q67,379.3125 67,380.1719 L67,381.0938 Q67,382.125 67.8438,382.8125 Q68.6875,383.5 70.1875,383.5 Q71.0781,383.5 71.7031,383.2969 Q72.0625,383.1875 72.4688,382.8281 Q72.7344,382.625 72.875,382.5625 Q73.0156,382.5 73.1875,382.5 Q73.5156,382.5 73.75,382.7656 Q74,383.0156 74,383.375 Q74,383.7188 73.6563,384.125 Q73.1563,384.7188 72.3594,385.0469 Q71.3125,385.5 70.0313,385.5 Q68.5313,385.5 67.3281,384.9063 Q66.3594,384.4375 65.6719,383.4219 Q65,382.4063 65,381.2031 L65,380.1094 Q65,378.8594 65.5938,377.7656 Q66.2031,376.6719 67.25,376.0938 Q68.3125,375.5 69.5,375.5 Q70.2188,375.5 70.8438,375.75 Q71.4688,376 72,376.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="84" y="384.9102">User</text><line style="stroke:#A80036;stroke-width:1.5;" x1="56" x2="113" y1="396" y2="396"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="40" x="61" y="413.4951">-name</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="40" x="61" y="429.8467">-email</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="31" x="61" y="446.1982">-pwd</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="41" x="61" y="462.5498">-roleId</text><line style="stroke:#A80036;stroke-width:1.5;" x1="56" x2="113" y1="469.4063" y2="469.4063"/><path d="M132.5,407.5 L132.5,433.8516 L262.5,433.8516 L262.5,417.5 L252.5,407.5 L132.5,407.5 " fill="#FBFB77" filter="url(#fffwhekcvrb3d)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M252.5,407.5 L252.5,417.5 L262.5,417.5 L252.5,407.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="109" x="138.5" y="425.9951">"Auth component."</text><!--MD5=[72be06cc7ae02ccc98efe28a50e62246]
+class SNSUser--><rect codeLine="6" fill="#FEFECE" filter="url(#fffwhekcvrb3d)" height="195.1641" id="SNSUser" style="stroke:#A80036;stroke-width:1.5;" width="155" x="7" y="115"/><ellipse cx="54.25" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M56.25,127.5 Q56.4531,127 56.6875,126.75 Q56.9219,126.5 57.1875,126.5 Q57.6563,126.5 57.9531,126.7813 Q58.25,127.0625 58.25,127.7188 L58.25,129.2813 Q58.25,129.9375 57.9688,130.2188 Q57.6875,130.5 57.25,130.5 Q56.8594,130.5 56.6094,130.3281 Q56.3594,130.1563 56.25,129.7031 Q56.2031,129.3906 56.0313,129.2188 Q55.7188,128.8906 55.1563,128.7031 Q54.5938,128.5 54.0313,128.5 Q53.3281,128.5 52.7344,128.7813 Q52.1563,129.0625 51.7031,129.6875 Q51.25,130.3125 51.25,131.1719 L51.25,132.0938 Q51.25,133.125 52.0938,133.8125 Q52.9375,134.5 54.4375,134.5 Q55.3281,134.5 55.9531,134.2969 Q56.3125,134.1875 56.7188,133.8281 Q56.9844,133.625 57.125,133.5625 Q57.2656,133.5 57.4375,133.5 Q57.7656,133.5 58,133.7656 Q58.25,134.0156 58.25,134.375 Q58.25,134.7188 57.9063,135.125 Q57.4063,135.7188 56.6094,136.0469 Q55.5625,136.5 54.2813,136.5 Q52.7813,136.5 51.5781,135.9063 Q50.6094,135.4375 49.9219,134.4219 Q49.25,133.4063 49.25,132.2031 L49.25,131.1094 Q49.25,129.8594 49.8438,128.7656 Q50.4531,127.6719 51.5,127.0938 Q52.5625,126.5 53.75,126.5 Q54.4688,126.5 55.0938,126.75 Q55.7188,127 56.25,127.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="52" x="74.75" y="135.9102">SNSUser</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="161" y1="147" y2="147"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="56" x="13" y="164.4951">-strName</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="44" x="13" y="180.8467">-strSex</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="78" x="13" y="197.1982">-strBirthDate</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="69" x="13" y="213.5498">-strAddress</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="110" x="13" y="229.9014">-strPhoneNumber</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="55" x="13" y="246.2529">-strEmail</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="102" x="13" y="262.6045">-snsUserNumber</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="143" x="13" y="278.9561">-strCitizenCardNumber</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="80" x="13" y="295.3076">-strPassword</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="161" y1="302.1641" y2="302.1641"/><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect fill="#FEFECE" filter="url(#fffwhekcvrb3d)" height="48" id="Company" style="stroke:#A80036;stroke-width:1.5;" width="85" x="42" y="13"/><ellipse cx="57" cy="29" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M59,25.5 Q59.2031,25 59.4375,24.75 Q59.6719,24.5 59.9375,24.5 Q60.4063,24.5 60.7031,24.7813 Q61,25.0625 61,25.7188 L61,27.2813 Q61,27.9375 60.7188,28.2188 Q60.4375,28.5 60,28.5 Q59.6094,28.5 59.3594,28.3281 Q59.1094,28.1563 59,27.7031 Q58.9531,27.3906 58.7813,27.2188 Q58.4688,26.8906 57.9063,26.7031 Q57.3438,26.5 56.7813,26.5 Q56.0781,26.5 55.4844,26.7813 Q54.9063,27.0625 54.4531,27.6875 Q54,28.3125 54,29.1719 L54,30.0938 Q54,31.125 54.8438,31.8125 Q55.6875,32.5 57.1875,32.5 Q58.0781,32.5 58.7031,32.2969 Q59.0625,32.1875 59.4688,31.8281 Q59.7344,31.625 59.875,31.5625 Q60.0156,31.5 60.1875,31.5 Q60.5156,31.5 60.75,31.7656 Q61,32.0156 61,32.375 Q61,32.7188 60.6563,33.125 Q60.1563,33.7188 59.3594,34.0469 Q58.3125,34.5 57.0313,34.5 Q55.5313,34.5 54.3281,33.9063 Q53.3594,33.4375 52.6719,32.4219 Q52,31.4063 52,30.2031 L52,29.1094 Q52,27.8594 52.5938,26.7656 Q53.2031,25.6719 54.25,25.0938 Q55.3125,24.5 56.5,24.5 Q57.2188,24.5 57.8438,24.75 Q58.4688,25 59,25.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="71" y="33.9102">Company</text><line style="stroke:#A80036;stroke-width:1.5;" x1="43" x2="126" y1="45" y2="45"/><line style="stroke:#A80036;stroke-width:1.5;" x1="43" x2="126" y1="53" y2="53"/><path d="M114.0742,420.5 C120.1573,420.5 126.2405,420.5 132.3236,420.5 " fill="none" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><path d="M84.5,61.0395 C84.5,75.3271 84.5,94.7535 84.5,114.8978 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="85.5" y="93.4951">knows</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="78.5" y="111.3929">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="76.5" y="75.5346">1</text><path d="M84.5,310.1666 C84.5,328.5649 84.5,347.2336 84.5,363.8128 " fill="none" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="85.5" y="342.4951">becomes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="76.5" y="360.3079">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="61.5" y="324.6618">0..1</text><!--MD5=[e9215bc02c13f2c4d12f46e914760a1d]
+@startuml
+'https://plantuml.com/class-diagram
+!pragma layout smetana
+
+note right of User : "Auth component."
+
+class SNSUser{
+==-strName
+==-strSex
+==-strBirthDate
+==-strAddress
+==-strPhoneNumber
+==-strEmail
+==-snsUserNumber
+==-strCitizenCardNumber
+==-strPassword
+}
+
+class User{
+==-name
+==-email
+==-pwd
+==-roleId
+}
+
+Company "1" -down- "*" SNSUser: knows >
+SNSUser "0..1" -down- "1" User: becomes >
+
+@enduml
+
+@startuml
+!pragma layout smetana
+
+note right of User : "Auth component."
+
+class SNSUser{
+==-strName
+==-strSex
+==-strBirthDate
+==-strAddress
+==-strPhoneNumber
+==-strEmail
+==-snsUserNumber
+==-strCitizenCardNumber
+==-strPassword
+}
+
+class User{
+==-name
+==-email
+==-pwd
+==-roleId
+}
+
+Company "1" -down- "*" SNSUser: knows >
+SNSUser "0..1" -down- "1" User: becomes >
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

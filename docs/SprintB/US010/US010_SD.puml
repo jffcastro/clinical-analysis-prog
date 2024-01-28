@@ -1,0 +1,67 @@
+@startuml
+autonumber
+
+actor "Administrator" as A
+
+participant ":RegisterNewEmployeeUI" as UI
+participant ":RegisterNewEmployeeController" as CTRL
+participant "registerNewEmployeeDto\n:RegisterNewEmployeeDto" as DTO
+participant ":Company" as C
+participant ":Employee" as E
+
+activate A
+A -> UI : asks to register a new employee
+activate UI
+UI --> A : shows a list with role options (Centre Coordinator, Nurse, Receptionist)
+deactivate UI
+
+A -> UI : selects a role
+activate UI
+UI --> A : requests data (name, address, phone number, email, citizen card number)
+deactivate UI
+
+A -> UI : types requested data
+activate UI
+
+UI -> CTRL : registerNewEmployee(registerNewEmployeeDto)
+activate CTRL
+
+CTRL -> C : registerNewEmployee(registerNewEmployeeDto)
+
+note over DTO, C : Several interactions to extract data from DTO.
+
+activate C
+C -> E : validateEmployee(emp)
+
+C --> CTRL : result of the employee validation
+
+CTRL --> UI : result of the employee validation
+
+UI --> A: shows all data and requests confirmation
+
+deactivate E
+deactivate C
+deactivate CTRL
+deactivate UI
+
+A -> UI : confirms the data
+activate UI
+UI -> CTRL : saveCreatedEmployee(registerNewEmployeeDto)
+activate CTRL
+CTRL -> C : saveCreatedEmployee(registerNewEmployeeDto)
+activate C
+
+C -> C : addEmployee(emp)
+
+C --> CTRL : result of the operation
+
+CTRL --> UI: result of the operation
+
+UI --> A : informs operation success
+
+deactivate C
+deactivate CTRL
+deactivate UI
+deactivate A
+
+@enduml

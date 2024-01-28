@@ -1,0 +1,38 @@
+@startuml
+
+autonumber
+actor "CenterCoordinator" as CC
+
+activate CC
+CC -> ":System" : asks to check and export vaccination statistics
+
+activate ":System"
+":System" --> CC : request the selection of a period (two dates)
+deactivate ":System"
+CC -> ":System" : selects the dates
+
+activate ":System"
+":System" --> CC : request a selection between the option of checking \nstatistics and the option of exporting them
+deactivate ":System"
+
+CC -> ":System" : selects one
+activate ":System"
+alt check statistics
+
+ ":System" --> CC : shows a list with the total number \nof fully vaccinated users per day
+
+else export statistics
+
+ ":System" --> CC : requests the name of the file
+deactivate ":System"
+CC-> ":System" : types the name of the file
+activate ":System"
+
+ ":System" --> CC : informs that the vaccination statistics have been exported
+
+deactivate ":System"
+end
+
+deactivate CC
+
+@enduml

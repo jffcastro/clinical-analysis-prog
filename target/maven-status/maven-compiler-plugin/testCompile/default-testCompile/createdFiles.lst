@@ -1,0 +1,16 @@
+app\domain\model\registerDailyTotalOfVaccinatedPeopleTest.class
+app\domain\model\SnsUserTest.class
+app\domain\model\AnalyzeThePerformanceOfACenterTest.class
+app\controller\CenterCoordinatorMenuControllerTest.class
+app\domain\model\RegisterTheArrivalOfAnSnsUserTest.class
+app\domain\model\MassVaccinationCenterTest.class
+app\domain\model\VaccineTest.class
+app\controller\RecordVaccineAdministrationControllerTest.class
+app\domain\model\AdministrationProcessTest.class
+app\domain\model\HealthcareCenterTest.class
+app\domain\model\GetListOfEmployeesTest.class
+app\domain\model\ScheduledVaccineTest.class
+app\domain\model\VaccineTypeTest.class
+app\controller\CheckAndExportVaccinationStatsControllerTest.class
+app\domain\model\RegisterNewEmployeeTest.class
+app\domain\model\ConsultUsersInTheWaitingRoomTest.class

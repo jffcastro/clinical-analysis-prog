@@ -1,0 +1,53 @@
+@startuml
+
+autonumber
+actor "Receptionist" as R
+
+activate R
+R -> ":System" : asks to schedule a vaccination
+
+activate ":System"
+":System" --> R : requests data (SNS number)
+deactivate ":System"
+
+R -> ":System"  : types user´s SNS number
+
+activate ":System"
+":System" --> R : shows a list with the available vaccination centers
+deactivate ":System"
+R -> ":System" : selects one vaccination center
+
+activate ":System"
+
+ ":System" --> R : shows a list with the Vaccine Types available
+
+deactivate ":System"
+
+R -> ":System" : selects one Vaccine Type
+activate ":System"
+
+":System" --> R : shows a list with all the dates available
+deactivate ":System"
+
+R -> ":System" : selects one date
+
+activate ":System"
+":System" --> R : shows a list with all the available slots (times)
+deactivate ":System"
+
+R -> ":System" : selects one slot
+
+activate ":System"
+
+":System" --> R : shows all the data and asks for confirmation
+deactivate ":System"
+
+R -> ":System" : confirms the data
+
+activate ":System"
+":System" --> R : informs operation sucess
+
+deactivate ":System"
+deactivate R
+
+@enduml

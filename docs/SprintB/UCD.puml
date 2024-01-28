@@ -1,0 +1,202 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+
+left to right direction
+title Usecase Diagram
+skinparam titleBorderRoundCorner 20
+skinparam titleBorderThickness 2
+skinparam arrowThickness 3
+
+
+'**********User*************
+Usecase UC23 as "UC23 - Vaccine Scheduling"
+Usecase UC24 as "UC24 - Authorize SMS message"
+Usecase UC25 as "UC25 - Obtain Vaccination Certificate"
+
+:User: as U
+
+U -d- UC23
+U -d- UC24
+U -d- UC25
+
+
+
+
+
+'**********Nurse*************
+Usecase UC14 as "UC14 - Check the Presence of the Patient"
+Usecase UC15 as "UC15 - Check User Info"
+Usecase UC16 as "UC16 - Check User's health condition"
+Usecase UC17 as "UC17 - Check User's scheduled vaccine type"
+Usecase UC18 as "UC18 - Check User's vaccination history"
+Usecase UC19 as "UC19 - Get system instructions regarding the vaccine"
+Usecase UC20 as "UC20 - Register Vaccine Type, name/brand and lot number"
+Usecase UC21 as "UC21 - Record adverse reactions"
+Usecase UC22 as "UC22 - Issues a vaccination certificate"
+
+:Nurse: as N
+
+N -d- UC14
+N -d- UC15
+N -d- UC16
+N -d- UC17
+N -d- UC18
+N -d- UC19
+N -d- UC20
+N -d- UC21
+N -d- UC22
+
+
+'**********Center Coordinator*************
+Usecase UC6 as "UC6 - Visualize Vaccination Statistics"
+Usecase UC7 as "UC7 - Generates Reports"
+Usecase UC8 as "UC8 - Analyse and Comparison"
+
+:Center Coordinator: as CC
+
+CC -d- UC6
+CC -d- UC7
+CC -d- UC8
+
+
+'**********Administrator*************
+Usecase UC9 as "UC9 - Register a vaccination center to respond to a certain pandemic"
+Usecase UC10 as "UC10 - Register an Employee"
+Usecase UC11 as "UC11 - Get a list of employees with a given function/role"
+Usecase UC12 as "UC12 - Specify a new vaccine type"
+Usecase UC13 as "UC13 - Specify a new vaccine and its administration process"
+
+:Administrator: as A
+
+A -d- UC9
+A -d- UC10
+A -d- UC11
+A -d- UC12
+A -d- UC13
+
+'**********Receptionist*************
+Usecase UC3 as "UC3 - Register an SNS User"
+Usecase UC4 as "UC4 - Schedule Vaccine For a User"
+Usecase UC5 as "UC5 - Arrivals Registration and Presence Confirmation"
+
+:Receptionist: as R
+
+R -d- UC3
+R -d- UC4
+R -d- UC5
+
+'**********Timer*************
+Usecase UC2 as "UC2 - Sends an email or SMS to the user confirming that the recovery period has ended"
+
+:<<Automatic>> Timer/Clock: as TC
+
+TC -d- UC2
+
+
+'**********System*************
+Usecase UC1 as "UC1 - Sends an SMS message with information about the scheduled appointment"
+
+:<<Automatic>>  System: as S
+
+S -d- UC1
+
+@enduml
+
+@startuml
+
+
+left to right direction
+title Usecase Diagram
+skinparam titleBorderRoundCorner 20
+skinparam titleBorderThickness 2
+skinparam arrowThickness 3
+
+
+Usecase UC24 as "UC24 - Schedule Vaccine Appointment"
+Usecase UC25 as "UC25 - Authorize DGS to send a message with\n information about the scheduled appointment"
+Usecase UC26 as "UC26 - Obtain Vaccination Certificate"
+
+:User: as U
+
+U -d- UC24
+U -d- UC25
+U -d- UC26
+
+
+Usecase UC21 as "UC21 - Schedule vaccine for a User"
+Usecase UC22 as "UC22 - Registers the arrival of a user"
+Usecase UC23 as "UC23 - Confirms that the user has the vaccine scheduled for that day and time \n using the SNS user number "
+
+:Receptionist: as R
+
+R -d- UC21
+R -d- UC22
+R -d- UC23
+
+
+Usecase UC10 as "UC10 - Check the list of SNS users in the vaccination center"
+Usecase UC11 as "UC11 - Check User's info"
+Usecase UC12 as "UC12 - Check User's health condition"
+Usecase UC13 as "UC13 - Check User's scheduled vaccine type"
+Usecase UC14 as "UC14 - Check User's vaccination history"
+Usecase UC15 as "UC15 - Get system instructions regarding the vaccine"
+Usecase UC16 as "UC16 - Registers vaccine type"
+Usecase UC17 as "UC17 - Registers vaccine name/brand"
+Usecase UC18 as "UC18 - Registers vaccine lot number"
+Usecase UC19 as "UC19 - Record adverse reactions"
+Usecase UC20 as "UC20 - Issues a vaccination certificate"
+
+:Nurse: as N
+
+N -d- UC10
+N -d- UC11
+N -d- UC12
+N -d- UC13
+N -d- UC14
+N -d- UC15
+N -d- UC16
+N -d- UC17
+N -d- UC18
+N -d- UC19
+N -d- UC20
+
+
+Usecase UC7 as "UC7 - Visualizes Vaccination Charts and Statistics"
+Usecase UC8 as "UC8 - Generates Reports"
+Usecase UC9 as "UC9 - Analyze data from other centers"
+
+:Center Coordinator: as CC
+
+CC -d- UC7
+CC -d- UC8
+CC -d- UC9
+
+
+Usecase UC3 as "UC3 - Configures and manages type of vaccines"
+Usecase UC4 as "UC4 - Configures and manages Vaccines"
+Usecase UC5 as "UC5 - Configures and manages Vaccination Center"
+Usecase UC6 as "UC6 - Configures and manages Employees"
+
+:Administrator: as A
+
+A -d- UC3
+A -d- UC4
+A -d- UC5
+A -d- UC6
+
+
+Usecase UC2 as "UC2 - Sends an email or SMS to the user confirming that the recovery period has ended"
+
+:<<Automatic>> Timer/Clock: as TC
+
+TC -d- UC2
+
+
+Usecase UC1 as "UC1 - Sends an SMS message with information about the scheduled appointment"
+
+:<<Automatic>>  System: as S
+
+S -d- UC1
+
+@enduml

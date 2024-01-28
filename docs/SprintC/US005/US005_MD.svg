@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:916px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 916 142" width="916px" zoomAndPan="magnify"><defs/><g><!--MD5=[a059576e163b46f56762f12600c49258]
+class Nurse--><g id="elem_Nurse"><rect codeLine="7" fill="#F1F1F1" height="40" id="Nurse" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69" x="7" y="51"/><ellipse cx="22" cy="67" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M24,63.5 Q24.2031,63 24.4375,62.75 Q24.6719,62.5 24.9375,62.5 Q25.4063,62.5 25.7031,62.7813 Q26,63.0625 26,63.7188 L26,65.2813 Q26,65.9375 25.7188,66.2188 Q25.4375,66.5 25,66.5 Q24.6094,66.5 24.3594,66.3281 Q24.1094,66.1563 24,65.7031 Q23.9531,65.3906 23.7813,65.2188 Q23.4688,64.8906 22.9063,64.7031 Q22.3438,64.5 21.7813,64.5 Q21.0781,64.5 20.4844,64.7813 Q19.9063,65.0625 19.4531,65.6875 Q19,66.3125 19,67.1719 L19,68.0938 Q19,69.125 19.8438,69.8125 Q20.6875,70.5 22.1875,70.5 Q23.0781,70.5 23.7031,70.2969 Q24.0625,70.1875 24.4688,69.8281 Q24.7344,69.625 24.875,69.5625 Q25.0156,69.5 25.1875,69.5 Q25.5156,69.5 25.75,69.7656 Q26,70.0156 26,70.375 Q26,70.7188 25.6563,71.125 Q25.1563,71.7188 24.3594,72.0469 Q23.3125,72.5 22.0313,72.5 Q20.5313,72.5 19.3281,71.9063 Q18.3594,71.4375 17.6719,70.4219 Q17,69.4063 17,68.2031 L17,67.1094 Q17,65.8594 17.5938,64.7656 Q18.2031,63.6719 19.25,63.0938 Q20.3125,62.5 21.5,62.5 Q22.2188,62.5 22.8438,62.75 Q23.4688,63 24,63.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="36" y="72.7285">Nurse</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="75" y1="83" y2="83"/></g><!--MD5=[9e94af7e26ddd61f16675ec5a7d7b75f]
+class UserInfo--><g id="elem_UserInfo"><rect codeLine="8" fill="#F1F1F1" height="128.0469" id="UserInfo" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="119" x="790" y="7"/><ellipse cx="820.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M822.75,19.5 Q822.9531,19 823.1875,18.75 Q823.4219,18.5 823.6875,18.5 Q824.1563,18.5 824.4531,18.7813 Q824.75,19.0625 824.75,19.7188 L824.75,21.2813 Q824.75,21.9375 824.4688,22.2188 Q824.1875,22.5 823.75,22.5 Q823.3594,22.5 823.1094,22.3281 Q822.8594,22.1563 822.75,21.7031 Q822.7031,21.3906 822.5313,21.2188 Q822.2188,20.8906 821.6563,20.7031 Q821.0938,20.5 820.5313,20.5 Q819.8281,20.5 819.2344,20.7813 Q818.6563,21.0625 818.2031,21.6875 Q817.75,22.3125 817.75,23.1719 L817.75,24.0938 Q817.75,25.125 818.5938,25.8125 Q819.4375,26.5 820.9375,26.5 Q821.8281,26.5 822.4531,26.2969 Q822.8125,26.1875 823.2188,25.8281 Q823.4844,25.625 823.625,25.5625 Q823.7656,25.5 823.9375,25.5 Q824.2656,25.5 824.5,25.7656 Q824.75,26.0156 824.75,26.375 Q824.75,26.7188 824.4063,27.125 Q823.9063,27.7188 823.1094,28.0469 Q822.0625,28.5 820.7813,28.5 Q819.2813,28.5 818.0781,27.9063 Q817.1094,27.4375 816.4219,26.4219 Q815.75,25.4063 815.75,24.2031 L815.75,23.1094 Q815.75,21.8594 816.3438,20.7656 Q816.9531,19.6719 818,19.0938 Q819.0625,18.5 820.25,18.5 Q820.9688,18.5 821.5938,18.75 Q822.2188,19 822.75,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="838.25" y="28.7285">UserInfo</text><line style="stroke:#181818;stroke-width:0.5;" x1="791" x2="908" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="796" y="57.5332">-Name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="796" y="75.1426">-Sex</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="796" y="92.752">-SnsUserNumber</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="796" y="110.3613">-Birthdate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="796" y="127.9707">-PhoneNumber</text></g><!--MD5=[7cee63e05c54fc7e82ca7f101606cdb1]
+class UsersWaitingList--><g id="elem_UsersWaitingList"><rect codeLine="15" fill="#F1F1F1" height="40" id="UsersWaitingList" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="137" x="193" y="51"/><ellipse cx="208" cy="67" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M210,63.5 Q210.2031,63 210.4375,62.75 Q210.6719,62.5 210.9375,62.5 Q211.4063,62.5 211.7031,62.7813 Q212,63.0625 212,63.7188 L212,65.2813 Q212,65.9375 211.7188,66.2188 Q211.4375,66.5 211,66.5 Q210.6094,66.5 210.3594,66.3281 Q210.1094,66.1563 210,65.7031 Q209.9531,65.3906 209.7813,65.2188 Q209.4688,64.8906 208.9063,64.7031 Q208.3438,64.5 207.7813,64.5 Q207.0781,64.5 206.4844,64.7813 Q205.9063,65.0625 205.4531,65.6875 Q205,66.3125 205,67.1719 L205,68.0938 Q205,69.125 205.8438,69.8125 Q206.6875,70.5 208.1875,70.5 Q209.0781,70.5 209.7031,70.2969 Q210.0625,70.1875 210.4688,69.8281 Q210.7344,69.625 210.875,69.5625 Q211.0156,69.5 211.1875,69.5 Q211.5156,69.5 211.75,69.7656 Q212,70.0156 212,70.375 Q212,70.7188 211.6563,71.125 Q211.1563,71.7188 210.3594,72.0469 Q209.3125,72.5 208.0313,72.5 Q206.5313,72.5 205.3281,71.9063 Q204.3594,71.4375 203.6719,70.4219 Q203,69.4063 203,68.2031 L203,67.1094 Q203,65.8594 203.5938,64.7656 Q204.2031,63.6719 205.25,63.0938 Q206.3125,62.5 207.5,62.5 Q208.2188,62.5 208.8438,62.75 Q209.4688,63 210,63.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="222" y="72.7285">UsersWaitingList</text><line style="stroke:#181818;stroke-width:0.5;" x1="194" x2="329" y1="83" y2="83"/></g><!--MD5=[c4593935f45e4a2a0cefc4788932b53f]
+class SnsUser--><g id="elem_SnsUser"><rect codeLine="16" fill="#F1F1F1" height="60.125" id="SnsUser" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="144" x="488" y="41"/><ellipse cx="529.55" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M531.55,53.5 Q531.7531,53 531.9875,52.75 Q532.2219,52.5 532.4875,52.5 Q532.9563,52.5 533.2531,52.7813 Q533.55,53.0625 533.55,53.7188 L533.55,55.2813 Q533.55,55.9375 533.2688,56.2188 Q532.9875,56.5 532.55,56.5 Q532.1594,56.5 531.9094,56.3281 Q531.6594,56.1563 531.55,55.7031 Q531.5031,55.3906 531.3313,55.2188 Q531.0188,54.8906 530.4563,54.7031 Q529.8938,54.5 529.3313,54.5 Q528.6281,54.5 528.0344,54.7813 Q527.4563,55.0625 527.0031,55.6875 Q526.55,56.3125 526.55,57.1719 L526.55,58.0938 Q526.55,59.125 527.3938,59.8125 Q528.2375,60.5 529.7375,60.5 Q530.6281,60.5 531.2531,60.2969 Q531.6125,60.1875 532.0188,59.8281 Q532.2844,59.625 532.425,59.5625 Q532.5656,59.5 532.7375,59.5 Q533.0656,59.5 533.3,59.7656 Q533.55,60.0156 533.55,60.375 Q533.55,60.7188 533.2063,61.125 Q532.7063,61.7188 531.9094,62.0469 Q530.8625,62.5 529.5813,62.5 Q528.0813,62.5 526.8781,61.9063 Q525.9094,61.4375 525.2219,60.4219 Q524.55,59.4063 524.55,58.2031 L524.55,57.1094 Q524.55,55.8594 525.1438,54.7656 Q525.7531,53.6719 526.8,53.0938 Q527.8625,52.5 529.05,52.5 Q529.7688,52.5 530.3938,52.75 Q531.0188,53 531.55,53.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="549.45" y="62.7285">SnsUser</text><line style="stroke:#181818;stroke-width:0.5;" x1="489" x2="631" y1="73" y2="73"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="132" x="494" y="93.6094">-SnsUserNumber</text></g><!--MD5=[a130e805f12c6caaf0787465d0f0d87e]
+link Nurse to UsersWaitingList--><g id="link_Nurse_UsersWaitingList"><path codeLine="21" d="M76.08,71 C107.02,71 153.85,71 192.57,71 " fill="none" id="Nurse-UsersWaitingList" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="116,62.1758,106.9549,59.2369,106.9549,65.1147,116,62.1758" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="120" y="67.4951">checks</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="84.1913" y="86.2836">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="178.1007" y="85.3382">1</text></g><!--MD5=[48c1753546dc4329f6549ad52774066c]
+link SnsUser to UserInfo--><g id="link_SnsUser_UserInfo"><path codeLine="22" d="M632.07,71 C680.62,71 744.19,71 789.85,71 " fill="none" id="SnsUser-UserInfo" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="703,62.1758,693.9549,59.2369,693.9549,65.1147,703,62.1758" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="707" y="67.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="639.8632" y="85.3318">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="775.1536" y="85.4887">1</text></g><!--MD5=[cb1b4381e3f58fc8df8a798af52e3711]
+link UsersWaitingList to SnsUser--><g id="link_UsersWaitingList_SnsUser"><path codeLine="23" d="M330.15,71 C377.24,71 439.91,71 487.76,71 " fill="none" id="UsersWaitingList-SnsUser" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="401,62.1758,391.9549,59.2369,391.9549,65.1147,401,62.1758" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="405" y="67.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="338.0414" y="85.3893">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="475.0524" y="85.3318">*</text></g><!--MD5=[ad13e8766a4d43022dc12165c2770f18]
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+hide methods
+skinparam classAttributeIconSize 0
+
+class Nurse
+class UserInfo{
+-Name
+-Sex
+-SnsUserNumber
+-Birthdate
+-PhoneNumber
+}
+class UsersWaitingList
+class SnsUser {
+==-SnsUserNumber
+}
+
+
+Nurse "*" - - "1" UsersWaitingList : checks >
+SnsUser "1" - - -  "1" UserInfo : has >
+UsersWaitingList "1" - - - "*" SnsUser: has >
+
+@enduml
+
+@startuml
+
+left to right direction
+hide methods
+skinparam classAttributeIconSize 0
+
+class Nurse
+class UserInfo{
+-Name
+-Sex
+-SnsUserNumber
+-Birthdate
+-PhoneNumber
+}
+class UsersWaitingList
+class SnsUser {
+==-SnsUserNumber
+}
+
+
+Nurse "*" - - "1" UsersWaitingList : checks >
+SnsUser "1" - - -  "1" UserInfo : has >
+UsersWaitingList "1" - - - "*" SnsUser: has >
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

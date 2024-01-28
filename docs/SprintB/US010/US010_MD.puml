@@ -1,0 +1,25 @@
+@startuml
+
+class Company
+
+class Employee {
+==-id
+==-name
+==-address
+==-phone number
+==-email
+==-citizen card number
+==-password
+}
+
+class Nurse
+
+class CenterCoordinator
+
+Company "1" -d- "*" Employee : has >
+
+Employee <|-d- Nurse
+Employee <|-d- Receptionist
+Employee <|-d- CenterCoordinator
+
+@enduml

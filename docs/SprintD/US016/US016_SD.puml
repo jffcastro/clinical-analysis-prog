@@ -1,0 +1,149 @@
+@startuml
+
+autonumber
+
+actor CenterCoordinator as CC
+
+participant ":AnalyzeCenterPerformanceGUI" as UI
+participant ":AnalyzeCenterPerformanceController" as CTRL
+participant "analyzer\n:PerformanceAnalyzer" as PA
+participant "company\n:Company" as C
+participant "vaccinationCentersStore\n:VaccinationCentersStore" as S
+participant "vaccinationCenter\n:VaccinationCenter" as VC
+
+
+activate CC
+CC -> UI :  asks to analyze the performance of the Vaccination Center
+
+activate UI
+
+UI -> CTRL : setVaccinationCenterAndItsAnalyzer()
+activate CTRL
+CTRL -> C : getVaccinationCentersStore()
+activate C
+C --> CTRL : returns the store
+deactivate C
+
+CTRL -> S : getVaccinationCenterAssociatedToCoordinator(id)
+activate S
+S --> CTRL : returns the vaccination center
+deactivate S
+CTRL -> VC : getAnalyzer()
+activate VC
+VC --> CTRL : returns the analyzer
+deactivate VC
+
+
+
+
+deactivate CTRL
+
+UI --> CC : shows the dates and requests the selection of one to be analyzed
+deactivate UI
+
+
+CC-> UI : selects the date to be analyzed
+
+activate UI
+UI -> CTRL : setSelectedDate(event)
+activate CTRL
+deactivate CTRL
+
+UI --> CC : request the input of a time interval
+deactivate UI
+CC -> UI : inputs a time interval
+activate UI
+UI --> CC : requests the confirmation of the selection of the\n date and of the insertion of the time interval
+deactivate UI
+CC -> UI : confirms the selection of the date and of the time interval
+activate UI
+UI -> CTRL : checkIfTimeIntervalIsValid(timeInterval)
+activate CTRL
+CTRL -> PA : checkIfTimeIntervalIsValid(timeInterval)
+activate PA
+PA -> PA : checkIfTimeIntervalIsEmpty(timeInterval)
+activate PA
+deactivate PA
+PA -> PA : checkIfTimeIntervalIsInAValidRange(timeInterval)
+activate PA
+PA -> VC : getMinutesOpenCenterPerDay()
+activate VC
+VC --> PA : returns the minutes open center per day
+deactivate VC
+deactivate PA
+PA --> CTRL : returns true if the time interval is valid
+deactivate PA
+CTRL --> UI : returns true if the time interval is valid
+deactivate CTRL
+UI -> CTRL : setTimeInterval(timeInterval)
+activate CTRL
+deactivate CTRL
+UI -> CTRL : statisticsDailyList = getTheStatisticsDailyList()
+activate CTRL
+CTRL -> PA : getTheStatisticsDailyList(selectedDate, timeInterval)
+activate PA
+PA -> PA : listToBeAnalyzed = formatListToBeAnalyzed(date,timeInterval)
+activate PA
+loop while there are Arrivals and Departures
+PA -> PA : countArrivalsAndDepartures(date, timeInterval, index)
+activate PA
+PA -> VC : getArrivalsList()
+activate VC
+VC --> PA : returns the list of arrivals
+deactivate VC
+PA -> VC : getDeparturesList()
+activate VC
+VC --> PA : returns the list of departures
+deactivate VC
+deactivate PA
+end loop
+
+deactivate PA
+PA --> CTRL : returns the statistics daily list
+deactivate PA
+deactivate CTRL
+UI -> CTRL : timeIntervals = getTimeIntervals()
+activate CTRL
+CTRL -> PA : getTimeIntervals(timeInterval)
+activate PA
+PA -> PA : setUpTimeIntervals(timeInterval)
+activate PA
+PA -> VC : getOpeningHour()
+activate VC
+VC --> PA : returns the opening hour
+deactivate VC
+PA --> VC : getClosingHour()
+activate VC
+VC --> PA : returns the closing hour
+deactivate VC
+deactivate PA
+PA --> CTRL : returns the time intervals
+deactivate PA
+deactivate CTRL
+UI -> CTRL : maxSumSubList = getMaxSumSubList()
+activate CTRL
+CTRL -> PA : getMaxSumSubList()
+activate PA
+PA -> PA : maxSumSubList = findMaxSumSublist(listToBeAnalyzed)
+activate PA
+deactivate PA
+PA --> CTRL : returns the max sum sub list
+deactivate PA
+CTRL --> UI : returns the max sum sub list
+deactivate CTRL
+UI -> CTRL : getMaxSum()
+activate CTRL
+CTRL -> PA : getMaxSum()
+activate PA
+PA -> PA : calculateSum(maxSumSubList)
+activate PA
+deactivate PA
+PA --> CTRL : returns the max sum
+deactivate PA
+CTRL --> UI : returns the max sum
+deactivate CTRL
+UI --> CC : shows the input list, with the difference between\n the number of Arrivals and the number of Departures for each time interval,\n the sublist with the maximum sum and the maximum sum
+deactivate UI
+
+deactivate CC
+@enduml

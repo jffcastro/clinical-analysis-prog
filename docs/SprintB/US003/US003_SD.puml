@@ -1,0 +1,59 @@
+@startuml
+autonumber
+
+actor "Receptionist" as R
+
+participant ":CreateAnUserUI" as UI
+participant ":CreateAnUserController" as CTRL
+participant ":Company" as C
+participant ":User" as U
+
+activate R
+R -> UI : asks to create a new system user
+activate UI
+UI --> R : requests data (name, address, sex, phone number, email address, birthdate, Citizen Card Number)
+deactivate UI
+
+R -> UI : types requested data
+activate UI
+
+UI -> CTRL : createSnsUser(name, address, sex, phone number, email address, birthdate, Citizen Card Number)
+activate CTRL
+
+CTRL -> C : createSnsUser(name, address, sex, phone number, email address, birthdate, Citizen Card Number)
+activate C
+C --> U : createSnsUser(name, address, sex, phone number, email address, birthdate, Citizen Card Number)
+activate U
+U -> U :  validate data
+
+CTRL --> UI : result
+
+UI --> R: shows all data and requests confirmation
+
+deactivate U
+deactivate C
+deactivate CTRL
+deactivate UI
+
+
+R -> UI : confirms the data
+activate UI
+UI -> CTRL : saveUser(name, address, sex, phone number, email address, birthdate, Citizen Card Number)
+activate CTRL
+CTRL -> C : saveUser(name, address, sex, phone number, email address, birthdate, Citizen Card Number)
+activate C
+
+
+
+
+CTRL --> UI: result
+
+UI --> R : informs operation success
+
+deactivate C
+deactivate CTRL
+deactivate UI
+deactivate R
+
+
+@enduml

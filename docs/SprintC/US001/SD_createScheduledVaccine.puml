@@ -1,0 +1,26 @@
+@startuml
+
+autonumber
+
+participant ":ScheduleVaccineController" as CTRL
+participant "scheduledVaccineDtoMapper\n:ScheduledVaccineMapper" as M
+participant "scheduledVaccineDto\n:ScheduledVaccineDto" as DTO
+participant "scheduledVaccine\n:ScheduledVaccine" as SV
+
+
+
+[o--> CTRL : scheduledVaccine = createScheduledVaccine(scheduleVaccineDto)
+activate CTRL
+CTRL -> M : scheduledVaccine = createScheduledVaccine(scheduleVaccineDto)
+
+
+activate M
+note over M, DTO
+Several steps to extract data from the DTO
+end note
+M ---> SV ** : createScheduledVaccine(scheduleVaccineDto)
+
+deactivate M
+
+
+@enduml

@@ -1,0 +1,110 @@
+@startuml
+
+autonumber
+
+actor Administrator as A
+
+participant ":SpecifyVaccineAndAdminProcessUI" as UI
+participant ":SpecifyVaccineAndAdminProcessController" as CTRL
+participant "company\n:Company" as C
+participant "administrationProcess\n:AdministrationProcess" as AP
+participant "vaccine\n:Vaccine" as V
+participant "vaccineAndAdminProcessDto\n:VaccineAndAdminProcessDto" as DTO
+
+activate A
+A -> UI :asks to specify a new vac and its administration process
+
+activate UI
+UI-> A : shows a list with all the Vaccine Types available
+deactivate UI
+
+
+A-> UI : selects one Vaccine Type
+
+
+
+activate UI
+UI --> A : requests data (id, name, brand, vaccineType)
+deactivate UI
+
+A -> UI : inputs requested data
+
+activate UI
+
+loop while adding age groups
+ UI --> A : requests data (age limits, number of doses,\n vac dosage, time interval between vaccines )
+
+deactivate UI
+note right
+data for the Administration Process
+end note
+
+
+A -> UI : types requested data
+activate UI
+
+end
+
+
+
+activate UI
+UI -> CTRL : specifyNewVaccineAndAdminProcess(vaccineAndAdminProcessDto)
+
+activate CTRL
+CTRL -> C : specifyNewVaccineAndAdminProcess(vaccineAndAdminProcessDto)
+
+activate C
+C -> AP : adminProcess = create(ageGroups, numberOfDoses, dosage, timeIntervalBetweenVaccines)
+
+note over C, DTO : Several interactions to extract data from DTO.
+
+
+activate AP
+deactivate AP
+
+C -> AP : validateAdministrationProcess(adminProcess)
+activate AP
+deactivate AP
+
+
+C -> V : vac = create(name, id, brand, adminProcess, vaccineType)
+note over C, DTO : Several interactions to extract data from DTO.
+
+activate V
+deactivate V
+
+C -> V : validateVaccine(vac)
+activate V
+deactivate V
+C --> CTRL : result
+CTRL --> UI : result
+deactivate CTRL
+deactivate C
+UI --> A : shows the data and requests confirmation
+deactivate UI
+A -> UI : confirms the data
+activate UI
+UI --> CTRL : saveVaccine(vaccineAndAdminProcessDto)
+
+activate CTRL
+
+CTRL -> C : saveVaccine(vaccineAndAdminProcessDto)
+
+activate C
+C -> AP : adminProcess = createAdministrationProcess(adminProcess)
+activate AP
+deactivate AP
+C -> V :vac = create(name, id, brand, adminProcess, vaccineType)
+activate V
+deactivate V
+
+C -> C : addVaccine(vac)
+
+
+
+C --> CTRL : result
+CTRL ---> UI : result
+UI --> A : informs operation success
+deactivate UI
+deactivate A
+@enduml

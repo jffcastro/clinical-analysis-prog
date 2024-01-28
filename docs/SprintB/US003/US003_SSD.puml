@@ -1,0 +1,23 @@
+@startuml
+autonumber
+actor "Receptionist" as RE
+
+activate RE
+RE -> ":System" : asks to create a new system user
+activate ":System"
+":System" --> RE : requests data (name, address, sex, phoneNumber, emailAddress, birthDate, SNSNumber, citizenCardNumber)
+deactivate ":System"
+
+RE -> ":System" : types requested data
+activate ":System"
+":System" --> RE : shows all data and requests confirmation
+deactivate ":System"
+
+RE -> ":System" : confirms the data
+activate ":System"
+":System" --> RE : informs operation success
+deactivate ":System"
+
+deactivate RE
+
+@enduml

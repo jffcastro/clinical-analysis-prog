@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+autonumber
+
+activate Administrator
+
+Administrator -> System: Asks to create a Vaccination Center
+activate System
+Administrator <-- System: Requests data (center id, name, phone number, email, fax,\n website, opening hour, closing hour, slot duration, vaccines per slot, road,\n zip code, local, center coordinator id)
+deactivate System
+
+Administrator -> System: Types requested data
+activate System
+Administrator <-- System: Shows data and requests confirmation
+deactivate System
+
+Administrator -> System: Confirms data
+activate System
+Administrator <-- System: Informs if the operation was successful
+deactivate System
+
+deactivate Administrator
+@enduml

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>isep.lei.sem2</groupId>
+    <artifactId>Sem2App</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+            </plugin>
+
+
+	<!-- Required for generating PIT Mutation reports -->
+	<plugin>
+		<groupId>org.pitest</groupId>
+		<artifactId>pitest-maven</artifactId>
+		<version>1.4.3</version>
+		
+		<configuration>
+			<!-- <timestampedReports>false</timestampedReports> -->
+			<!-- <inScopeClasses> <param>lapr.project.model.*</param> <param>lapr.project.utils.*</param> </inScopeClasses> -->
+			<targetClasses>
+				<param>app.domain.model.*</param>
+				<param>app.utils.*</param>
+				<param>app.controller.*</param>
+			</targetClasses>
+			<targetTests>
+				<param>app.domain.model.*</param>
+				<param>app.utils.*</param>
+				<param>app.controller.*</param>
+			</targetTests>
+			<outputFormats>
+				<outputFormat>XML</outputFormat>
+				<outputFormat>HTML</outputFormat>
+			</outputFormats>
+			<!-- <verbose>true</verbose> -->
+		</configuration>
+	</plugin>
+	<!-- Build an executable JAR -->
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<version>3.2.0</version>
+		<configuration>
+		<archive>
+			<manifest>
+				<addClasspath>true</addClasspath>
+				<classpathPrefix>lib/</classpathPrefix>
+				<mainClass>app.ui.Main</mainClass>
+			</manifest>
+		</archive>
+		</configuration>
+	</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<exclude>META-INF/*.SF</exclude>
+										<exclude>META-INF/*.DSA</exclude>
+										<exclude>META-INF/*.DES</exclude>
+										<exclude>META-INF/*.RSA</exclude>
+										<exclude>META-INF/*.json</exclude>
+										<exclude>META-INF/substrate/config/resourcebundles</exclude>
+										<exclude>META-INF/substrate/config/*.json</exclude>
+										<exclude> org/* </exclude>
+										<exclude>module-info.class</exclude>
+									</excludes>
+								</filter>
+							</filters>
+							<shadedArtifactAttached>true</shadedArtifactAttached>
+							<transformers>
+								<transformer implementation=
+													 "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>app.ui.RunJar</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+        </plugins>
+    </build>
+	<properties>
+		<maven.compiler.source>1.11</maven.compiler.source>
+		<maven.compiler.target>1.11</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>repsy</id>
+			<name>lei-soft</name>
+			<url>https://repo.repsy.io/mvn/pmaio/lei-soft</url>
+		</repository>
+	</repositories>
+
+    <dependencies>
+		<dependency>
+			<groupId>pt.isep.lei.esoft</groupId>
+			<artifactId>AuthLib</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>18.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>18.0.1</version>
+		</dependency>
+
+
+    </dependencies>
+</project>

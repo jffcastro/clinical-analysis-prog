@@ -1,0 +1,21 @@
+@startuml
+
+autonumber
+
+participant ":RecordVaccineAdministrationController" as CTRL
+participant "vaccineBulletinMapper\n:<VaccineBulletin>Mapper" as M
+participant "vaccineBulletinDto\n:VaccineBulletinDto" as DTO
+participant "VaccineBulletin\n:VaccineBulletin" as VB
+
+[o--> CTRL : vaccineBulletin = createVaccineBulletin(vaccineBulletinDto)
+activate CTRL
+CTRL -> M : vaccineBulletin = createVaccineBulletin(vaccineBulletinDto)
+
+activate M
+note over M, DTO
+Several steps to extract data from the DTO
+end note
+M ---> VB ** : createVaccineBulletin(vaccineBulletinDto))
+
+deactivate M
+@enduml

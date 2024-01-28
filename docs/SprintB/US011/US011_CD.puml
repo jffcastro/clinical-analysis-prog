@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Company {
++getEmployees()
++fillListOfEmployeesWithAGivenRole()
++getNurseList()
++getReceptionistList()
++getCentreCoordinatorList()
+}
+
+class Employee {
+String name
+String address
+String role
+String id
+int phoneNumber
+String email
+int citizenCardNumber
+}
+
+class GetListOfEmployeesUI
+
+class GetListOfEmployeesController{
++getEmployees()
++getNurseList()
++getReceptionistList()
++getCentreCoordinatorList()
+}
+
+
+left to right direction
+
+GetListOfEmployeesUI .> GetListOfEmployeesController
+GetListOfEmployeesController .> Company
+Company .> Employee: gets
+
+@enduml

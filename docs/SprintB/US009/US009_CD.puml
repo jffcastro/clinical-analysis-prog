@@ -1,0 +1,81 @@
+@startuml
+'https://plantuml.com/class-diagram
+'!pragma layout smetana
+
+class Company {
++createVaccinationCenter(VaccinationCenterDto dto)
++saveVaccinationCenter(VaccinationCenterDto dto)
+}
+
+class VaccinationCenter {
+-intID;
+-strName;
+-strPhoneNumber;
+-strEmail;
+-strFax;
+-strWebsite;
+-strOpeningHour;
+-strClosingHour;
+-strSlotDuration;
+-strVaccinesPerSlot;
+-strRoad
+-strZipCode
+-strLocal
+-strCenterCoordinatorID
+}
+
+class CenterCoordinator{
+
+}
+
+class VaccineType{
+-description
+-code
+-vaccineTechnology
+}
+
+class Vaccine{
+-brand
+}
+
+class Employee{
+-id
+-name
+-address
+-phoneNumber
+-email
+-citizenCardNumber
+-password
+}
+
+class MassVaccinationCenter{
+}
+
+class HealthcareCenter{
+-strARS;
+-strAGES;
+}
+
+class CreateVaccinationCenterUI{
++createVaccinationCenter(VaccinationCenterDto dto)
++saveVaccinationCenter(VaccinationCenterDto dto)
+}
+
+class CreateVaccinationCenterController{
++createVaccinationCenter(VaccinationCenterDto dto)
++saveVaccinationCenter(VaccinationCenterDto dto)
+}
+
+CreateVaccinationCenterUI ..> CreateVaccinationCenterController
+CreateVaccinationCenterController ..> Company
+Company "1" -> "*" VaccinationCenter : storages
+CreateVaccinationCenterController ..> VaccinationCenter
+VaccinationCenter "1" --> "1" CenterCoordinator : has >
+VaccinationCenter <|-- MassVaccinationCenter
+VaccinationCenter <|-- HealthcareCenter
+Employee <|-- CenterCoordinator
+MassVaccinationCenter "1" --> "1" VaccineType: administers
+HealthcareCenter "1" -down-> "*" VaccineType: administers
+VaccineType "1" <-down- "*" Vaccine: is of <
+
+@enduml

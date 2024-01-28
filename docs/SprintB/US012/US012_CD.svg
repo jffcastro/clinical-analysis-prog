@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="255px" preserveAspectRatio="none" style="width:462px;height:255px;background:#FFFFFF;" version="1.1" viewBox="0 0 462 255" width="462px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ps8hslwopvu0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="3" fill="#FEFECE" filter="url(#f1ps8hslwopvu0)" height="75.6719" id="Company" style="stroke:#A80036;stroke-width:1.5;" width="162" x="286" y="27"/><ellipse cx="336.25" cy="43" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M338.25,39.5 Q338.4531,39 338.6875,38.75 Q338.9219,38.5 339.1875,38.5 Q339.6563,38.5 339.9531,38.7813 Q340.25,39.0625 340.25,39.7188 L340.25,41.2813 Q340.25,41.9375 339.9688,42.2188 Q339.6875,42.5 339.25,42.5 Q338.8594,42.5 338.6094,42.3281 Q338.3594,42.1563 338.25,41.7031 Q338.2031,41.3906 338.0313,41.2188 Q337.7188,40.8906 337.1563,40.7031 Q336.5938,40.5 336.0313,40.5 Q335.3281,40.5 334.7344,40.7813 Q334.1563,41.0625 333.7031,41.6875 Q333.25,42.3125 333.25,43.1719 L333.25,44.0938 Q333.25,45.125 334.0938,45.8125 Q334.9375,46.5 336.4375,46.5 Q337.3281,46.5 337.9531,46.2969 Q338.3125,46.1875 338.7188,45.8281 Q338.9844,45.625 339.125,45.5625 Q339.2656,45.5 339.4375,45.5 Q339.7656,45.5 340,45.7656 Q340.25,46.0156 340.25,46.375 Q340.25,46.7188 339.9063,47.125 Q339.4063,47.7188 338.6094,48.0469 Q337.5625,48.5 336.2813,48.5 Q334.7813,48.5 333.5781,47.9063 Q332.6094,47.4375 331.9219,46.4219 Q331.25,45.4063 331.25,44.2031 L331.25,43.1094 Q331.25,41.8594 331.8438,40.7656 Q332.4531,39.6719 333.5,39.0938 Q334.5625,38.5 335.75,38.5 Q336.4688,38.5 337.0938,38.75 Q337.7188,39 338.25,39.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="356.75" y="47.9102">Company</text><line style="stroke:#A80036;stroke-width:1.5;" x1="287" x2="447" y1="59" y2="59"/><line style="stroke:#A80036;stroke-width:1.5;" x1="287" x2="447" y1="67" y2="67"/><ellipse cx="297" cy="78" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="306" y="82.4189">createVaccineType(type)</text><ellipse cx="297" cy="91.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="306" y="96.2549">validateVaccineType(type)?</text><!--MD5=[5d1d7a5288013f6c79538ea633b579ef]
+class SpecifyNewVaccineTypeUI--><rect codeLine="8" fill="#FEFECE" filter="url(#f1ps8hslwopvu0)" height="48" id="SpecifyNewVaccineTypeUI" style="stroke:#A80036;stroke-width:1.5;" width="177" x="28" y="7"/><ellipse cx="43" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M45,19.5 Q45.2031,19 45.4375,18.75 Q45.6719,18.5 45.9375,18.5 Q46.4063,18.5 46.7031,18.7813 Q47,19.0625 47,19.7188 L47,21.2813 Q47,21.9375 46.7188,22.2188 Q46.4375,22.5 46,22.5 Q45.6094,22.5 45.3594,22.3281 Q45.1094,22.1563 45,21.7031 Q44.9531,21.3906 44.7813,21.2188 Q44.4688,20.8906 43.9063,20.7031 Q43.3438,20.5 42.7813,20.5 Q42.0781,20.5 41.4844,20.7813 Q40.9063,21.0625 40.4531,21.6875 Q40,22.3125 40,23.1719 L40,24.0938 Q40,25.125 40.8438,25.8125 Q41.6875,26.5 43.1875,26.5 Q44.0781,26.5 44.7031,26.2969 Q45.0625,26.1875 45.4688,25.8281 Q45.7344,25.625 45.875,25.5625 Q46.0156,25.5 46.1875,25.5 Q46.5156,25.5 46.75,25.7656 Q47,26.0156 47,26.375 Q47,26.7188 46.6563,27.125 Q46.1563,27.7188 45.3594,28.0469 Q44.3125,28.5 43.0313,28.5 Q41.5313,28.5 40.3281,27.9063 Q39.3594,27.4375 38.6719,26.4219 Q38,25.4063 38,24.2031 L38,23.1094 Q38,21.8594 38.5938,20.7656 Q39.2031,19.6719 40.25,19.0938 Q41.3125,18.5 42.5,18.5 Q43.2188,18.5 43.8438,18.75 Q44.4688,19 45,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="145" x="57" y="27.9102">SpecifyNewVaccineTypeUI</text><line style="stroke:#A80036;stroke-width:1.5;" x1="29" x2="204" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="29" x2="204" y1="47" y2="47"/><!--MD5=[654b6611eea81d902b04013993589538]
+class SpecifyNewVaccineTypeController--><rect codeLine="10" fill="#FEFECE" filter="url(#f1ps8hslwopvu0)" height="75.6719" id="SpecifyNewVaccineTypeController" style="stroke:#A80036;stroke-width:1.5;" width="219" x="7" y="90"/><ellipse cx="22" cy="106" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24,102.5 Q24.2031,102 24.4375,101.75 Q24.6719,101.5 24.9375,101.5 Q25.4063,101.5 25.7031,101.7813 Q26,102.0625 26,102.7188 L26,104.2813 Q26,104.9375 25.7188,105.2188 Q25.4375,105.5 25,105.5 Q24.6094,105.5 24.3594,105.3281 Q24.1094,105.1563 24,104.7031 Q23.9531,104.3906 23.7813,104.2188 Q23.4688,103.8906 22.9063,103.7031 Q22.3438,103.5 21.7813,103.5 Q21.0781,103.5 20.4844,103.7813 Q19.9063,104.0625 19.4531,104.6875 Q19,105.3125 19,106.1719 L19,107.0938 Q19,108.125 19.8438,108.8125 Q20.6875,109.5 22.1875,109.5 Q23.0781,109.5 23.7031,109.2969 Q24.0625,109.1875 24.4688,108.8281 Q24.7344,108.625 24.875,108.5625 Q25.0156,108.5 25.1875,108.5 Q25.5156,108.5 25.75,108.7656 Q26,109.0156 26,109.375 Q26,109.7188 25.6563,110.125 Q25.1563,110.7188 24.3594,111.0469 Q23.3125,111.5 22.0313,111.5 Q20.5313,111.5 19.3281,110.9063 Q18.3594,110.4375 17.6719,109.4219 Q17,108.4063 17,107.2031 L17,106.1094 Q17,104.8594 17.5938,103.7656 Q18.2031,102.6719 19.25,102.0938 Q20.3125,101.5 21.5,101.5 Q22.2188,101.5 22.8438,101.75 Q23.4688,102 24,102.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="187" x="36" y="110.9102">SpecifyNewVaccineTypeController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="225" y1="122" y2="122"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="225" y1="130" y2="130"/><ellipse cx="18" cy="141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="27" y="145.4189">createVaccineType(type)</text><ellipse cx="18" cy="154.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="27" y="159.2549">saveVaccineType(type)</text><!--MD5=[0e501da62322464167c8ec4d233a6b7e]
+class VaccineType--><rect codeLine="15" fill="#FEFECE" filter="url(#f1ps8hslwopvu0)" height="103.3438" id="VaccineType" style="stroke:#A80036;stroke-width:1.5;" width="156" x="289" y="138.5"/><ellipse cx="328.75" cy="154.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M330.75,151 Q330.9531,150.5 331.1875,150.25 Q331.4219,150 331.6875,150 Q332.1563,150 332.4531,150.2813 Q332.75,150.5625 332.75,151.2188 L332.75,152.7813 Q332.75,153.4375 332.4688,153.7188 Q332.1875,154 331.75,154 Q331.3594,154 331.1094,153.8281 Q330.8594,153.6563 330.75,153.2031 Q330.7031,152.8906 330.5313,152.7188 Q330.2188,152.3906 329.6563,152.2031 Q329.0938,152 328.5313,152 Q327.8281,152 327.2344,152.2813 Q326.6563,152.5625 326.2031,153.1875 Q325.75,153.8125 325.75,154.6719 L325.75,155.5938 Q325.75,156.625 326.5938,157.3125 Q327.4375,158 328.9375,158 Q329.8281,158 330.4531,157.7969 Q330.8125,157.6875 331.2188,157.3281 Q331.4844,157.125 331.625,157.0625 Q331.7656,157 331.9375,157 Q332.2656,157 332.5,157.2656 Q332.75,157.5156 332.75,157.875 Q332.75,158.2188 332.4063,158.625 Q331.9063,159.2188 331.1094,159.5469 Q330.0625,160 328.7813,160 Q327.2813,160 326.0781,159.4063 Q325.1094,158.9375 324.4219,157.9219 Q323.75,156.9063 323.75,155.7031 L323.75,154.6094 Q323.75,153.3594 324.3438,152.2656 Q324.9531,151.1719 326,150.5938 Q327.0625,150 328.25,150 Q328.9688,150 329.5938,150.25 Q330.2188,150.5 330.75,151 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="69" x="348.25" y="159.4102">VaccineType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="290" x2="444" y1="170.5" y2="170.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="295" y="185.9189">String name</text><line style="stroke:#A80036;stroke-width:1.5;" x1="290" x2="444" y1="192.3359" y2="192.3359"/><ellipse cx="300" cy="203.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="309" y="207.7549">VaccineType(type)</text><ellipse cx="300" cy="217.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="309" y="221.5908">validateVaccineType(type)</text><ellipse cx="300" cy="231.0078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="309" y="235.4268">saveVaccineType(type)</text><!--MD5=[7c1b650b482ee65a8aacccfe35e3842b]
+link SpecifyNewVaccineTypeUI to SpecifyNewVaccineTypeController--><path codeLine="24" d="M116.5,55.32 C116.5,66.79 116.5,78.26 116.5,89.73 " fill="none" id="SpecifyNewVaccineTypeUI-SpecifyNewVaccineTypeController" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2ecb384ece7ba683832533b79bd839c7]
+link SpecifyNewVaccineTypeController to Company--><path codeLine="25" d="M226.13,100.46 C244.52,95.8 263.37,91.02 281.03,86.54 " fill="none" id="SpecifyNewVaccineTypeController-to-Company" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="285.98,85.29,276.2727,83.6259,281.1335,86.5195,278.2399,91.3803,285.98,85.29" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[05986564e1c13a00611587b35563d868]
+link Company to VaccineType--><path codeLine="26" d="M367,103.05 C367,113.04 367,123.03 367,133.02 " fill="none" id="Company-to-VaccineType" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="367,138.24,371,129.24,367,133.24,363,129.24,367,138.24" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[da9ecb8ca0785a59b02b4979cbf94715]
+link SpecifyNewVaccineTypeController to VaccineType--><path codeLine="27" d="M226.13,155.1 C245.47,159.93 265.33,164.88 283.78,169.49 " fill="none" id="SpecifyNewVaccineTypeController-to-VaccineType" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="288.94,170.77,281.1662,164.7228,284.0868,169.5674,279.2421,172.488,288.94,170.77" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f076650d79adec12ff473d09c40744e6]
+@startuml
+'https://plantuml.com/class-diagram
+
+class Company {
++createVaccineType(type)
++validateVaccineType(type)?
+}
+
+class SpecifyNewVaccineTypeUI
+
+class SpecifyNewVaccineTypeController{
++createVaccineType(type)
++saveVaccineType(type)
+}
+
+class VaccineType {
+String name
++VaccineType(type)
++validateVaccineType(type)
++saveVaccineType(type)
+}
+
+left to right direction
+
+SpecifyNewVaccineTypeUI - SpecifyNewVaccineTypeController
+SpecifyNewVaccineTypeController - -> Company
+Company .> VaccineType
+SpecifyNewVaccineTypeController -> VaccineType
+
+@enduml
+
+@startuml
+
+class Company {
++createVaccineType(type)
++validateVaccineType(type)?
+}
+
+class SpecifyNewVaccineTypeUI
+
+class SpecifyNewVaccineTypeController{
++createVaccineType(type)
++saveVaccineType(type)
+}
+
+class VaccineType {
+String name
++VaccineType(type)
++validateVaccineType(type)
++saveVaccineType(type)
+}
+
+left to right direction
+
+SpecifyNewVaccineTypeUI - SpecifyNewVaccineTypeController
+SpecifyNewVaccineTypeController - -> Company
+Company .> VaccineType
+SpecifyNewVaccineTypeController -> VaccineType
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

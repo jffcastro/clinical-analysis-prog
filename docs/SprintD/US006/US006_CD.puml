@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+package Controller {
+class App{
++runDailyTasks()
+}
+}
+package Domain {
+class VaccinationCenter{
+-id
+-name
+-phoneNumber
+-email
+-fax
+-website
+-openingHour
+-closingHour
+-slotDuration
+-vaccinesPerSlot
+-road
+-zipCode
+-local
+-centerCoordinatorID
+-arrivalsList
++getVaccinesAdministeredList()
+}
+
+
+class Company{
++registerDailyTotalOfPeopleVaccinated()
+}
+}
+
+package Store{
+class VaccinationCenterStore{
++getVaccinationCentersList()
+}
+}
+
+left to right direction
+
+
+App ..> Company
+App .>VaccinationCenter
+Company "1" --- "1" VaccinationCenterStore: > has
+VaccinationCenterStore"1" --- "*"VaccinationCenter: > has
+@enduml

@@ -1,0 +1,87 @@
+
+
+@startuml
+
+autonumber
+actor "Administrator" as USER
+participant ":\nLoadCSVUI" as UI
+participant ":\nUtils" as UT
+participant ":\nLoadCSVController" as CTRL
+participant ":\nCompany" as COMP
+participant ":\nSNSUser" as CLIENT
+participant ":\nSNSUserDto" as DTO
+participant ":\nAuthFacade" as AUTH
+
+activate USER
+USER -> UI : Asks to load a CSV file with SNS User info
+activate UI
+UI --> USER : request path of the CSV file
+deactivate UI
+
+USER -> UI : types path
+activate UI
+
+UI -> UI : validateFileFormat(path)
+loop while file has new lines
+UI -> UI : validateCSVData(values)
+
+
+deactivate UT
+UI -> UT : passwordGenerator
+activate UT
+UT -> UI : returns String
+deactivate UT
+UI -> UI : saves data into an \nArrayList<String>\ncalled csvData
+deactivate UT
+end loop
+loop while csvData has new lines
+UI -> DTO : fillSNSUserDto(csvData)
+activate DTO
+deactivate DTO
+UI -> CTRL : createSNSUser(**SNSUserDto**)
+activate CTRL
+CTRL -> COMP: createSNSUser(**SNSUserDto**)
+deactivate CTRL
+activate COMP
+COMP -> CLIENT: createSNSUser(**SNSUserDto**)
+activate CLIENT
+CLIENT -> CLIENT: validateSNSUser()
+CLIENT -> COMP: returns SNSUser
+deactivate CLIENT
+
+UI -> CTRL : saveSNSUser(**SNSUserDto**)
+deactivate COMP
+activate CTRL
+CTRL -> COMP: saveSNSUser(**SNSUserDto**)
+activate COMP
+
+COMP -> COMP: checks for duplicates
+COMP -> COMP: stores SNSUser
+COMP -> AUTH: addUserWithRole(name,email,pwd,roleId)
+activate AUTH
+AUTH -> AUTH: addUserWithRole(name,email,pwd,roleId)
+AUTH -> AUTH: existsUser(email)
+deactivate AUTH
+deactivate COMP
+deactivate CTRL
+end loop
+
+
+UI -> USER: Shows how many SNSUsers were\nsaved and how many were duplicates
+deactivate CTRL
+deactivate UI
+
+USER -> UI: Asks to load a list of SNS Users
+activate UI
+UI -> CTRL: getSNSUserList()
+activate CTRL
+CTRL -> COMP: getSNSUserList()
+
+activate COMP
+COMP -> COMP: returns ArrayList of SNSUsers
+
+UI -> USER: Shows list of SNS Users
+deactivate COMP
+deactivate CTRL
+deactivate UI
+@enduml

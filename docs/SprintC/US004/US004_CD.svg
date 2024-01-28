@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="415px" preserveAspectRatio="none" style="width:1297px;height:415px;background:#FFFFFF;" version="1.1" viewBox="0 0 1297 415" width="1297px" zoomAndPan="magnify"><defs><filter height="300%" id="f1jpuwt26elmhk" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[dba9a92b96999febf7a21ca0aa8468a3]
+class ScheduledVaccine--><rect codeLine="6" fill="#FEFECE" filter="url(#f1jpuwt26elmhk)" height="131.0156" id="ScheduledVaccine" style="stroke:#A80036;stroke-width:1.5;" width="141" x="1075.5" y="20.5"/><ellipse cx="1093.65" cy="36.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1095.65,33 Q1095.8531,32.5 1096.0875,32.25 Q1096.3219,32 1096.5875,32 Q1097.0563,32 1097.3531,32.2813 Q1097.65,32.5625 1097.65,33.2188 L1097.65,34.7813 Q1097.65,35.4375 1097.3688,35.7188 Q1097.0875,36 1096.65,36 Q1096.2594,36 1096.0094,35.8281 Q1095.7594,35.6563 1095.65,35.2031 Q1095.6031,34.8906 1095.4313,34.7188 Q1095.1188,34.3906 1094.5563,34.2031 Q1093.9938,34 1093.4313,34 Q1092.7281,34 1092.1344,34.2813 Q1091.5563,34.5625 1091.1031,35.1875 Q1090.65,35.8125 1090.65,36.6719 L1090.65,37.5938 Q1090.65,38.625 1091.4938,39.3125 Q1092.3375,40 1093.8375,40 Q1094.7281,40 1095.3531,39.7969 Q1095.7125,39.6875 1096.1188,39.3281 Q1096.3844,39.125 1096.525,39.0625 Q1096.6656,39 1096.8375,39 Q1097.1656,39 1097.4,39.2656 Q1097.65,39.5156 1097.65,39.875 Q1097.65,40.2188 1097.3063,40.625 Q1096.8063,41.2188 1096.0094,41.5469 Q1094.9625,42 1093.6813,42 Q1092.1813,42 1090.9781,41.4063 Q1090.0094,40.9375 1089.3219,39.9219 Q1088.65,38.9063 1088.65,37.7031 L1088.65,36.6094 Q1088.65,35.3594 1089.2438,34.2656 Q1089.8531,33.1719 1090.9,32.5938 Q1091.9625,32 1093.15,32 Q1093.8688,32 1094.4938,32.25 Q1095.1188,32.5 1095.65,33 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="102" x="1108.35" y="41.4102">ScheduledVaccine</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1076.5" x2="1215.5" y1="52.5" y2="52.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="1081.5" y="67.9189">int snsNumber</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="1081.5" y="81.7549">LocalDateTime date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="1081.5" y="95.5908">VaccineType vaccineType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1076.5" x2="1215.5" y1="102.0078" y2="102.0078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="1081.5" y="117.4268">+getSnsNumber()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="51" x="1081.5" y="131.2627">+getDate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="1081.5" y="145.0986">+getVaccineType()</text><!--MD5=[de60e6d4f424ae4d0522096f76a59010]
+class VaccinationCenter--><rect codeLine="17" fill="#FEFECE" filter="url(#f1jpuwt26elmhk)" height="214.0313" id="VaccinationCenter" style="stroke:#A80036;stroke-width:1.5;" width="274" x="1009" y="187"/><ellipse cx="1091.75" cy="203" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1093.75,199.5 Q1093.9531,199 1094.1875,198.75 Q1094.4219,198.5 1094.6875,198.5 Q1095.1563,198.5 1095.4531,198.7813 Q1095.75,199.0625 1095.75,199.7188 L1095.75,201.2813 Q1095.75,201.9375 1095.4688,202.2188 Q1095.1875,202.5 1094.75,202.5 Q1094.3594,202.5 1094.1094,202.3281 Q1093.8594,202.1563 1093.75,201.7031 Q1093.7031,201.3906 1093.5313,201.2188 Q1093.2188,200.8906 1092.6563,200.7031 Q1092.0938,200.5 1091.5313,200.5 Q1090.8281,200.5 1090.2344,200.7813 Q1089.6563,201.0625 1089.2031,201.6875 Q1088.75,202.3125 1088.75,203.1719 L1088.75,204.0938 Q1088.75,205.125 1089.5938,205.8125 Q1090.4375,206.5 1091.9375,206.5 Q1092.8281,206.5 1093.4531,206.2969 Q1093.8125,206.1875 1094.2188,205.8281 Q1094.4844,205.625 1094.625,205.5625 Q1094.7656,205.5 1094.9375,205.5 Q1095.2656,205.5 1095.5,205.7656 Q1095.75,206.0156 1095.75,206.375 Q1095.75,206.7188 1095.4063,207.125 Q1094.9063,207.7188 1094.1094,208.0469 Q1093.0625,208.5 1091.7813,208.5 Q1090.2813,208.5 1089.0781,207.9063 Q1088.1094,207.4375 1087.4219,206.4219 Q1086.75,205.4063 1086.75,204.2031 L1086.75,203.1094 Q1086.75,201.8594 1087.3438,200.7656 Q1087.9531,199.6719 1089,199.0938 Q1090.0625,198.5 1091.25,198.5 Q1091.9688,198.5 1092.5938,198.75 Q1093.2188,199 1093.75,199.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="1112.25" y="207.9102">VaccinationCenter</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1010" x2="1282" y1="219" y2="219"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="1015" y="234.4189">-String strName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="1015" y="248.2549">-String strOpeningHour</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="1015" y="262.0908">-String strClosingHour</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="1015" y="275.9268">-String strSlotDuration</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="1015" y="289.7627">-List&lt;ScheduledVaccine&gt; scheduledVaccineList</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="1015" y="303.5986">-List&lt;Arrival&gt; arrivalsList</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1010" x2="1282" y1="310.0156" y2="310.0156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="1015" y="325.4346">+getArrivalsList()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="1015" y="339.2705">+getStrOpeningHour()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="1015" y="353.1064">+cleanArrivalsList()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="262" x="1015" y="366.9424">+removeAppointment(ScheduledVaccine appointment)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="1015" y="380.7783">+registerArrival(Arrival arrival)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="1015" y="394.6143">+checkIfAlreadyRegistered(int snsNumber)</text><!--MD5=[b854a15348c14bf8d2de44e62ca1ae6c]
+class RegisterArrivalOfSNSUserUI--><rect codeLine="33" fill="#FEFECE" filter="url(#f1jpuwt26elmhk)" height="48" id="RegisterArrivalOfSNSUserUI" style="stroke:#A80036;stroke-width:1.5;" width="188" x="617" y="7"/><ellipse cx="632" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M634,19.5 Q634.2031,19 634.4375,18.75 Q634.6719,18.5 634.9375,18.5 Q635.4063,18.5 635.7031,18.7813 Q636,19.0625 636,19.7188 L636,21.2813 Q636,21.9375 635.7188,22.2188 Q635.4375,22.5 635,22.5 Q634.6094,22.5 634.3594,22.3281 Q634.1094,22.1563 634,21.7031 Q633.9531,21.3906 633.7813,21.2188 Q633.4688,20.8906 632.9063,20.7031 Q632.3438,20.5 631.7813,20.5 Q631.0781,20.5 630.4844,20.7813 Q629.9063,21.0625 629.4531,21.6875 Q629,22.3125 629,23.1719 L629,24.0938 Q629,25.125 629.8438,25.8125 Q630.6875,26.5 632.1875,26.5 Q633.0781,26.5 633.7031,26.2969 Q634.0625,26.1875 634.4688,25.8281 Q634.7344,25.625 634.875,25.5625 Q635.0156,25.5 635.1875,25.5 Q635.5156,25.5 635.75,25.7656 Q636,26.0156 636,26.375 Q636,26.7188 635.6563,27.125 Q635.1563,27.7188 634.3594,28.0469 Q633.3125,28.5 632.0313,28.5 Q630.5313,28.5 629.3281,27.9063 Q628.3594,27.4375 627.6719,26.4219 Q627,25.4063 627,24.2031 L627,23.1094 Q627,21.8594 627.5938,20.7656 Q628.2031,19.6719 629.25,19.0938 Q630.3125,18.5 631.5,18.5 Q632.2188,18.5 632.8438,18.75 Q633.4688,19 634,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="156" x="646" y="27.9102">RegisterArrivalOfSNSUserUI</text><line style="stroke:#A80036;stroke-width:1.5;" x1="618" x2="804" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="618" x2="804" y1="47" y2="47"/><!--MD5=[7596083637d10a9733a3a3b1fb1a72db]
+class RegisterArrivalOfSNSUserController--><rect codeLine="35" fill="#FEFECE" filter="url(#f1jpuwt26elmhk)" height="200.1953" id="RegisterArrivalOfSNSUserController" style="stroke:#A80036;stroke-width:1.5;" width="476" x="473" y="90"/><ellipse cx="607.75" cy="106" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M609.75,102.5 Q609.9531,102 610.1875,101.75 Q610.4219,101.5 610.6875,101.5 Q611.1563,101.5 611.4531,101.7813 Q611.75,102.0625 611.75,102.7188 L611.75,104.2813 Q611.75,104.9375 611.4688,105.2188 Q611.1875,105.5 610.75,105.5 Q610.3594,105.5 610.1094,105.3281 Q609.8594,105.1563 609.75,104.7031 Q609.7031,104.3906 609.5313,104.2188 Q609.2188,103.8906 608.6563,103.7031 Q608.0938,103.5 607.5313,103.5 Q606.8281,103.5 606.2344,103.7813 Q605.6563,104.0625 605.2031,104.6875 Q604.75,105.3125 604.75,106.1719 L604.75,107.0938 Q604.75,108.125 605.5938,108.8125 Q606.4375,109.5 607.9375,109.5 Q608.8281,109.5 609.4531,109.2969 Q609.8125,109.1875 610.2188,108.8281 Q610.4844,108.625 610.625,108.5625 Q610.7656,108.5 610.9375,108.5 Q611.2656,108.5 611.5,108.7656 Q611.75,109.0156 611.75,109.375 Q611.75,109.7188 611.4063,110.125 Q610.9063,110.7188 610.1094,111.0469 Q609.0625,111.5 607.7813,111.5 Q606.2813,111.5 605.0781,110.9063 Q604.1094,110.4375 603.4219,109.4219 Q602.75,108.4063 602.75,107.2031 L602.75,106.1094 Q602.75,104.8594 603.3438,103.7656 Q603.9531,102.6719 605,102.0938 Q606.0625,101.5 607.25,101.5 Q607.9688,101.5 608.5938,101.75 Q609.2188,102 609.75,102.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="198" x="628.25" y="110.9102">RegisterArrivalOfSNSUserController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="474" x2="948" y1="122" y2="122"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="479" y="137.4189">-VaccinationCenter vaccinationCenter</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="479" y="151.2549">-ScheduledVaccine appointment</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="479" y="165.0908">-Arrival arrival</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="231" x="479" y="178.9268">-List&lt;ScheduledVaccine&gt; vaccineAppointments</text><line style="stroke:#A80036;stroke-width:1.5;" x1="474" x2="948" y1="185.3438" y2="185.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="479" y="200.7627">+setVaccinationCenter(int index)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="479" y="214.5986">+checkIfAlreadyRegistered(int snsNumber)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="464" x="479" y="228.4346">+checkAndSetUserAppointment(int snsNumber, List&lt;ScheduledVaccine&gt; vaccineAppointments)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="479" y="242.2705">+validateDateAndTime()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="479" y="256.1064">+cleanArrivalsList()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="337" x="479" y="269.9424">+registerArrival(int snsNumber, VaccinationCenter vaccinationCenter)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="479" y="283.7783">+setArrival(int snsNumber)</text><!--MD5=[950bab46f39ba9ae59885963abb53c18]
+class Arrival--><rect codeLine="49" fill="#FEFECE" filter="url(#f1jpuwt26elmhk)" height="158.6875" id="Arrival" style="stroke:#A80036;stroke-width:1.5;" width="406" x="7" y="110.5"/><ellipse cx="189.25" cy="126.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M191.25,123 Q191.4531,122.5 191.6875,122.25 Q191.9219,122 192.1875,122 Q192.6563,122 192.9531,122.2813 Q193.25,122.5625 193.25,123.2188 L193.25,124.7813 Q193.25,125.4375 192.9688,125.7188 Q192.6875,126 192.25,126 Q191.8594,126 191.6094,125.8281 Q191.3594,125.6563 191.25,125.2031 Q191.2031,124.8906 191.0313,124.7188 Q190.7188,124.3906 190.1563,124.2031 Q189.5938,124 189.0313,124 Q188.3281,124 187.7344,124.2813 Q187.1563,124.5625 186.7031,125.1875 Q186.25,125.8125 186.25,126.6719 L186.25,127.5938 Q186.25,128.625 187.0938,129.3125 Q187.9375,130 189.4375,130 Q190.3281,130 190.9531,129.7969 Q191.3125,129.6875 191.7188,129.3281 Q191.9844,129.125 192.125,129.0625 Q192.2656,129 192.4375,129 Q192.7656,129 193,129.2656 Q193.25,129.5156 193.25,129.875 Q193.25,130.2188 192.9063,130.625 Q192.4063,131.2188 191.6094,131.5469 Q190.5625,132 189.2813,132 Q187.7813,132 186.5781,131.4063 Q185.6094,130.9375 184.9219,129.9219 Q184.25,128.9063 184.25,127.7031 L184.25,126.6094 Q184.25,125.3594 184.8438,124.2656 Q185.4531,123.1719 186.5,122.5938 Q187.5625,122 188.75,122 Q189.4688,122 190.0938,122.25 Q190.7188,122.5 191.25,123 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="209.75" y="131.4102">Arrival</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="412" y1="142.5" y2="142.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="13" y="157.9189">-int snsNumber</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="13" y="171.7549">-LocalDateTime dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="13" y="185.5908">-VaccineType vaccineType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="412" y1="192.0078" y2="192.0078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="394" x="13" y="207.4268">+validateDateAndTime(LocalDateTime date, VaccinationCenter vaccinationCenter)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="13" y="221.2627">-checkDate(LocalDateTime date)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="13" y="235.0986">-checkTime(LocalDateTime date)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="251" x="13" y="248.9346">-subtractTimes(int slotDuration, LocalDateTime date)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="13" y="262.7705">-sumTimes(LocalDateTime date)</text><!--MD5=[66932c9c1c3eb385569e39147ae71bda]
+reverse link Arrival to RegisterArrivalOfSNSUserController--><path codeLine="63" d="M418.3,190 C436.26,190 454.53,190 472.71,190 " fill="none" id="Arrival-backto-RegisterArrivalOfSNSUserController" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="413.24,190,422.24,194,418.24,190,422.24,186,413.24,190" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ee503a6c31b04ca0fe4bc99a4c59da51]
+link RegisterArrivalOfSNSUserController to VaccinationCenter--><path codeLine="64" d="M949.09,246.94 C967.74,251.43 986.19,255.86 1003.88,260.1 " fill="none" id="RegisterArrivalOfSNSUserController-to-VaccinationCenter" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1008.85,261.3,1001.022,255.3232,1003.9861,260.1413,999.168,263.1054,1008.85,261.3" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2d40d9a11aebd133fabb998c9c434b01]
+link RegisterArrivalOfSNSUserController to ScheduledVaccine--><path codeLine="65" d="M949.09,133.06 C993.07,122.49 1035.91,112.2 1070.26,103.95 " fill="none" id="RegisterArrivalOfSNSUserController-to-ScheduledVaccine" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1075.26,102.75,1065.573,100.9716,1070.3994,103.9223,1067.4487,108.7486,1075.26,102.75" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c02671460e69f12b5222eca068106625]
+link RegisterArrivalOfSNSUserUI to RegisterArrivalOfSNSUserController--><path codeLine="66" d="M711,55.3 C711,65.06 711,74.83 711,84.59 " fill="none" id="RegisterArrivalOfSNSUserUI-to-RegisterArrivalOfSNSUserController" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="711,89.69,715,80.69,711,84.69,707,80.69,711,89.69" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6d0940c796747856b465ba510faac68]
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+
+class ScheduledVaccine {
+int snsNumber
+LocalDateTime date
+VaccineType vaccineType
++getSnsNumber()
++getDate()
++getVaccineType()
+}
+
+'class Company
+
+class VaccinationCenter {
+-String strName
+-String strOpeningHour
+-String strClosingHour
+-String strSlotDuration
+-List<ScheduledVaccine> scheduledVaccineList
+-List<Arrival> arrivalsList
++getArrivalsList()
++getStrOpeningHour()
++cleanArrivalsList()
++removeAppointment(ScheduledVaccine appointment)
++registerArrival(Arrival arrival)
++checkIfAlreadyRegistered(int snsNumber)
+}
+
+
+class RegisterArrivalOfSNSUserUI
+
+class RegisterArrivalOfSNSUserController{
+-VaccinationCenter vaccinationCenter
+-ScheduledVaccine appointment
+-Arrival arrival
+-List<ScheduledVaccine> vaccineAppointments
++setVaccinationCenter(int index)
++checkIfAlreadyRegistered(int snsNumber)
++checkAndSetUserAppointment(int snsNumber, List<ScheduledVaccine> vaccineAppointments)
++validateDateAndTime()
++cleanArrivalsList()
++registerArrival(int snsNumber, VaccinationCenter vaccinationCenter)
++setArrival(int snsNumber)
+}
+
+class Arrival {
+-int snsNumber
+-LocalDateTime dateTime
+-VaccineType vaccineType
++validateDateAndTime(LocalDateTime date, VaccinationCenter vaccinationCenter)
+-checkDate(LocalDateTime date)
+-checkTime(LocalDateTime date)
+-subtractTimes(int slotDuration, LocalDateTime date)
+-sumTimes(LocalDateTime date)
+}
+
+
+left to right direction
+
+RegisterArrivalOfSNSUserController .up-> Arrival
+RegisterArrivalOfSNSUserController ..> VaccinationCenter
+RegisterArrivalOfSNSUserController ..> ScheduledVaccine
+RegisterArrivalOfSNSUserUI -> RegisterArrivalOfSNSUserController
+
+@enduml
+
+@startuml
+
+skinparam classAttributeIconSize 0
+
+
+class ScheduledVaccine {
+int snsNumber
+LocalDateTime date
+VaccineType vaccineType
++getSnsNumber()
++getDate()
++getVaccineType()
+}
+
+
+class VaccinationCenter {
+-String strName
+-String strOpeningHour
+-String strClosingHour
+-String strSlotDuration
+-List<ScheduledVaccine> scheduledVaccineList
+-List<Arrival> arrivalsList
++getArrivalsList()
++getStrOpeningHour()
++cleanArrivalsList()
++removeAppointment(ScheduledVaccine appointment)
++registerArrival(Arrival arrival)
++checkIfAlreadyRegistered(int snsNumber)
+}
+
+
+class RegisterArrivalOfSNSUserUI
+
+class RegisterArrivalOfSNSUserController{
+-VaccinationCenter vaccinationCenter
+-ScheduledVaccine appointment
+-Arrival arrival
+-List<ScheduledVaccine> vaccineAppointments
++setVaccinationCenter(int index)
++checkIfAlreadyRegistered(int snsNumber)
++checkAndSetUserAppointment(int snsNumber, List<ScheduledVaccine> vaccineAppointments)
++validateDateAndTime()
++cleanArrivalsList()
++registerArrival(int snsNumber, VaccinationCenter vaccinationCenter)
++setArrival(int snsNumber)
+}
+
+class Arrival {
+-int snsNumber
+-LocalDateTime dateTime
+-VaccineType vaccineType
++validateDateAndTime(LocalDateTime date, VaccinationCenter vaccinationCenter)
+-checkDate(LocalDateTime date)
+-checkTime(LocalDateTime date)
+-subtractTimes(int slotDuration, LocalDateTime date)
+-sumTimes(LocalDateTime date)
+}
+
+
+left to right direction
+
+RegisterArrivalOfSNSUserController .up-> Arrival
+RegisterArrivalOfSNSUserController ..> VaccinationCenter
+RegisterArrivalOfSNSUserController ..> ScheduledVaccine
+RegisterArrivalOfSNSUserUI -> RegisterArrivalOfSNSUserController
+
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

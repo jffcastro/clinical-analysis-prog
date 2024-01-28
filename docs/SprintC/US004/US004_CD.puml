@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+
+class ScheduledVaccine {
+int snsNumber
+LocalDateTime date
+VaccineType vaccineType
++getSnsNumber()
++getDate()
++getVaccineType()
+}
+
+'class Company
+
+class VaccinationCenter {
+-String strName
+-String strOpeningHour
+-String strClosingHour
+-String strSlotDuration
+-List<ScheduledVaccine> scheduledVaccineList
+-List<Arrival> arrivalsList
++getArrivalsList()
++getStrOpeningHour()
++cleanArrivalsList()
++removeAppointment(ScheduledVaccine appointment)
++registerArrival(Arrival arrival)
++checkIfAlreadyRegistered(int snsNumber)
+}
+
+
+class RegisterArrivalOfSNSUserUI
+
+class RegisterArrivalOfSNSUserController{
+-VaccinationCenter vaccinationCenter
+-ScheduledVaccine appointment
+-Arrival arrival
+-List<ScheduledVaccine> vaccineAppointments
++setVaccinationCenter(int index)
++checkIfAlreadyRegistered(int snsNumber)
++checkAndSetUserAppointment(int snsNumber, List<ScheduledVaccine> vaccineAppointments)
++validateDateAndTime()
++cleanArrivalsList()
++registerArrival(int snsNumber, VaccinationCenter vaccinationCenter)
++setArrival(int snsNumber)
+}
+
+class Arrival {
+-int snsNumber
+-LocalDateTime dateTime
+-VaccineType vaccineType
++validateDateAndTime(LocalDateTime date, VaccinationCenter vaccinationCenter)
+-checkDate(LocalDateTime date)
+-checkTime(LocalDateTime date)
+-subtractTimes(int slotDuration, LocalDateTime date)
+-sumTimes(LocalDateTime date)
+}
+
+
+left to right direction
+
+RegisterArrivalOfSNSUserController .up-> Arrival
+RegisterArrivalOfSNSUserController ..> VaccinationCenter
+RegisterArrivalOfSNSUserController ..> ScheduledVaccine
+RegisterArrivalOfSNSUserUI -> RegisterArrivalOfSNSUserController
+
+@enduml

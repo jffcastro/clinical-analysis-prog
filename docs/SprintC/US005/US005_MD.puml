@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+hide methods
+skinparam classAttributeIconSize 0
+
+class Nurse
+class UserInfo{
+-Name
+-Sex
+-SnsUserNumber
+-Birthdate
+-PhoneNumber
+}
+class UsersWaitingList
+class SnsUser {
+==-SnsUserNumber
+}
+
+
+Nurse "*" -- "1" UsersWaitingList : checks >
+SnsUser "1" ---  "1" UserInfo : has >
+UsersWaitingList "1" --- "*" SnsUser: has >
+
+@enduml

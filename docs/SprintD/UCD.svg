@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2091px" preserveAspectRatio="none" style="width:691px;height:2091px;background:#FFFFFF;" version="1.1" viewBox="0 0 691 2091" width="691px" zoomAndPan="magnify"><defs/><g><rect height="27.6094" rx="10" ry="10" style="stroke:#00000000;stroke-width:2.0;fill:none;" width="131" x="273.285" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="121" x="278.285" y="24.5332">Usecase Diagram</text><g id="elem_UC6"><ellipse cx="454.6186" cy="2040.5331" fill="#F1F1F1" rx="215.1186" ry="45.4237" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="403" x="253.1186" y="2044.2616">UC6 - Record the daily total of people vaccinated in each center</text></g><!--MD5=[c2373ef0c1d815b85be038d39d94be15]
+entity TC--><g id="elem_TC"><ellipse cx="84.5" cy="2010.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M84.5,2018.1094 L84.5,2045.1094 M71.5,2026.1094 L97.5,2026.1094 M84.5,2045.1094 L71.5,2060.1094 M84.5,2045.1094 L97.5,2060.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="6" y="2076.1426">«Automatic» Timer/Clock</text></g><g id="elem_UC15"><ellipse cx="454.7468" cy="1641.7587" fill="#F1F1F1" rx="161.2468" ry="34.6494" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="308.7468" y="1645.4873">UC15 - Check and export vaccination statistics</text></g><g id="elem_UC16"><ellipse cx="454.5573" cy="1744.8208" fill="#F1F1F1" rx="154.0573" ry="33.2115" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="277" x="316.0573" y="1748.5494">UC16 - Analyze the performance of a center</text></g><g id="elem_UC17"><ellipse cx="454.305" cy="1843.3704" fill="#F1F1F1" rx="139.305" ry="30.261" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="331.305" y="1847.0989">U17 - Import data from a legacy system</text></g><g id="elem_UC18"><ellipse cx="454.3945" cy="1934.7883" fill="#F1F1F1" rx="116.3945" ry="25.6789" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="355.8945" y="1938.5168">UC18 - Get a list of all vaccines</text></g><!--MD5=[36dc586d67e0f1d076b0ce70c9875d3e]
+entity CC--><g id="elem_CC"><ellipse cx="84.5" cy="1764.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M84.5,1772.1094 L84.5,1799.1094 M71.5,1780.1094 L97.5,1780.1094 M84.5,1799.1094 L71.5,1814.1094 M84.5,1799.1094 L97.5,1814.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="23.5" y="1830.1426">Center Coordinator</text></g><g id="elem_UC9"><ellipse cx="454.285" cy="1009.7664" fill="#F1F1F1" rx="231.285" ry="48.657" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="436" x="236.285" y="1013.4949">UC9 - Register a vaccination center to respond to a certain pandemic</text></g><g id="elem_UC10"><ellipse cx="454.304" cy="1118.3702" fill="#F1F1F1" rx="111.804" ry="24.7608" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="360.804" y="1122.0987">UC10 - Register an Employee</text></g><g id="elem_UC11"><ellipse cx="454.7487" cy="1219.5591" fill="#F1F1F1" rx="190.2487" ry="40.4497" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="352" x="278.7487" y="1223.2876">UC11 - Get a list of employees with a given function/role</text></g><g id="elem_UC12"><ellipse cx="454.6384" cy="1322.7371" fill="#F1F1F1" rx="126.1384" ry="27.6277" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="218" x="345.6384" y="1326.4656">UC12 - Specify a new vaccine type</text></g><g id="elem_UC13"><ellipse cx="454.3954" cy="1428.6885" fill="#F1F1F1" rx="203.3954" ry="43.0791" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="379" x="264.8954" y="1432.417">UC13 - Specify a new vaccine and its administration process</text></g><g id="elem_UC14"><ellipse cx="454.6676" cy="1539.8429" fill="#F1F1F1" rx="151.6676" ry="32.7335" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="318.6676" y="1543.5714">UC14 - Load a set of users from a CSV file</text></g><!--MD5=[770389ab9df153645bc6ef28055eb2b5]
+entity A--><g id="elem_A"><ellipse cx="84.5" cy="1241.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M84.5,1249.1094 L84.5,1276.1094 M71.5,1257.1094 L97.5,1257.1094 M84.5,1276.1094 L71.5,1291.1094 M84.5,1276.1094 L97.5,1291.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="43" y="1307.1426">Administrator</text></g><g id="elem_UC5"><ellipse cx="454.4406" cy="560.6975" fill="#F1F1F1" rx="223.4406" ry="47.0881" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="420" x="244.4406" y="564.426">UC5 - Consult the users in the waiting room of a vaccination center</text></g><g id="elem_UC7"><ellipse cx="454.3066" cy="677.4707" fill="#F1F1F1" rx="159.8066" ry="34.3613" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="309.8066" y="681.1992">UC7 - Record adverse reactions of a sns user</text></g><g id="elem_UC8"><ellipse cx="454.3711" cy="790.3836" fill="#F1F1F1" rx="204.3711" ry="43.2742" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="381" x="263.8711" y="794.1121">UC8 - Record the administration of a vaccine to an SNS user</text></g><g id="elem_UC19"><ellipse cx="454.3821" cy="897.4858" fill="#F1F1F1" rx="129.8821" ry="28.3764" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="341.3821" y="901.2143">UC19 - Issue Vaccination Certificate</text></g><!--MD5=[1d330b295f016d6727cd1dfcd8404564]
+entity N--><g id="elem_N"><ellipse cx="84.5" cy="704.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M84.5,712.1094 L84.5,739.1094 M71.5,720.1094 L97.5,720.1094 M84.5,739.1094 L71.5,754.1094 M84.5,739.1094 L97.5,754.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="66" y="770.1426">Nurse</text></g><g id="elem_UC2"><ellipse cx="454.5829" cy="250.426" fill="#F1F1F1" rx="134.5829" ry="29.3166" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="336.5829" y="254.1545">UC2 - Schedule a Vaccine For a User</text></g><g id="elem_UC3"><ellipse cx="454.2512" cy="339.4596" fill="#F1F1F1" rx="107.2512" ry="23.8502" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="365.7512" y="343.1881">UC3 - Register an SNS User</text></g><g id="elem_UC4"><ellipse cx="454.3779" cy="438.6849" fill="#F1F1F1" rx="185.8779" ry="39.5756" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="343" x="282.8779" y="442.4135">UC4 - Arrivals Registration and Presence Confirmation</text></g><!--MD5=[ca4fca654d8994778fee589c6b3ae58e]
+entity R--><g id="elem_R"><ellipse cx="84.5" cy="309.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M84.5,317.1094 L84.5,344.1094 M71.5,325.1094 L97.5,325.1094 M84.5,344.1094 L71.5,359.1094 M84.5,344.1094 L97.5,359.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="45.5" y="375.1426">Receptionist</text></g><g id="elem_UC01"><ellipse cx="454.2512" cy="68.4596" fill="#F1F1F1" rx="107.2512" ry="23.8502" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="365.7512" y="72.1881">UC01 -  Schedule a Vaccine</text></g><g id="elem_UC20"><ellipse cx="454.6118" cy="156.8317" fill="#F1F1F1" rx="134.1118" ry="29.2224" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="235" x="337.1118" y="160.5603">UC20 - Obtain Vaccination Certificate</text></g><!--MD5=[ee0fec323975fbe97ba28321ad4c4bf3]
+entity U--><g id="elem_U"><ellipse cx="84.5" cy="82.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M84.5,90.1094 L84.5,117.1094 M71.5,98.1094 L97.5,98.1094 M84.5,117.1094 L71.5,132.1094 M84.5,117.1094 L97.5,132.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="70" y="148.1426">User</text></g><!--MD5=[9034425f8e671431020c5a3f3ba7ee6f]
+link TC to UC6--><g id="link_TC_UC6"><path d="M163.09,2040.6094 C185.97,2040.6094 212.2,2040.6094 239.32,2040.6094 " fill="none" id="TC-UC6" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[1ca0b05c1213e860d14aca2a7a118d5c]
+link CC to UC15--><g id="link_CC_UC15"><path d="M129.68,1755.3594 C155.32,1734.4894 189.15,1710.0294 223,1694.6094 C254.39,1680.3094 290,1669.6894 323.67,1661.8694 " fill="none" id="CC-UC15" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[c6a68f4c25c2a898dff1a8a6f647258e]
+link CC to UC16--><g id="link_CC_UC16"><path d="M145.86,1786.4094 C194.08,1779.8594 263.39,1770.4394 324.02,1762.1994 " fill="none" id="CC-UC16" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[41aa298a38bec20c1cb3a3e9bc158fa9]
+link CC to UC17--><g id="link_CC_UC17"><path d="M145.86,1802.6494 C197.04,1809.4594 271.97,1819.4394 335.07,1827.8394 " fill="none" id="CC-UC17" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[c30ca61779951f3ff5b9a35a0e4b285f]
+link CC to UC18--><g id="link_CC_UC18"><path d="M130.24,1833.6594 C155.79,1853.9494 189.36,1877.4094 223,1891.6094 C261.91,1908.0294 307.14,1918.2094 347.18,1924.4994 " fill="none" id="CC-UC18" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[cd0b76491e9876132105be17c6a8259a]
+link A to UC9--><g id="link_A_UC9"><path d="M103.19,1232.2594 C125.08,1187.9594 166.52,1116.9094 223,1076.6094 C242.25,1062.8694 264.29,1051.9294 286.95,1043.2294 " fill="none" id="A-UC9" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[af97dbc481b077865e65573a320ef31c]
+link A to UC10--><g id="link_A_UC10"><path d="M123.76,1232.3694 C149.56,1208.2294 185.62,1178.7394 223,1161.6094 C262.14,1143.6794 308.27,1133.2294 348.95,1127.1294 " fill="none" id="A-UC10" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[449c64a774d91d8876508c4e0b4d5c10]
+link A to UC11--><g id="link_A_UC11"><path d="M126.29,1265.8494 C167.46,1260.0294 233.66,1250.6694 295.78,1241.8994 " fill="none" id="A-UC11" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[2f85eb89430d23b277543d8f44ddfe39]
+link A to UC12--><g id="link_A_UC12"><path d="M126.29,1277.2594 C179.25,1284.5994 273.63,1297.6794 347.46,1307.9094 " fill="none" id="A-UC12" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[d596e5afd8d8059daac37841b5625e08]
+link A to UC13--><g id="link_A_UC13"><path d="M126.19,1305.7494 C152.4,1326.2394 188,1351.3794 223,1367.6094 C249.76,1380.0194 279.48,1390.2394 308.44,1398.5394 " fill="none" id="A-UC13" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[5fc6eb7d06eb19c2631e3ceeacdc1388]
+link A to UC14--><g id="link_A_UC14"><path d="M99.15,1310.6394 C118.62,1360.2894 159.22,1444.9494 223,1489.6094 C249.58,1508.2194 281.8,1520.0994 313.61,1527.6394 " fill="none" id="A-UC14" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[62e43b69ca0c4fbe600aedd59e764ed2]
+link N to UC5--><g id="link_N_UC5"><path d="M103.41,716.4794 C128.17,692.3794 175.26,650.0094 223,625.6094 C247.06,613.3094 273.77,603.0594 300.22,594.6194 " fill="none" id="N-UC5" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[603e5a1d3d8acb06f9af380b1bdd1238]
+link N to UC7--><g id="link_N_UC7"><path d="M103.25,731.8594 C142.88,725.7194 241.56,710.4394 324.11,697.6494 " fill="none" id="N-UC7" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[ccb025f8d405bfe607a7ac87db9d2856]
+link N to UC8--><g id="link_N_UC8"><path d="M103.25,737.3094 C137.13,742.4694 214.2,754.1894 287.43,765.3394 " fill="none" id="N-UC8" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[3d4690e565485dc60cd04b66de9fa18c]
+link N to UC19--><g id="link_N_UC19"><path d="M103.26,755.1594 C127.51,781.8094 173.63,827.6994 223,851.6094 C257.8,868.4594 298.41,879.1394 335.77,885.9094 " fill="none" id="N-UC19" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[b52cc46f9dce3082f553023584a89ccc]
+link R to UC2--><g id="link_R_UC2"><path d="M123.78,327.2494 C151.24,318.6194 189.19,307.1594 223,298.6094 C265.01,287.9894 311.75,277.9394 352.1,269.7994 " fill="none" id="R-UC2" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[2ec2e22f2e4d0ce2369712ba59c3aa2f]
+link R to UC3--><g id="link_R_UC3"><path d="M123.84,339.6094 C176.12,339.6094 271.83,339.6094 346.71,339.6094 " fill="none" id="R-UC3" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[85c2181e1802f339c4fc1b9bee08558e]
+link R to UC4--><g id="link_R_UC4"><path d="M123.57,351.8394 C151.08,360.5394 189.2,372.2694 223,381.6094 C257.47,391.1294 295.05,400.7394 329.67,409.2894 " fill="none" id="R-UC4" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[7e5a6b0ab872aaaff21e570f1bb9ef53]
+link U to UC01--><g id="link_U_UC01"><path d="M99.03,110.9894 C140.59,106.0194 269.02,90.6694 359.27,79.8794 " fill="none" id="U-UC01" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[96b3fd791c7bffe64952f06acd00718c]
+link U to UC20--><g id="link_U_UC20"><path d="M99.03,114.2294 C137.22,118.7894 248.75,132.1294 336.62,142.6394 " fill="none" id="U-UC20" style="stroke:#181818;stroke-width:3.0;"/></g><!--MD5=[09aa96ff6aece9d2f4bccef86b689590]
+@startuml
+
+left to right direction
+title Usecase Diagram
+skinparam titleBorderRoundCorner 20
+skinparam titleBorderThickness 2
+skinparam arrowThickness 3
+
+
+'**********Timer*************
+Usecase UC6 as "UC6 - Record the daily total of people vaccinated in each center"
+
+:<<Automatic>> Timer/Clock: as TC
+
+TC -d- UC6
+
+
+'**********Center Coordinator*************
+Usecase UC15 as "UC15 - Check and export vaccination statistics"
+Usecase UC16 as "UC16 - Analyze the performance of a center"
+Usecase UC17 as "U17 - Import data from a legacy system"
+Usecase UC18 as "UC18 - Get a list of all vaccines"
+
+:Center Coordinator: as CC
+
+CC -d- UC15
+CC -d- UC16
+CC -d- UC17
+CC -d- UC18
+
+
+
+'**********Administrator*************
+Usecase UC9 as "UC9 - Register a vaccination center to respond to a certain pandemic"
+Usecase UC10 as "UC10 - Register an Employee"
+Usecase UC11 as "UC11 - Get a list of employees with a given function/role"
+Usecase UC12 as "UC12 - Specify a new vaccine type"
+Usecase UC13 as "UC13 - Specify a new vaccine and its administration process"
+Usecase UC14 as "UC14 - Load a set of users from a CSV file "
+
+:Administrator: as A
+
+A -d- UC9
+A -d- UC10
+A -d- UC11
+A -d- UC12
+A -d- UC13
+A -d- UC14
+
+
+'**********Nurse*************
+Usecase UC5 as "UC5 - Consult the users in the waiting room of a vaccination center"
+Usecase UC7 as "UC7 - Record adverse reactions of a sns user"
+Usecase UC8 as "UC8 - Record the administration of a vaccine to an SNS user"
+Usecase UC19 as "UC19 - Issue Vaccination Certificate"
+
+
+:Nurse: as N
+
+N -d- UC5
+N -d- UC7
+N -d- UC8
+N -d- UC19
+
+
+'**********Receptionist*************
+Usecase UC2 as "UC2 - Schedule a Vaccine For a User"
+Usecase UC3 as "UC3 - Register an SNS User"
+Usecase UC4 as "UC4 - Arrivals Registration and Presence Confirmation"
+
+:Receptionist: as R
+
+R -d- UC2
+R -d- UC3
+R -d- UC4
+
+
+'**********User*************
+Usecase UC01 as "UC01 -  Schedule a Vaccine"
+Usecase UC20 as "UC20 - Obtain Vaccination Certificate"
+
+:User: as U
+
+U -d- UC01
+U -d- UC20
+
+
+@enduml
+
+@startuml
+
+left to right direction
+title Usecase Diagram
+skinparam titleBorderRoundCorner 20
+skinparam titleBorderThickness 2
+skinparam arrowThickness 3
+
+
+Usecase UC6 as "UC6 - Record the daily total of people vaccinated in each center"
+
+:<<Automatic>> Timer/Clock: as TC
+
+TC -d- UC6
+
+
+Usecase UC15 as "UC15 - Check and export vaccination statistics"
+Usecase UC16 as "UC16 - Analyze the performance of a center"
+Usecase UC17 as "U17 - Import data from a legacy system"
+Usecase UC18 as "UC18 - Get a list of all vaccines"
+
+:Center Coordinator: as CC
+
+CC -d- UC15
+CC -d- UC16
+CC -d- UC17
+CC -d- UC18
+
+
+
+Usecase UC9 as "UC9 - Register a vaccination center to respond to a certain pandemic"
+Usecase UC10 as "UC10 - Register an Employee"
+Usecase UC11 as "UC11 - Get a list of employees with a given function/role"
+Usecase UC12 as "UC12 - Specify a new vaccine type"
+Usecase UC13 as "UC13 - Specify a new vaccine and its administration process"
+Usecase UC14 as "UC14 - Load a set of users from a CSV file "
+
+:Administrator: as A
+
+A -d- UC9
+A -d- UC10
+A -d- UC11
+A -d- UC12
+A -d- UC13
+A -d- UC14
+
+
+Usecase UC5 as "UC5 - Consult the users in the waiting room of a vaccination center"
+Usecase UC7 as "UC7 - Record adverse reactions of a sns user"
+Usecase UC8 as "UC8 - Record the administration of a vaccine to an SNS user"
+Usecase UC19 as "UC19 - Issue Vaccination Certificate"
+
+
+:Nurse: as N
+
+N -d- UC5
+N -d- UC7
+N -d- UC8
+N -d- UC19
+
+
+Usecase UC2 as "UC2 - Schedule a Vaccine For a User"
+Usecase UC3 as "UC3 - Register an SNS User"
+Usecase UC4 as "UC4 - Arrivals Registration and Presence Confirmation"
+
+:Receptionist: as R
+
+R -d- UC2
+R -d- UC3
+R -d- UC4
+
+
+Usecase UC01 as "UC01 -  Schedule a Vaccine"
+Usecase UC20 as "UC20 - Obtain Vaccination Certificate"
+
+:User: as U
+
+U -d- UC01
+U -d- UC20
+
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 11:55:52 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

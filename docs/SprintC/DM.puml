@@ -1,0 +1,144 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+
+class ApplicationUser {
+==-name
+==-emailAddress
+==-role
+==-password
+}
+
+
+class Administrator
+
+class SnsUser {
+==-SnsUserNumber
+}
+
+ApplicationUser <|--- SnsUser
+ApplicationUser <|---- Nurse
+ApplicationUser <|-left- Receptionist
+ApplicationUser <|- Administrator
+ApplicationUser <|--- CenterCoordinator
+
+'Receptionist "1" - "*" SnsUser : creates new >
+
+
+class Receptionist
+
+class Nurse
+
+class CenterCoordinator
+
+'Administrator "*" -- "*" SnsUser : configures and manages  >
+'Administrator "*" - "*" Nurse : configures and manages >
+'Administrator "*" -l- "*" Receptionist : configures and manages >
+'Administrator "*" -- "*" VaccinatonCenter : configures and manages >
+'Administrator "*" -up-- "*" CenterCoordinator : configures and manages >
+'Administrator "*" -up- "*" TypeOfVaccine : configures and manages >
+'Administrator "*" -- "*" Vaccine : specifies new >
+'Administrator "1" - "*" DosageScheme : specifies  >
+'Administrator "*" -left "*" Employee : configures and manages >
+
+'Employee <-left Receptionist
+'Employee <- Nurse
+
+class VaccinationCenter {
+==-intID
+==-strName
+==-strPhoneNumber
+==-strEmail
+==-strFax
+==-strWebsite
+==-strOpeningHour
+==-strClosingHour
+==-strSlotDuration
+==-strVaccinesPerSlot
+==-strRoad
+==-strZipCode
+==-strLocal
+==-strCenterCoordinatorID
+ }
+
+class MassVaccinationCenter extends VaccinationCenter {
+
+}
+
+class HealthcareCenter extends VaccinationCenter {
+==-ARE
+==-AGES
+}
+
+class Vaccine {
+==-brand
+==-name
+==-id
+}
+
+class AdministrationProcess {
+==-numberOfDoses
+==-dosage
+== -age
+==-intervalBetweenVaccines
+}
+
+class VaccineType {
+==-code
+==-description
+==-technology
+}
+
+
+Vaccine "1" -- "*" AdministrationProcess : has a >
+VaccineType "*" -- "1" Vaccine :is of <
+Vaccine "*" --- "1" VaccinationCenter : is administered on >
+
+class DigitalCertificate
+
+'Nurse "1" -left "*" DigitalCertificate : delivers >
+SnsUser "1" --- "1" DigitalCertificate : requests >
+
+class VaccineAppointment {
+==-date
+}
+
+SnsUser "1" -- "*" VaccineAppointment : schedules >
+'Receptionist "1" - "*" VaccineAppointment : schedules and confirms >
+
+
+class UsersWaitingList
+class UserInfo
+
+Receptionist "*" - "1" UsersWaitingList : atualizes >
+Nurse "*" -- "1" UsersWaitingList : checks >
+Nurse "1" - "*" Vaccine : administers >
+SnsUser "1" --  "*" UserInfo : has >
+VaccineAppointment "*" -- "1" VaccineType : is associated to a >
+UsersWaitingList "1" --- "*" SnsUser: has >
+VaccinationCenter "1" -- "*" VaccineAppointment : has >
+
+
+class GivenVaccine
+class AdverseReactions
+
+GivenVaccine "*" - "*" AdverseReactions
+(GivenVaccine, AdverseReactions) - Nurse : registers
+
+
+class ManageVaccinationProcess
+
+CenterCoordinator "1" -- "1" ManageVaccinationProcess : has to >
+CenterCoordinator "1" -- "1" VaccinationCenter : is coordinated by <
+
+class Application
+class EntriesAndExitsList
+
+Application "1" -- "*" SnsUser : requests authorization to send SMS >
+Application "1" -- "*" SnsUser : notify >
+VaccinationCenter "1" -up- "*" EntriesAndExitsList : has >
+Receptionist "1" -- "*" VaccineAppointment : schedules >
+
+
+@enduml

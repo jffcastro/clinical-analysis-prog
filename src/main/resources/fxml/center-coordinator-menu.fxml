@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: ANTIQUEWHITE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.gui.CenterCoordinatorGUI">
+   <top>
+      <HBox alignment="CENTER" prefHeight="111.0" prefWidth="1280.0" style="-fx-background-color: #00A4E8;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="146.0" prefWidth="242.0" style="-fx-background-color: #F4F4F4;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="88.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="146.0" prefWidth="601.0" />
+            <Label prefHeight="46.0" prefWidth="388.0" text="CENTER COORDINATOR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="119.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Icon center coordinator.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="186.0" prefWidth="1280.0">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/check and export.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#checkAndExportStats" prefHeight="62.0" prefWidth="619.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Check and export Vaccination Statistics">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="166.0" prefWidth="1280.0">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../Images/performance.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#analyzeCenterPerformance" prefHeight="62.0" prefWidth="618.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Analyze the performance">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="179.0" prefWidth="1280.0">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../Images/Import data.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#toImportDataFromLegacySystem" prefHeight="62.0" prefWidth="619.0" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Import data from legacy system">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Pane prefHeight="117.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="85.0" prefWidth="178.0" style="-fx-background-color: INDIANRED;" styleClass="logout-button" stylesheets="@../styles/styleSheet.css" text="LOGOUT" textFill="ANTIQUEWHITE">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

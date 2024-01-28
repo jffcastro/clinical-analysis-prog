@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class RegisterNewEmployeeUI {
+-showNewEmployeeData(registerNewEmployeeDto)
+}
+
+class RegisterNewEmployeeController {
++registerNewEmployee(RegisterNewEmployeeDto dto)
++saveCreatedEmployee(RegisterNewEmployeeDto dto)
+}
+
+class Company {
+-employees
+-roles
++registerNewEmployee(registerNewEmployeeDto)
++saveCreatedEmployee(registerNewEmployeeDto)
+}
+
+class Employee{
+- String id
+- String name
+- String address
+- int phone number
+- String email
+- int citizen card number
+- String password
++validateNewEmployee()
+}
+
+RegisterNewEmployeeUI ..> RegisterNewEmployeeController
+RegisterNewEmployeeController ..> Company
+Company "1" - "*" Employee : storages >
+RegisterNewEmployeeController -- Employee
+
+@enduml

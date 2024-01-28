@@ -1,0 +1,61 @@
+  @startuml
+
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class CenterCoordinator
+
+class Employee {
+-id
+}
+
+class ApplicationUser {
+    -name
+    -email
+    -password
+    -role
+    -address
+    -citizenCardNumber
+}
+
+class VaccinationCenter {
+-id
+-name
+-phoneNumber
+-email
+-fax
+-website
+-openingHour
+-closingHour
+-slotDuration
+-vaccinesPerSlot
+-road
+-zipCode
+-local
+-centerCoordinatorID
+-arrivalsList
+-scheduledVaccineList
+-vaccinesAdministeredList
+}
+
+class VaccinationStatistics
+
+
+ApplicationUser <|-- Employee
+
+Employee <|-- CenterCoordinator
+'Ele exporta um ficheiro, represento de alguma forma ou chega dizer que ele exporta as stats?
+'Aqui devo pôr que coordena ou checks and exports vaccination statistics, uma vez que é o que ele faz na US
+CenterCoordinator "1" --> "1" VaccinationCenter : coordinates >
+
+CenterCoordinator "1" --> "*" VaccinationStatistics : checks and exports >
+
+Company "1" -- "*" ApplicationUser : has >
+
+Company "1" -- "*" VaccinationCenter : has >
+
+VaccinationStatistics "*" --> "1" VaccinationCenter : are related to >
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+autonumber
+
+actor "Administrator" as A
+
+participant ":GetListOfEmployeesUI" as UI
+participant ":GetListOfEmployeesController" as CTRL
+participant ":Company" as C
+participant ":Employee" as E
+
+
+activate A
+A -> UI : asks for a list of Employees
+activate UI
+UI --> A : shows roles list (nurse,receptionist,centre coordinator)
+deactivate UI
+
+A -> UI : Selects a role
+activate UI
+
+UI -> CTRL : GetListOfEmployeesUI()
+activate CTRL
+
+CTRL -> C : fillListOfEmployeesWithAGivenRole()
+activate C
+C --> E : saveCreatedEmployee()
+activate E
+
+UI --> A: shows list of Employees with the selected role
+
+deactivate E
+deactivate C
+deactivate CTRL
+deactivate UI
+
+
+
+@enduml

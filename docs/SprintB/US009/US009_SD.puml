@@ -1,0 +1,56 @@
+@startuml
+autonumber
+
+actor "Administrator" as A
+
+participant ":CreateVaccinationCenterUI" as UI
+participant ":CreateVaccinationCenterController" as CTRL
+participant ":Company" as C
+participant ":VaccinationCenter" as V
+
+activate A
+A -> UI : asks to create a new vaccination center
+activate UI
+
+UI --> A : requests data (center id, name, phone number, email, fax,\n website, opening hour, closing hour, slot duration, vaccines per slot, road,\n zip code, local, center coordinator id)
+deactivate UI
+
+A -> UI : types requested data
+activate UI
+
+UI -> CTRL : createVaccinationCenter(VaccinationCenterDto)
+activate CTRL
+
+CTRL -> C : createVaccinationCenter(VaccinationCenterDto)
+activate C
+C --> V : createVaccinationCenter(VaccinationCenterDto)
+activate V
+V -> V :  validate data
+
+CTRL --> UI : result
+
+UI --> A: shows all data and requests confirmation
+
+deactivate V
+deactivate C
+deactivate CTRL
+deactivate UI
+
+A -> UI : confirms the data
+activate UI
+UI -> CTRL : saveVaccinationCenter(VaccinationCenterDto)
+activate CTRL
+CTRL -> C : saveVaccinationCenter(VaccinationCenterDto)
+activate C
+
+
+CTRL --> UI: result
+
+UI --> A : informs operation success
+
+deactivate C
+deactivate CTRL
+deactivate UI
+deactivate A
+
+@enduml

@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+skinparam classAttributeIconSize 0
+hide methods
+
+Class Company{
+}
+
+Class VaccinationCenter{
+-id
+-name
+-phoneNumber
+-email
+-fax
+-website
+-openingHour
+-closingHour
+-slotDuration
+-vaccinesPerSlot
+-road
+-zipCode
+-local
+-centerCoordinatorID
+-arrivalsList
+}
+
+Class VaccineBulletin{
+-vaccine
+-dateTimeOfLastDose
+-doseNumber
+-lotNumber
+}
+
+class MassVaccinationCenter extends VaccinationCenter {
+
+}
+
+class HealthcareCenter extends VaccinationCenter {
+-ARE
+-AGES
+}
+
+Company "1" -- "*" VaccinationCenter: has >
+VaccinationCenter"1" -- "*"VaccineBulletin: has >
+@enduml

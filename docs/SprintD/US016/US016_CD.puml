@@ -1,0 +1,122 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+package UI{
+class CheckAndExportVacStatsGUI {
+-controller : CheckAndExportVaccinationStatsController
+-firstDatePicker : DatePicker
+-lastDatePicker : DatePicker
+-okBtn : Button
+-askFileNameTxt : TextArea
+
++CheckAndExportVacStatsGUI()
++back(event)
++setFirstDate(firstDate)
++setLastDate(lastDate)
++setFirstDatePicker(firstDate)
++setLastDatePicker(lastDate)
++checkStatistics(event)
++exportStatistics(event)
++exportStatisticsOption(event)
+-toCheckVacStatsScene(event)
+-toCenterCoordinatorMenu(event)
+
+}
+}
+
+
+package Controller{
+class CheckAndExportVaccinationStatsController {
+-center : VaccinationCenter
+- firstDate : LocalDate
+- lastDate : LocalDate
++CheckAndExportVaccinationStatsController()
++setFirstDate(firstDate)
++setLastDate(lastDate)
++getFirstDate()
++getLastDate()
++checkIfDatesAreValid()
++exportVaccinationStatistics(fileName)
++getVaccinationStatsListBetweenDates()
++toCheckVaccinationStatsScene(event)
+}
+}
+
+package Domain {
+class Company{
+
+}
+
+class VaccinationCenter {
+-id : int
+-name : String
+-phoneNumber : PhoneNumber
+-email : Email
+-fax : PhoneNumber
+-website : Website
+-openingHour : LocalDateTime
+-closingHour : LocalDateTime
+-slotDuration : int
+-vaccinesPerSlot : int
+-road : String
+-zipCode : ZipCode
+-local : String
+-centerCoordinatorID : int
++VaccinationCenter(id, name, phoneNumber, email, fax, website, openingHour, closingHour, slotDuration, vaccinesPerSlot, road, zipCode, local, centerCoordinatorID)
++addFullyVaccinated(newAdministration)
+-getVaccinationStatsList()
++getVaccinationStatsListBetweenDates(firstDate, lastDate)
++getFirstDateAvailable(listFullyVaccinated)
+}
+
+class VaccinationCentersStore {
+-vaccinationCenters : List<VaccinationCenter>
++getVaccinationCenters()
++getVaccinationCenterAssociatedToCoordinator(coordinatorId)
+
+}
+
+class Arrival {
+-snsNumber : int
+-arrivalTime : LocalDateTime
+}
+
+class Departure {
+-snsNumber : int
+-departureTime : LocalDateTime
+}
+
+class PerformanceAnalyzer {
+}
+
+class VaccineType {
+-code : String
+-description : String
+-technology : String
+}
+ }
+'UI
+CheckAndExportVacStatsGUI ..> CheckAndExportVaccinationStatsController
+
+'CONTROLLER
+
+CheckAndExportVaccinationStatsController ..> VaccinationCentersStore
+CheckAndExportVaccinationStatsController ..> VaccinationCenter
+CheckAndExportVaccinationStatsController ..> Company
+
+
+
+'DOMAIN
+
+Company "1" -- "1" VaccinationCentersStore : has >
+VaccinationCentersStore "1" -- "*" VaccinationCenter : has >
+PerformanceAnalyzer "1" --> "1" VaccinationCenter : analyzes >
+VaccinationCenter "1" -- "*" Arrival : has >
+VaccinationCenter "1" -- "*" Departure : has >
+PerformanceAnalyzer ..> Arrival
+PerformanceAnalyzer ..> Departure
+Arrival "*" -- "1" VaccineType : is associated to >
+
+
+@enduml

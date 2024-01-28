@@ -1,0 +1,29 @@
+@startuml
+autonumber
+actor "Receptionist" as R
+
+activate R
+
+R -> ":System" : asks register an arrival
+activate ":System"
+":System" --> R : shows a list with all the available vaccination centers for the receptionist
+deactivate ":System"
+
+R -> ":System" : selects one vaccination center
+activate ":System"
+":System" --> R : requests the sns number
+deactivate ":System"
+
+R -> ":System" : types the sns number
+activate ":System"
+":System" --> R : requests confirmation
+deactivate ":System"
+
+R -> ":System" : confirms
+activate ":System"
+":System" --> R : informs operation success
+deactivate ":System"
+
+deactivate R
+
+@enduml

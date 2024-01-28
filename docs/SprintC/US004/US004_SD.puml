@@ -1,0 +1,102 @@
+@startuml
+autonumber
+
+actor "Receptionist" as R
+
+participant ":RegisterArrivalOfASNSUserUI" as UI
+participant ":RegisterArrivalOfASNSUserController" as CTRL
+participant ":Company" as C
+participant ":VaccinationCenter" as VC
+participant ":Arrival" as A
+
+activate R
+
+R -> UI : asks to register an arrival
+activate UI
+
+UI -> CTRL : vaccinationCentersList = getVaccinationCenters()
+activate CTRL
+
+CTRL -> C : vaccinationCentersList = getVaccinationCenters()
+activate C
+
+deactivate C
+deactivate CTRL
+UI --> R : shows a list with all the available vaccination centers
+deactivate UI
+
+R -> UI : selects one vaccination center
+activate UI
+
+UI -> CTRL : setVaccinationCenter(index)
+activate CTRL
+
+
+deactivate CTRL
+deactivate UI
+
+UI --> R : requests data (snsNumber)
+activate UI
+
+
+R -> UI : types data
+
+UI -> CTRL : checkAndSetUserAppointment(snsNumber)
+activate CTRL
+
+CTRL --> UI : result
+deactivate CTRL
+
+UI -> CTRL : setArrival()
+activate CTRL
+
+CTRL ---> A ** : arrival = createArrival(snsNumber, vaccineType)
+
+deactivate CTRL
+
+UI -> CTRL : checkIfAlreadyRegistered(snsNumber)
+activate CTRL
+
+CTRL -> VC : checkIfAlreadyRegistered(snsNumber)
+activate VC
+
+VC --> CTRL : result
+deactivate VC
+
+CTRL --> UI : resut
+deactivate CTRL
+
+UI -> CTRL : checkDateAndTime()
+activate CTRL
+
+
+CTRL -> A : checkDateAndTime(date, vaccinationCenter)
+activate A
+
+A --> CTRL : result
+deactivate A
+
+CTRL --> UI : resut
+deactivate CTRL
+
+UI --> R : result
+deactivate A
+
+deactivate UI
+
+
+R -> UI : registers the arrival
+activate UI
+
+UI -> CTRL : registerArrival()
+activate CTRL
+
+
+CTRL -> VC : registerArrival(arrival)
+activate VC
+
+deactivate VC
+deactivate CTRL
+UI --> R : informs operation success
+
+@enduml

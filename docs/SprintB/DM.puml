@@ -1,0 +1,136 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+
+class ApplicationUser {
+==-name
+==-emailAddress
+==-role
+==-password
+}
+
+
+class Administrator
+
+class SnsUser {
+==-SnsUserNumber
+}
+
+ApplicationUser <|--- SnsUser
+ApplicationUser <|---- Nurse
+ApplicationUser <|-left- Receptionist
+ApplicationUser <|- Administrator
+ApplicationUser <|--- CenterCoordinator
+
+'Receptionist "1" - "*" SnsUser : creates new >
+
+
+class Receptionist
+
+class Nurse
+
+class CenterCoordinator
+
+'Administrator "*" -- "*" SnsUser : configures and manages  >
+'Administrator "*" - "*" Nurse : configures and manages >
+'Administrator "*" -l- "*" Receptionist : configures and manages >
+'Administrator "*" -- "*" VaccinatonCenter : configures and manages >
+'Administrator "*" -up-- "*" CenterCoordinator : configures and manages >
+'Administrator "*" -up- "*" TypeOfVaccine : configures and manages >
+'Administrator "*" -- "*" Vaccine : specifies new >
+'Administrator "1" - "*" DosageScheme : specifies  >
+'Administrator "*" -left "*" Employee : configures and manages >
+
+'Employee <-left Receptionist
+'Employee <- Nurse
+
+class VaccinatonCenter {
+==-intID
+==-strName
+==-strPhoneNumber
+==-strEmail
+==-strFax
+==-strWebsite
+==-strOpeningHour
+==-strClosingHour
+==-strSlotDuration
+==-strVaccinesPerSlot
+==-strRoad
+==-strZipCode
+==-strLocal
+==-strCenterCoordinatorID
+ }
+
+class MassVaccinationCenter extends VaccinatonCenter {
+
+}
+
+class HealthcareCenter extends VaccinatonCenter {
+==-ARE
+==-AGES
+}
+
+class Vaccine {
+==-brand
+}
+
+class DosageScheme {
+==-numberOfDoses
+==-dosage
+== -age
+==-intervalBetweenVaccines
+}
+
+class TypeOfVaccine {
+==-virus
+}
+
+
+Vaccine "1" -- "1" DosageScheme : has a >
+TypeOfVaccine "*" -- "1" Vaccine :is of <
+Vaccine "*" --- "1" VaccinatonCenter : is administered on >
+
+class DigitalCertificate
+
+'Nurse "1" -left "*" DigitalCertificate : delivers >
+SnsUser "1" --- "1" DigitalCertificate : requests >
+
+class VaccineAppointment
+
+SnsUser "1" -- "*" VaccineAppointment : schedules >
+'Receptionist "1" - "*" VaccineAppointment : schedules and confirms >
+
+
+class UsersWaitingList
+class UserInfo
+
+Receptionist "*" - "1" UsersWaitingList : atualizes >
+Nurse "*" -- "1" UsersWaitingList : checks >
+Nurse "1" - "*" Vaccine : administers >
+SnsUser "1" --  "*" UserInfo : has >
+VaccineAppointment "1" -- "1" Vaccine : is associated to a >
+
+
+
+
+class GivenVaccine
+class AdverseReactions
+
+GivenVaccine "*" - "*" AdverseReactions
+(GivenVaccine, AdverseReactions) - Nurse : registers
+
+
+class ManageVaccinationProcess
+
+CenterCoordinator "1" -- "1" ManageVaccinationProcess : has to >
+CenterCoordinator "1" -- "1" VaccinatonCenter : is coordinated by <
+
+class Application
+class EntriesAndExitsList
+
+Application "1" -- "*" SnsUser : requests authorization to send SMS >
+Application "1" -- "*" SnsUser : notify >
+VaccinatonCenter "1" -up- "*" EntriesAndExitsList : has >
+
+@enduml

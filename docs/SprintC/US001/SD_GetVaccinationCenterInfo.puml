@@ -1,0 +1,25 @@
+@startuml
+
+autonumber
+
+participant ":ScheduleVaccineController" as CTRL
+participant "vaccinationCenterMapper\n:VaccinationCenterMapper" as VCM
+participant "vaccinationCenter\n:VaccinationCenter" as VC
+participant "vaccinationCenterDto\n:VaccinationCenterDto" as VCDTO
+
+
+[o--> CTRL : vaccinationCenterDto = getVaccinationCenterInfo()
+activate CTRL
+
+CTRL -> VCM : vaccinationCenterDto = domainToDto(vaccinationCenter)
+
+note over VCM,VC
+Several steps to extract data from the Vaccination Center
+end note
+activate VCM
+VCM --> VCDTO ** : vaccinationCenterDto = createVaccinationCenterDto(vaccinationCenter)
+deactivate VCM
+
+deactivate CTRL
+
+@enduml

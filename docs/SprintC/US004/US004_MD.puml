@@ -1,0 +1,21 @@
+@startuml
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class Receptionist
+
+class SNSUser
+
+class ListOfArrivals
+
+class Arrival
+
+
+Receptionist "1" --- "*" SNSUser : registers the arrival of >
+Receptionist "1" --- "*" Arrival : registers >
+Arrival "*" -- "1" ListOfArrivals : is stored on >
+
+
+@enduml

@@ -1,0 +1,46 @@
+@startuml
+
+autonumber
+actor "Administrator" as A
+
+activate A
+A -> ":System" : asks to specify a new Vaccine and its Administration Process
+
+activate ":System"
+":System" --> A : shows a list with all the Vaccine Types available
+deactivate ":System"
+
+A -> ":System" : selects one Vaccine Type
+
+activate ":System"
+":System" --> A : requests data for the Vaccine (Id, Name and Brand)
+deactivate ":System"
+A -> ":System" : types requested data
+
+activate ":System"
+
+loop while adding age groups
+ ":System" --> A : requests data (age limits, number of doses,\n vaccine dosage, time interval between vaccines )
+
+note right
+information for the Administration Process
+end note
+deactivate ":System"
+
+A -> ":System" : types requested data
+activate ":System"
+
+end
+
+":System" --> A : shows all data and requests confirmation
+deactivate ":System"
+
+A -> ":System" : confirms the data
+
+activate ":System"
+":System" --> A : informs operation success
+deactivate ":System"
+
+deactivate A
+
+@enduml

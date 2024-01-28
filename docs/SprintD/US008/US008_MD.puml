@@ -1,0 +1,78 @@
+  @startuml
+
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class SnsUser {
+-snsUserNumber
+-birthdate
+-phoneNumber
+-sex
+-address
+-citizenCardNumber
+}
+
+class VaccineBulletin {
+-vaccine
+-dateTimeOfLastDose
+-doseNumber
+-lotNumber
+}
+
+class VaccineType {
+-description
+-code
+-vaccineTechnology
+}
+
+class Vaccine {
+-name
+-id
+-brand
+-adminProcess
+-vaccine type
+}
+
+class ScheduledVaccine {
+-snsUserNumber
+-date
+}
+
+class VaccinationCenter {
+-id
+-name
+-phoneNumber
+-email
+-fax
+-website
+-openingHour
+-closingHour
+-slotDuration
+-vaccinesPerSlot
+-road
+-zipCode
+-local
+-centerCoordinatorID
+-arrivalsList
+}
+
+SnsUser "1" --> "*" VaccineBulletin: has >
+
+VaccineBulletin "1" --> "1" Vaccine: has >
+
+ScheduledVaccine "*" --> "1" VaccineType: is associated  >
+
+Company "1" -- "*" SnsUser : has >
+
+Company "1" --- "*" VaccinationCenter : has >
+
+Company "1" -- "*" VaccineType : storages >
+
+VaccinationCenter "1" -- "*" ScheduledVaccine : has >
+
+Vaccine "*" -- "1" VaccineType : has one >
+
+
+@enduml

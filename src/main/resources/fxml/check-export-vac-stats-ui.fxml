@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: ANTIQUEWHITE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.gui.CheckAndExportVacStatsGUI">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="115.0" prefWidth="1356.0" styleClass="top-background" stylesheets="@../styles/styleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane>
+               <children>
+                  <Label alignment="CENTER" text="Vaccination Statistics" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="59.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </top>
+   <bottom>
+      <FlowPane prefHeight="94.0" prefWidth="1356.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="117.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#back" prefHeight="70.0" prefWidth="165.0" style="-fx-background-color: INDIANRED;" styleClass="logout-button" stylesheets="@../styles/styleSheet.css" text="Back" textFill="ANTIQUEWHITE">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </bottom>
+   <center>
+      <FlowPane alignment="CENTER" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="mainMenuPane" prefHeight="520.0" prefWidth="898.0">
+               <effect>
+                  <Bloom threshold="1.0" />
+               </effect>
+               <children>
+                  <TextArea fx:id="askFileNameTxt" layoutX="306.0" layoutY="454.0" opacity="0.58" prefHeight="17.0" prefWidth="235.0" promptText="choose the file name" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextArea>
+                  <DatePicker fx:id="firstDatePicker" layoutX="140.0" layoutY="99.0" onAction="#setFirstDate" prefHeight="64.0" prefWidth="277.0" promptText="first date" stylesheets="@../styles/styleSheet.css">
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="dropdown-menu" />
+                     </styleClass></DatePicker>
+                  <DatePicker fx:id="lastDatePicker" layoutX="483.0" layoutY="99.0" onAction="#setLastDate" prefHeight="65.0" prefWidth="277.0" promptText="last date" stylesheets="@../styles/styleSheet.css">
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="dropdown-menu" />
+                     </styleClass></DatePicker>
+                  <Label fx:id="selectLbl" layoutX="90.0" layoutY="11.0" prefHeight="69.0" prefWidth="758.0" text="Select the period you want to get the statistics from">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="checkStatsBtn" layoutX="310.0" layoutY="231.0" mnemonicParsing="false" onAction="#checkStatistics" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Check Statistics">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exportStatsButton" layoutX="305.0" layoutY="358.0" mnemonicParsing="false" onAction="#exportStatisticsOption" styleClass="buttons" stylesheets="@../styles/styleSheet.css" text="Export Statistics">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="okBtn" layoutX="544.0" layoutY="455.0" mnemonicParsing="false" onAction="#exportStatistics" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: LIGHTGREEN;" styleClass="login-button" stylesheets="@../styles/styleSheet.css" text="OK" visible="false">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </center>
+</BorderPane>

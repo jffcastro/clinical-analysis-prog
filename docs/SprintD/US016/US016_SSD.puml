@@ -1,0 +1,39 @@
+@startuml
+autonumber
+
+actor "CenterCoordinator" as CC
+
+activate CC
+CC -> ":System" : asks to analyze the performance of the Vaccination Center
+
+activate ":System"
+":System" --> CC : shows the dates and requests the selection of one to be analyzed
+deactivate ":System"
+CC -> ":System" : selects one date
+
+activate ":System"
+":System" --> CC : request the input of a time interval (minutes)
+deactivate ":System"
+
+CC -> ":System" : types the time interval
+
+activate ":System"
+
+ ":System" --> CC : requests the confirmation of the selection of the\n date and of the insertion of the time interval
+
+deactivate ":System"
+
+CC -> ":System" : confirms the selection of the date and the insertion of the time interval
+
+
+activate ":System"
+ ":System" --> CC : shows the input list, with the difference between\n the number of Arrivals and the number of Departures for each time interval,\n the sublist with the maximum sum and the maximum sum
+
+deactivate ":System"
+
+
+
+
+deactivate CC
+
+@enduml

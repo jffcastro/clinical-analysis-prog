@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+activate Administrator
+
+Administrator -> System: asks to specify a new vaccine type
+activate System
+Administrator <-- System: requests data (name)
+deactivate System
+
+Administrator -> System: types requested data
+activate System
+Administrator <-- System: shows all data and requests confirmation
+deactivate System
+
+Administrator -> System: confirms data
+activate System
+Administrator <-- System: informs operation success
+deactivate System
+
+deactivate Administrator
+
+
+@enduml

@@ -1,0 +1,135 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class ScheduleVaccineUI {
++run()
+-introduceSnsNumberUI()
+-selectVaccineTypeHealthCareCenterUI(healthcareCenter)
+-selectVaccineTypeUI(vaccinationCenter)
+-selectDateUI(vaccinationCenter)
+-selectDateFromCurrentMonth(appointmentsList, slotsPerDay, vaccinesPerSlot)
+-selectDateFromNextMonth(appointmentsList, slotsPerDay, vaccinesPerSlot)
+-calculateSlotsPerDay(openingHour, closingHour, slotDuration)
+-dayHasAvailability(slotsPerDay, vaccinesPerSlot, date, appointments)
+-printAppointmentInfo(scheduledVaccineDto, vaccinationCenter)
+-printValidAppointmentInfo(scheduledVaccineDto, vaccinationCenter)
+-printInvalidAppointment()
+}
+
+class ScheduleVaccineController {
++ScheduleVaccineController()
++scheduleVaccine(scheduledVaccineDto, vaccinationCenter)
++validateAppointment(scheduledVaccineDto, vaccinationCenter)
++validateAppointmentAccordingToAgeGroupAndTimeSinceLastDose(scheduledVaccineDto, center)
+-dataIsAllFilled(scheduledVaccineDto)
+}
+
+class ScheduleVaccineDto {
++snsNumber
++date
+}
+
+class ScheduledVaccineMapper {
++createScheduledVaccine(scheduledVaccineDto)
+}
+
+class VaccinationCenterDto
+note left: Same data as the VaccinationCenter class (omitted)
+
+
+
+class VaccinationCenterMapper {
+domainToDto(vaccinationCenter)
+}
+
+class Company{
+
+}
+
+class VaccinationCenter {
+-id
+-name
+-phoneNumber
+-email
+-fax
+-website
+-openingHour
+-closingHour
+-slotDuration
+-vaccinesPerSlot
+-road
+-zipCode
+-local
+-centerCoordinatorID
+-arrivalsList
++VaccinationCenter(id, name, phoneNumber, email, fax, website, openingHour, closingHour, slotDuration, vaccinesPerSlot, road, zipCode, local, centerCoordinatorID)
++addAppointment(newAppointment)
++validateAppointment(scheduledVaccineDto)
+-centerHasAvailability(appointmentsList, scheduledVaccineDto, center)
++validateAppointmentAccordingToAgeGroupAndTimeSinceLastDose(dto, company)
++validateAppointmentAccordingToAdminProcess(snsUser, dto, takenVaccine)
+-getUserAgeGroup(snsUser, administrationProcess)
+-validateAgeGroup(snsUser, administrationProcess)
+}
+
+class VaccineType {
+-code
+-description
+-technology
+}
+
+ class ScheduledVaccine {
+ -snsUserNumber
+ -date
+ }
+
+class SnsUser {
+- name;
+- sex;
+- birthDate;
+- address;
+- phoneNumber;
+- email;
+- userNumber;
+- citizenCardNumber;
+- password;
+- takenVaccines;
++ snsUser(Name, Sex, BirthDate, Address, Number, Email, snsUserNumber, CitizenCardNumber, Password)
++ registerVaccine(TakenVaccine takenVaccine)
+}
+'UI
+ScheduleVaccineUI ..> ScheduleVaccineController
+ScheduleVaccineUI ..> VaccinationCenterDto
+ScheduleVaccineUI ..> ScheduleVaccineDto
+'CONTROLLER
+ScheduleVaccineController ..> VaccinationCenter
+ScheduleVaccineController ..> Company
+ScheduleVaccineController ..> ScheduledVaccineMapper
+ScheduleVaccineController ..> ScheduleVaccineDto
+ScheduleVaccineController ..> VaccinationCenterMapper
+ScheduleVaccineController ..> VaccinationCenterDto
+ScheduleVaccineController ..> ScheduledVaccine
+
+
+'CONTROLLER TO DOMAIN
+ScheduledVaccineMapper ..> ScheduledVaccine
+VaccinationCenterMapper ..> VaccinationCenterDto
+ScheduledVaccineMapper ..> ScheduleVaccineDto
+VaccinationCenterMapper ..> VaccinationCenter
+ScheduleVaccineDto "*" --> "1" VaccineType : is associated to >
+
+
+'TP08 - page 9
+
+
+'DOMAIN
+ScheduledVaccine "*" --> "1" VaccineType : is associated to >
+VaccinationCenter "1" --> "*" ScheduledVaccine : has >
+SnsUser "1" -- "1" ScheduledVaccine : schedules >
+
+Company "1" -- "*" VaccinationCenter : has >
+Company "1" -- "*" SnsUser : has >
+Company "1" -- "*" VaccineType : has >
+
+
+@enduml

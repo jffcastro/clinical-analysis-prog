@@ -1,0 +1,44 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class SpecifyNewVaccineAndAdminProcessUI {
+-showVaccineAndAdminProcessData(vaccineAndAdminProcessDto)
+-chooseNumberOfDoses()
+}
+
+class SpecifyNewVaccineAndAdminProcessController {
++specifyNewVaccineAndAdminProcess(vaccineAndAdminProcessDto)
++saveVaccine(vaccineAndAdminProcessDto)
+}
+
+class Vaccine{
+-id
+-name
+-brand
+
+}
+class VaccineType {
+-code
+-description
+-technology
++validateVaccineType()
++validateCode()
+}
+
+class AdministrationProcess {
+-ageGroups
+-dosages
+-numberOfDoses
+-timeIntervalBetweenVaccines
+
+}
+
+SpecifyNewVaccineAndAdminProcessUI ..> SpecifyNewVaccineAndAdminProcessController
+SpecifyNewVaccineAndAdminProcessController ..> Company
+Company "1" - "*" Vaccine : storages >
+SpecifyNewVaccineAndAdminProcessController ..> Vaccine
+Vaccine "*" *-- "1" VaccineType
+Vaccine "1" *-- "1  " AdministrationProcess
+
+
+@enduml

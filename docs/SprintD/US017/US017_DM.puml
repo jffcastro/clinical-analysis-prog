@@ -1,0 +1,89 @@
+@startuml
+!pragma layout smetana
+
+hide methods
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class CenterCoordinator
+
+
+class VaccinationCenter {
+==-id
+==-name
+==-phoneNumber
+==-email
+==-fax
+==-website
+==-openingHour
+==-closingHour
+==-slotDuration
+==-vaccinesPerSlot
+==-road
+==-zipCode
+==-local
+==-centerCoordinatorID
+==-arrivalsList
+==-scheduledVaccineList
+==-vaccinesAdministeredList
+}
+
+class SnsUser {
+==-Name
+==-Sex
+==-BirthDate
+==-Address
+==-PhoneNumber
+==-Email
+==-UserNumber
+==-CitizenCardNumber
+==-Password
+}
+
+
+class VaccineType{
+-description
+==-code
+==-vaccineTechnology
+}
+
+class Vaccine {
+==-name
+==-id
+==-brand
+==-adminProcess
+==-vaccine type
+}
+
+class Arrival {
+==-snsNumber
+==-arrivalTime
+==-vaccineType
+}
+
+class Departure {
+==-snsNumber
+==-departureTime
+}
+
+Company "1" ---> "*" VaccinationCenter : owns >
+Company "1" -d-> "*" CenterCoordinator : employees >
+Company "1" -r-> "*" SnsUser : knows >
+
+CenterCoordinator "1" --> "1" VaccinationCenter : coordinates >
+CenterCoordinator "1" --> "*" LegacyData: imports
+
+VaccinationCenter "1" -u-> "*" Arrival : has >
+VaccinationCenter "1" -u-> "*" Departure : has >
+VaccinationCenter "1" -u-> "*,1" VaccineType: administers >
+
+Vaccine "1" --> "1" VaccineType : is of >
+
+LegacyData "1" --> "1" VaccinationCenter: is related to
+LegacyData "1" --> "*" SnsUser : has information on
+LegacyData "1" --> "*" Arrival : has information on
+LegacyData "1" --> "*" Departure : has information on
+LegacyData "1" --> "*" Vaccine : has information on
+
+@enduml

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1744px" preserveAspectRatio="none" style="width:1109px;height:1744px;background:#FFFFFF;" version="1.1" viewBox="0 0 1109 1744" width="1109px" zoomAndPan="magnify"><defs/><g><!--MD5=[9681dc6e01e10c6b4fe06895ae94f592]
+cluster UI--><g id="cluster_UI"><path d="M8.5,6 L23.5,6 A3.75,3.75 0 0 1 26,8.5 L33,29.6094 L395.5,29.6094 A2.5,2.5 0 0 1 398,32.1094 L398,617.5 A2.5,2.5 0 0 1 395.5,620 L8.5,620 A2.5,2.5 0 0 1 6,617.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " style="stroke:#000000;stroke-width:1.5;fill:none;"/><line style="stroke:#000000;stroke-width:1.5;fill:none;" x1="6" x2="33" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="14" x="10" y="22.5332">UI</text></g><!--MD5=[1f2cfc53d9d308f53762fd0fcbaa4873]
+cluster Controller--><g id="cluster_Controller"><path d="M246.5,653 L318.5,653 A3.75,3.75 0 0 1 321,655.5 L328,676.6094 L577.5,676.6094 A2.5,2.5 0 0 1 580,679.1094 L580,961.5 A2.5,2.5 0 0 1 577.5,964 L246.5,964 A2.5,2.5 0 0 1 244,961.5 L244,655.5 A2.5,2.5 0 0 1 246.5,653 " style="stroke:#000000;stroke-width:1.5;fill:none;"/><line style="stroke:#000000;stroke-width:1.5;fill:none;" x1="244" x2="328" y1="676.6094" y2="676.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="248" y="669.5332">Controller</text></g><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><g id="cluster_Domain"><path d="M20.5,997 L73.5,997 A3.75,3.75 0 0 1 76,999.5 L83,1020.6094 L1099.5,1020.6094 A2.5,2.5 0 0 1 1102,1023.1094 L1102,1734.5 A2.5,2.5 0 0 1 1099.5,1737 L20.5,1737 A2.5,2.5 0 0 1 18,1734.5 L18,999.5 A2.5,2.5 0 0 1 20.5,997 " style="stroke:#000000;stroke-width:1.5;fill:none;"/><line style="stroke:#000000;stroke-width:1.5;fill:none;" x1="18" x2="83" y1="1020.6094" y2="1020.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="22" y="1013.5332">Domain</text></g><!--MD5=[adfaf45b6610d71f2f12b7cefe5f97bf]
+class CheckAndExportVacStatsGUI--><g id="elem_CheckAndExportVacStatsGUI"><rect codeLine="5" fill="#F1F1F1" height="329.75" id="CheckAndExportVacStatsGUI" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="360" x="22" y="42"/><ellipse cx="105.75" cy="58" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M107.75,54.5 Q107.9531,54 108.1875,53.75 Q108.4219,53.5 108.6875,53.5 Q109.1563,53.5 109.4531,53.7813 Q109.75,54.0625 109.75,54.7188 L109.75,56.2813 Q109.75,56.9375 109.4688,57.2188 Q109.1875,57.5 108.75,57.5 Q108.3594,57.5 108.1094,57.3281 Q107.8594,57.1563 107.75,56.7031 Q107.7031,56.3906 107.5313,56.2188 Q107.2188,55.8906 106.6563,55.7031 Q106.0938,55.5 105.5313,55.5 Q104.8281,55.5 104.2344,55.7813 Q103.6563,56.0625 103.2031,56.6875 Q102.75,57.3125 102.75,58.1719 L102.75,59.0938 Q102.75,60.125 103.5938,60.8125 Q104.4375,61.5 105.9375,61.5 Q106.8281,61.5 107.4531,61.2969 Q107.8125,61.1875 108.2188,60.8281 Q108.4844,60.625 108.625,60.5625 Q108.7656,60.5 108.9375,60.5 Q109.2656,60.5 109.5,60.7656 Q109.75,61.0156 109.75,61.375 Q109.75,61.7188 109.4063,62.125 Q108.9063,62.7188 108.1094,63.0469 Q107.0625,63.5 105.7813,63.5 Q104.2813,63.5 103.0781,62.9063 Q102.1094,62.4375 101.4219,61.4219 Q100.75,60.4063 100.75,59.2031 L100.75,58.1094 Q100.75,56.8594 101.3438,55.7656 Q101.9531,54.6719 103,54.0938 Q104.0625,53.5 105.25,53.5 Q105.9688,53.5 106.5938,53.75 Q107.2188,54 107.75,54.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="126.25" y="63.7285">CheckAndExportVacStatsGUI</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="381" y1="74" y2="74"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="348" x="28" y="92.5332">-controller : CheckAndExportVaccinationStatsController</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="28" y="110.1426">-firstDatePicker : DatePicker</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="28" y="127.752">-lastDatePicker : DatePicker</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="28" y="145.3613">-okBtn : Button</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="28" y="162.9707">-askFileNameTxt : TextArea</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="381" y1="170.0469" y2="170.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="28" y="188.5801">+CheckAndExportVacStatsGUI()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="28" y="206.1895">+back(event)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="28" y="223.7988">+setFirstDate(firstDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="28" y="241.4082">+setLastDate(lastDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="28" y="259.0176">+setFirstDatePicker(firstDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="28" y="276.627">+setLastDatePicker(lastDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="28" y="294.2363">+checkStatistics(event)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="28" y="311.8457">+exportStatistics(event)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="28" y="329.4551">+exportStatisticsOption(event)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="28" y="347.0645">-toCheckVacStatsScene(event)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="28" y="364.6738">-toCenterCoordinatorMenu(event)</text></g><!--MD5=[c7faf042af3f035e4919ed3b81476ec4]
+class CheckListVacStatsGUI--><g id="elem_CheckListVacStatsGUI"><rect codeLine="26" fill="#F1F1F1" height="171.2656" id="CheckListVacStatsGUI" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="360" x="22" y="433"/><ellipse cx="127.25" cy="449" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M129.25,445.5 Q129.4531,445 129.6875,444.75 Q129.9219,444.5 130.1875,444.5 Q130.6563,444.5 130.9531,444.7813 Q131.25,445.0625 131.25,445.7188 L131.25,447.2813 Q131.25,447.9375 130.9688,448.2188 Q130.6875,448.5 130.25,448.5 Q129.8594,448.5 129.6094,448.3281 Q129.3594,448.1563 129.25,447.7031 Q129.2031,447.3906 129.0313,447.2188 Q128.7188,446.8906 128.1563,446.7031 Q127.5938,446.5 127.0313,446.5 Q126.3281,446.5 125.7344,446.7813 Q125.1563,447.0625 124.7031,447.6875 Q124.25,448.3125 124.25,449.1719 L124.25,450.0938 Q124.25,451.125 125.0938,451.8125 Q125.9375,452.5 127.4375,452.5 Q128.3281,452.5 128.9531,452.2969 Q129.3125,452.1875 129.7188,451.8281 Q129.9844,451.625 130.125,451.5625 Q130.2656,451.5 130.4375,451.5 Q130.7656,451.5 131,451.7656 Q131.25,452.0156 131.25,452.375 Q131.25,452.7188 130.9063,453.125 Q130.4063,453.7188 129.6094,454.0469 Q128.5625,454.5 127.2813,454.5 Q125.7813,454.5 124.5781,453.9063 Q123.6094,453.4375 122.9219,452.4219 Q122.25,451.4063 122.25,450.2031 L122.25,449.1094 Q122.25,447.8594 122.8438,446.7656 Q123.4531,445.6719 124.5,445.0938 Q125.5625,444.5 126.75,444.5 Q127.4688,444.5 128.0938,444.75 Q128.7188,445 129.25,445.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="147.75" y="454.7285">CheckListVacStatsGUI</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="381" y1="465" y2="465"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="348" x="28" y="483.5332">-controller : CheckAndExportVaccinationStatsController</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="28" y="501.1426">-tableView : TableView</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="28" y="518.752">-dateColumn : TableColumn</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="28" y="536.3613">-totalVaccinatedColumn : TableColumn</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="381" y1="543.4375" y2="543.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="28" y="561.9707">+CheckListVacStatsGUI()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="28" y="579.5801">+setStatsTable()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="28" y="597.1895">+back(event)</text></g><!--MD5=[093ee6cbab074bc282deae827ec29a7d]
+class CheckAndExportVaccinationStatsController--><g id="elem_CheckAndExportVaccinationStatsController"><rect codeLine="38" fill="#F1F1F1" height="259.3125" id="CheckAndExportVaccinationStatsController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="304" x="260" y="689"/><ellipse cx="275" cy="705" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M277,701.5 Q277.2031,701 277.4375,700.75 Q277.6719,700.5 277.9375,700.5 Q278.4063,700.5 278.7031,700.7813 Q279,701.0625 279,701.7188 L279,703.2813 Q279,703.9375 278.7188,704.2188 Q278.4375,704.5 278,704.5 Q277.6094,704.5 277.3594,704.3281 Q277.1094,704.1563 277,703.7031 Q276.9531,703.3906 276.7813,703.2188 Q276.4688,702.8906 275.9063,702.7031 Q275.3438,702.5 274.7813,702.5 Q274.0781,702.5 273.4844,702.7813 Q272.9063,703.0625 272.4531,703.6875 Q272,704.3125 272,705.1719 L272,706.0938 Q272,707.125 272.8438,707.8125 Q273.6875,708.5 275.1875,708.5 Q276.0781,708.5 276.7031,708.2969 Q277.0625,708.1875 277.4688,707.8281 Q277.7344,707.625 277.875,707.5625 Q278.0156,707.5 278.1875,707.5 Q278.5156,707.5 278.75,707.7656 Q279,708.0156 279,708.375 Q279,708.7188 278.6563,709.125 Q278.1563,709.7188 277.3594,710.0469 Q276.3125,710.5 275.0313,710.5 Q273.5313,710.5 272.3281,709.9063 Q271.3594,709.4375 270.6719,708.4219 Q270,707.4063 270,706.2031 L270,705.1094 Q270,703.8594 270.5938,702.7656 Q271.2031,701.6719 272.25,701.0938 Q273.3125,700.5 274.5,700.5 Q275.2188,700.5 275.8438,700.75 Q276.4688,701 277,701.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="272" x="289" y="710.7285">CheckAndExportVaccinationStatsController</text><line style="stroke:#181818;stroke-width:0.5;" x1="261" x2="563" y1="721" y2="721"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="266" y="739.5332">-center : VaccinationCenter</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="266" y="757.1426">-firstDate : LocalDate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="266" y="774.752">-lastDate : LocalDate</text><line style="stroke:#181818;stroke-width:0.5;" x1="261" x2="563" y1="781.8281" y2="781.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="266" y="800.3613">+CheckAndExportVaccinationStatsController()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="266" y="817.9707">+setFirstDate(firstDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="266" y="835.5801">+setLastDate(lastDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="266" y="853.1895">+getFirstDate()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="266" y="870.7988">+getLastDate()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="266" y="888.4082">+checkIfDatesAreValid()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="266" y="906.0176">+exportVaccinationStatistics(fileName)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="266" y="923.627">+getVaccinationStatsListBetweenDates()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="266" y="941.2363">+toCheckVaccinationStatsScene(event)</text></g><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><g id="elem_Company"><rect codeLine="55" fill="#F1F1F1" height="48" id="Company" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="267" y="1033"/><ellipse cx="282" cy="1049" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M284,1045.5 Q284.2031,1045 284.4375,1044.75 Q284.6719,1044.5 284.9375,1044.5 Q285.4063,1044.5 285.7031,1044.7813 Q286,1045.0625 286,1045.7188 L286,1047.2813 Q286,1047.9375 285.7188,1048.2188 Q285.4375,1048.5 285,1048.5 Q284.6094,1048.5 284.3594,1048.3281 Q284.1094,1048.1563 284,1047.7031 Q283.9531,1047.3906 283.7813,1047.2188 Q283.4688,1046.8906 282.9063,1046.7031 Q282.3438,1046.5 281.7813,1046.5 Q281.0781,1046.5 280.4844,1046.7813 Q279.9063,1047.0625 279.4531,1047.6875 Q279,1048.3125 279,1049.1719 L279,1050.0938 Q279,1051.125 279.8438,1051.8125 Q280.6875,1052.5 282.1875,1052.5 Q283.0781,1052.5 283.7031,1052.2969 Q284.0625,1052.1875 284.4688,1051.8281 Q284.7344,1051.625 284.875,1051.5625 Q285.0156,1051.5 285.1875,1051.5 Q285.5156,1051.5 285.75,1051.7656 Q286,1052.0156 286,1052.375 Q286,1052.7188 285.6563,1053.125 Q285.1563,1053.7188 284.3594,1054.0469 Q283.3125,1054.5 282.0313,1054.5 Q280.5313,1054.5 279.3281,1053.9063 Q278.3594,1053.4375 277.6719,1052.4219 Q277,1051.4063 277,1050.2031 L277,1049.1094 Q277,1047.8594 277.5938,1046.7656 Q278.2031,1045.6719 279.25,1045.0938 Q280.3125,1044.5 281.5,1044.5 Q282.2188,1044.5 282.8438,1044.75 Q283.4688,1045 284,1045.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="296" y="1054.7285">Company</text><line style="stroke:#181818;stroke-width:0.5;" x1="268" x2="358" y1="1065" y2="1065"/><line style="stroke:#181818;stroke-width:0.5;" x1="268" x2="358" y1="1073" y2="1073"/></g><!--MD5=[de60e6d4f424ae4d0522096f76a59010]
+class VaccinationCenter--><g id="elem_VaccinationCenter"><rect codeLine="59" fill="#F1F1F1" height="382.5781" id="VaccinationCenter" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="1052" x="34" y="1338"/><ellipse cx="497.75" cy="1354" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M499.75,1350.5 Q499.9531,1350 500.1875,1349.75 Q500.4219,1349.5 500.6875,1349.5 Q501.1563,1349.5 501.4531,1349.7813 Q501.75,1350.0625 501.75,1350.7188 L501.75,1352.2813 Q501.75,1352.9375 501.4688,1353.2188 Q501.1875,1353.5 500.75,1353.5 Q500.3594,1353.5 500.1094,1353.3281 Q499.8594,1353.1563 499.75,1352.7031 Q499.7031,1352.3906 499.5313,1352.2188 Q499.2188,1351.8906 498.6563,1351.7031 Q498.0938,1351.5 497.5313,1351.5 Q496.8281,1351.5 496.2344,1351.7813 Q495.6563,1352.0625 495.2031,1352.6875 Q494.75,1353.3125 494.75,1354.1719 L494.75,1355.0938 Q494.75,1356.125 495.5938,1356.8125 Q496.4375,1357.5 497.9375,1357.5 Q498.8281,1357.5 499.4531,1357.2969 Q499.8125,1357.1875 500.2188,1356.8281 Q500.4844,1356.625 500.625,1356.5625 Q500.7656,1356.5 500.9375,1356.5 Q501.2656,1356.5 501.5,1356.7656 Q501.75,1357.0156 501.75,1357.375 Q501.75,1357.7188 501.4063,1358.125 Q500.9063,1358.7188 500.1094,1359.0469 Q499.0625,1359.5 497.7813,1359.5 Q496.2813,1359.5 495.0781,1358.9063 Q494.1094,1358.4375 493.4219,1357.4219 Q492.75,1356.4063 492.75,1355.2031 L492.75,1354.1094 Q492.75,1352.8594 493.3438,1351.7656 Q493.9531,1350.6719 495,1350.0938 Q496.0625,1349.5 497.25,1349.5 Q497.9688,1349.5 498.5938,1349.75 Q499.2188,1350 499.75,1350.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="518.25" y="1359.7285">VaccinationCenter</text><line style="stroke:#181818;stroke-width:0.5;" x1="35" x2="1085" y1="1370" y2="1370"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="40" y="1388.5332">-id : int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="40" y="1406.1426">-name : String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="40" y="1423.752">-phoneNumber : PhoneNumber</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="40" y="1441.3613">-email : Email</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="40" y="1458.9707">-fax : PhoneNumber</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="40" y="1476.5801">-website : Website</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="40" y="1494.1895">-openingHour : LocalDateTime</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="40" y="1511.7988">-closingHour : LocalDateTime</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="40" y="1529.4082">-slotDuration : int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="40" y="1547.0176">-vaccinesPerSlot : int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="40" y="1564.627">-road : String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="40" y="1582.2363">-zipCode : ZipCode</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="40" y="1599.8457">-local : String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="40" y="1617.4551">-centerCoordinatorID : int</text><line style="stroke:#181818;stroke-width:0.5;" x1="35" x2="1085" y1="1624.5313" y2="1624.5313"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="1040" x="40" y="1643.0645">+VaccinationCenter(id, name, phoneNumber, email, fax, website, openingHour, closingHour, slotDuration, vaccinesPerSlot, road, zipCode, local, centerCoordinatorID)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="40" y="1660.6738">+addFullyVaccinated(newAdministration)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="40" y="1678.2832">-getVaccinationStatsList()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="369" x="40" y="1695.8926">+getVaccinationStatsListBetweenDates(firstDate, lastDate)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="40" y="1713.502">+getFirstDateAvailable(listFullyVaccinated)</text></g><!--MD5=[c6871c470bedcfae230ac99e02851447]
+class VaccinationCentersStore--><g id="elem_VaccinationCentersStore"><rect codeLine="81" fill="#F1F1F1" height="100.8281" id="VaccinationCentersStore" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="410" x="108" y="1159"/><ellipse cx="230.25" cy="1175" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M232.25,1171.5 Q232.4531,1171 232.6875,1170.75 Q232.9219,1170.5 233.1875,1170.5 Q233.6563,1170.5 233.9531,1170.7813 Q234.25,1171.0625 234.25,1171.7188 L234.25,1173.2813 Q234.25,1173.9375 233.9688,1174.2188 Q233.6875,1174.5 233.25,1174.5 Q232.8594,1174.5 232.6094,1174.3281 Q232.3594,1174.1563 232.25,1173.7031 Q232.2031,1173.3906 232.0313,1173.2188 Q231.7188,1172.8906 231.1563,1172.7031 Q230.5938,1172.5 230.0313,1172.5 Q229.3281,1172.5 228.7344,1172.7813 Q228.1563,1173.0625 227.7031,1173.6875 Q227.25,1174.3125 227.25,1175.1719 L227.25,1176.0938 Q227.25,1177.125 228.0938,1177.8125 Q228.9375,1178.5 230.4375,1178.5 Q231.3281,1178.5 231.9531,1178.2969 Q232.3125,1178.1875 232.7188,1177.8281 Q232.9844,1177.625 233.125,1177.5625 Q233.2656,1177.5 233.4375,1177.5 Q233.7656,1177.5 234,1177.7656 Q234.25,1178.0156 234.25,1178.375 Q234.25,1178.7188 233.9063,1179.125 Q233.4063,1179.7188 232.6094,1180.0469 Q231.5625,1180.5 230.2813,1180.5 Q228.7813,1180.5 227.5781,1179.9063 Q226.6094,1179.4375 225.9219,1178.4219 Q225.25,1177.4063 225.25,1176.2031 L225.25,1175.1094 Q225.25,1173.8594 225.8438,1172.7656 Q226.4531,1171.6719 227.5,1171.0938 Q228.5625,1170.5 229.75,1170.5 Q230.4688,1170.5 231.0938,1170.75 Q231.7188,1171 232.25,1171.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="250.75" y="1180.7285">VaccinationCentersStore</text><line style="stroke:#181818;stroke-width:0.5;" x1="109" x2="517" y1="1191" y2="1191"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="114" y="1209.5332">-vaccinationCenters : List&lt;VaccinationCenter&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="109" x2="517" y1="1216.6094" y2="1216.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="114" y="1235.1426">+getVaccinationCenters()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="398" x="114" y="1252.752">+getVaccinationCenterAssociatedToCoordinator(coordinatorId)</text></g><!--MD5=[99e05155ffd03a85ec190e9f6e70e52b]
+link CheckAndExportVacStatsGUI to CheckListVacStatsGUI--><g id="link_CheckAndExportVacStatsGUI_CheckListVacStatsGUI"><path codeLine="90" d="M202,372.27 C202,391.28 202,410.1 202,427.57 " fill="none" id="CheckAndExportVacStatsGUI-to-CheckListVacStatsGUI" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="202,432.95,206,423.95,202,427.95,198,423.95,202,432.95" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[49a15542884c43ce36329a5ca0fe3da5]
+link CheckAndExportVacStatsGUI to CheckAndExportVaccinationStatsController--><g id="link_CheckAndExportVacStatsGUI_CheckAndExportVaccinationStatsController"><path codeLine="91" d="M367.59,372.21 C380.47,391.56 391.68,411.95 400,433 C431.23,512 434.39,607.42 429.66,683.44 " fill="none" id="CheckAndExportVacStatsGUI-to-CheckAndExportVaccinationStatsController" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="429.31,688.88,433.8915,680.1617,429.6379,683.8908,425.9088,679.6371,429.31,688.88" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f5c4f8928a3cfa0043d5a13387abdfde]
+link CheckListVacStatsGUI to CheckAndExportVaccinationStatsController--><g id="link_CheckListVacStatsGUI_CheckAndExportVaccinationStatsController"><path codeLine="92" d="M261.62,604.1 C279.28,629.17 299.08,657.25 318.35,684.61 " fill="none" id="CheckListVacStatsGUI-to-CheckAndExportVaccinationStatsController" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="321.44,688.99,319.5151,679.3311,318.5555,684.906,312.9806,683.9463,321.44,688.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[bccdf9b4c4c72c3f1b1ff23b59954d42]
+link CheckAndExportVaccinationStatsController to VaccinationCentersStore--><g id="link_CheckAndExportVaccinationStatsController_VaccinationCentersStore"><path codeLine="96" d="M401.56,948.18 C396.3,990.92 388.5,1038.44 377,1081 C370.97,1103.31 367.06,1108.19 357,1129 C353,1137.27 348.55,1145.89 344.05,1154.27 " fill="none" id="CheckAndExportVaccinationStatsController-to-VaccinationCentersStore" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="341.55,1158.9,349.3411,1152.8752,343.9222,1154.4986,342.2988,1149.0796,341.55,1158.9" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[dbd3c99bf3c9da99ac3c6aa9773f4967]
+link CheckAndExportVaccinationStatsController to VaccinationCenter--><g id="link_CheckAndExportVaccinationStatsController_VaccinationCenter"><path codeLine="97" d="M468.92,948.34 C493.9,1010.73 520.94,1087.47 536,1159 C547.73,1214.72 554.22,1276.12 557.69,1332.59 " fill="none" id="CheckAndExportVaccinationStatsController-to-VaccinationCenter" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="557.99,1337.69,561.47,1328.4765,557.7048,1332.6981,553.4831,1328.9329,557.99,1337.69" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f4ecbfdd85ceba349ca2dd49a68e3853]
+link CheckAndExportVaccinationStatsController to Company--><g id="link_CheckAndExportVaccinationStatsController_Company"><path codeLine="98" d="M358.15,948.13 C345.47,978.42 333.18,1007.8 324.63,1028.22 " fill="none" id="CheckAndExportVaccinationStatsController-to-Company" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="322.65,1032.96,329.8113,1026.1986,324.5781,1028.3467,322.43,1023.1136,322.65,1032.96" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[29286e1800b224f442cd4de52a9be642]
+link Company to VaccinationCentersStore--><g id="link_Company_VaccinationCentersStore"><path codeLine="104" d="M313,1081.19 C313,1101.8 313,1132.64 313,1158.8 " fill="none" id="Company-VaccinationCentersStore" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="318,1125.1758,320.9389,1116.1307,315.0611,1116.1307,318,1125.1758" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="327" y="1125.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="305.1469" y="1102.5743">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="305.5078" y="1148.0772">1</text></g><!--MD5=[f36d163a63d7d7b60e9f6201c7b725d8]
+link VaccinationCentersStore to VaccinationCenter--><g id="link_VaccinationCentersStore_VaccinationCenter"><path codeLine="105" d="M351.59,1260.19 C368.55,1282.02 389.65,1309.19 411.86,1337.78 " fill="none" id="VaccinationCentersStore-VaccinationCenter" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="393.0672,1303.1245,389.8395,1294.1784,385.1976,1297.7841,393.0672,1303.1245" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="399" y="1304.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="349.0859" y="1281.2383">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="400.5049" y="1326.8657">*</text></g><!--MD5=[32539f017a2950976edcac20edb46587]
+@startuml
+skinparam classAttributeIconSize 0
+
+
+package UI {
+class CheckAndExportVacStatsGUI {
+-controller : CheckAndExportVaccinationStatsController
+-firstDatePicker : DatePicker
+-lastDatePicker : DatePicker
+-okBtn : Button
+-askFileNameTxt : TextArea
+
++CheckAndExportVacStatsGUI()
++back(event)
++setFirstDate(firstDate)
++setLastDate(lastDate)
++setFirstDatePicker(firstDate)
++setLastDatePicker(lastDate)
++checkStatistics(event)
++exportStatistics(event)
++exportStatisticsOption(event)
+-toCheckVacStatsScene(event)
+-toCenterCoordinatorMenu(event)
+
+}
+
+class CheckListVacStatsGUI {
+-controller : CheckAndExportVaccinationStatsController
+-tableView : TableView
+-dateColumn : TableColumn
+-totalVaccinatedColumn : TableColumn
++CheckListVacStatsGUI()
++setStatsTable()
++back(event)
+}
+}
+
+package Controller {
+class CheckAndExportVaccinationStatsController {
+-center : VaccinationCenter
+- firstDate : LocalDate
+- lastDate : LocalDate
++CheckAndExportVaccinationStatsController()
++setFirstDate(firstDate)
++setLastDate(lastDate)
++getFirstDate()
++getLastDate()
++checkIfDatesAreValid()
++exportVaccinationStatistics(fileName)
++getVaccinationStatsListBetweenDates()
++toCheckVaccinationStatsScene(event)
+}
+}
+
+package Domain {
+class Company{
+
+}
+
+class VaccinationCenter {
+-id : int
+-name : String
+-phoneNumber : PhoneNumber
+-email : Email
+-fax : PhoneNumber
+-website : Website
+-openingHour : LocalDateTime
+-closingHour : LocalDateTime
+-slotDuration : int
+-vaccinesPerSlot : int
+-road : String
+-zipCode : ZipCode
+-local : String
+-centerCoordinatorID : int
++VaccinationCenter(id, name, phoneNumber, email, fax, website, openingHour, closingHour, slotDuration, vaccinesPerSlot, road, zipCode, local, centerCoordinatorID)
++addFullyVaccinated(newAdministration)
+-getVaccinationStatsList()
++getVaccinationStatsListBetweenDates(firstDate, lastDate)
++getFirstDateAvailable(listFullyVaccinated)
+}
+
+class VaccinationCentersStore {
+-vaccinationCenters : List<VaccinationCenter>
++getVaccinationCenters()
++getVaccinationCenterAssociatedToCoordinator(coordinatorId)
+
+}
+}
+
+'UI
+CheckAndExportVacStatsGUI ..> CheckListVacStatsGUI
+CheckAndExportVacStatsGUI ..> CheckAndExportVaccinationStatsController
+CheckListVacStatsGUI ..> CheckAndExportVaccinationStatsController
+
+'CONTROLLER
+
+CheckAndExportVaccinationStatsController ..> VaccinationCentersStore
+CheckAndExportVaccinationStatsController ..> VaccinationCenter
+CheckAndExportVaccinationStatsController ..> Company
+
+
+
+'DOMAIN
+
+Company "1" - - "1" VaccinationCentersStore : has >
+VaccinationCentersStore "1" - - "*" VaccinationCenter : has >
+
+
+@enduml
+
+@startuml
+skinparam classAttributeIconSize 0
+
+
+package UI {
+class CheckAndExportVacStatsGUI {
+-controller : CheckAndExportVaccinationStatsController
+-firstDatePicker : DatePicker
+-lastDatePicker : DatePicker
+-okBtn : Button
+-askFileNameTxt : TextArea
+
++CheckAndExportVacStatsGUI()
++back(event)
++setFirstDate(firstDate)
++setLastDate(lastDate)
++setFirstDatePicker(firstDate)
++setLastDatePicker(lastDate)
++checkStatistics(event)
++exportStatistics(event)
++exportStatisticsOption(event)
+-toCheckVacStatsScene(event)
+-toCenterCoordinatorMenu(event)
+
+}
+
+class CheckListVacStatsGUI {
+-controller : CheckAndExportVaccinationStatsController
+-tableView : TableView
+-dateColumn : TableColumn
+-totalVaccinatedColumn : TableColumn
++CheckListVacStatsGUI()
++setStatsTable()
++back(event)
+}
+}
+
+package Controller {
+class CheckAndExportVaccinationStatsController {
+-center : VaccinationCenter
+- firstDate : LocalDate
+- lastDate : LocalDate
++CheckAndExportVaccinationStatsController()
++setFirstDate(firstDate)
++setLastDate(lastDate)
++getFirstDate()
++getLastDate()
++checkIfDatesAreValid()
++exportVaccinationStatistics(fileName)
++getVaccinationStatsListBetweenDates()
++toCheckVaccinationStatsScene(event)
+}
+}
+
+package Domain {
+class Company{
+
+}
+
+class VaccinationCenter {
+-id : int
+-name : String
+-phoneNumber : PhoneNumber
+-email : Email
+-fax : PhoneNumber
+-website : Website
+-openingHour : LocalDateTime
+-closingHour : LocalDateTime
+-slotDuration : int
+-vaccinesPerSlot : int
+-road : String
+-zipCode : ZipCode
+-local : String
+-centerCoordinatorID : int
++VaccinationCenter(id, name, phoneNumber, email, fax, website, openingHour, closingHour, slotDuration, vaccinesPerSlot, road, zipCode, local, centerCoordinatorID)
++addFullyVaccinated(newAdministration)
+-getVaccinationStatsList()
++getVaccinationStatsListBetweenDates(firstDate, lastDate)
++getFirstDateAvailable(listFullyVaccinated)
+}
+
+class VaccinationCentersStore {
+-vaccinationCenters : List<VaccinationCenter>
++getVaccinationCenters()
++getVaccinationCenterAssociatedToCoordinator(coordinatorId)
+
+}
+}
+
+CheckAndExportVacStatsGUI ..> CheckListVacStatsGUI
+CheckAndExportVacStatsGUI ..> CheckAndExportVaccinationStatsController
+CheckListVacStatsGUI ..> CheckAndExportVaccinationStatsController
+
+
+CheckAndExportVaccinationStatsController ..> VaccinationCentersStore
+CheckAndExportVaccinationStatsController ..> VaccinationCenter
+CheckAndExportVaccinationStatsController ..> Company
+
+
+
+
+Company "1" - - "1" VaccinationCentersStore : has >
+VaccinationCentersStore "1" - - "*" VaccinationCenter : has >
+
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 11:55:52 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

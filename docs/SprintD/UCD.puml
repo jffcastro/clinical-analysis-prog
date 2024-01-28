@@ -1,0 +1,88 @@
+@startuml
+
+left to right direction
+title Usecase Diagram
+skinparam titleBorderRoundCorner 20
+skinparam titleBorderThickness 2
+skinparam arrowThickness 3
+
+
+'**********Timer*************
+Usecase UC6 as "UC6 - Record the daily total of people vaccinated in each center"
+
+:<<Automatic>> Timer/Clock: as TC
+
+TC -d- UC6
+
+
+'**********Center Coordinator*************
+Usecase UC15 as "UC15 - Check and export vaccination statistics"
+Usecase UC16 as "UC16 - Analyze the performance of a center"
+Usecase UC17 as "U17 - Import data from a legacy system"
+Usecase UC18 as "UC18 - Get a list of all vaccines"
+
+:Center Coordinator: as CC
+
+CC -d- UC15
+CC -d- UC16
+CC -d- UC17
+CC -d- UC18
+
+
+
+'**********Administrator*************
+Usecase UC9 as "UC9 - Register a vaccination center to respond to a certain pandemic"
+Usecase UC10 as "UC10 - Register an Employee"
+Usecase UC11 as "UC11 - Get a list of employees with a given function/role"
+Usecase UC12 as "UC12 - Specify a new vaccine type"
+Usecase UC13 as "UC13 - Specify a new vaccine and its administration process"
+Usecase UC14 as "UC14 - Load a set of users from a CSV file "
+
+:Administrator: as A
+
+A -d- UC9
+A -d- UC10
+A -d- UC11
+A -d- UC12
+A -d- UC13
+A -d- UC14
+
+
+'**********Nurse*************
+Usecase UC5 as "UC5 - Consult the users in the waiting room of a vaccination center"
+Usecase UC7 as "UC7 - Record adverse reactions of a sns user"
+Usecase UC8 as "UC8 - Record the administration of a vaccine to an SNS user"
+Usecase UC19 as "UC19 - Issue Vaccination Certificate"
+
+
+:Nurse: as N
+
+N -d- UC5
+N -d- UC7
+N -d- UC8
+N -d- UC19
+
+
+'**********Receptionist*************
+Usecase UC2 as "UC2 - Schedule a Vaccine For a User"
+Usecase UC3 as "UC3 - Register an SNS User"
+Usecase UC4 as "UC4 - Arrivals Registration and Presence Confirmation"
+
+:Receptionist: as R
+
+R -d- UC2
+R -d- UC3
+R -d- UC4
+
+
+'**********User*************
+Usecase UC01 as "UC01 -  Schedule a Vaccine"
+Usecase UC20 as "UC20 - Obtain Vaccination Certificate"
+
+:User: as U
+
+U -d- UC01
+U -d- UC20
+
+
+@enduml

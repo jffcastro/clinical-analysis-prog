@@ -1,0 +1,126 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package UI {
+class DataFromLegacySystemUI{
+-sortedListUI : List<String>
++run()
++printSortedArray()
+}
+}
+
+package Domain{
+class VaccinationCenter{
+-id : int
+-name : String
+-phoneNumber : PhoneNumber
+-email : Email
+-fax : PhoneNumber
+-website : Website
+-openingHour : LocalDateTime
+-closingHour : LocalDateTime
+-slotDuration : int
+-vaccinesPerSlot : int
+-road : String
+-zipCode : ZipCode
+-local : String
+-centerCoordinatorID : int
++addArrival()
++addDeparture()
+}
+class Arrival{
+-snsNumber : int
+-arrivalTime : LocalDateTime
+-vaccineType : VaccineType
+}
+class Departure{
+-snsNumber : int
+-departureTime : LocalDateTime
+}
+}
+
+package Controller {
+class App{
++getSortingAlgorithm()
+}
+
+class DataFromLegacySystemController{
++getSortingAlgorithm()
++getSNSUserList()
++getVaccines()
++readFile()
++updateFile()
++setList()
++insertionSortAscending()
++insertionSortDescending()
++getListToSort()
++heapAscending()
++heapDescending()
++getAlgorithm()
++chooseCriteriaToSort()
++sortListWithAlgo()
+-sortedList : List<String>
+}
+}
+
+package Domain {
+class Company{
++getSnsUsersStore()
++getVaccinesList()
+}
+}
+
+package Stores {
+class SNSUserStore{
++getSnsUserList()
+}
+class vaccinationCenterStore{
++getVaccinationCentersStore()
+}
+}
+
+package Miscellaneous{
+class ReadLegacyDataFile{
++readFile()
++validateFileLegacye()
++isValidDate()
++updateLegacyFile()
++getSNSUserList()
++getVaccineList()
++findPosOfSNSUserumber()
++findPosOfVax()
++checksDuplicatesNumber()
++setList()
++insertionSortDescending()
++insertionSortAscending()
++heapSortAscending()
++heapSortDescending()
+-legacyDataList : List<String>
+-listToSort : List<LocalDateTime>
+-updatedList : List<String>
+-snsUsersList : ArrayList<SNSUser>
+-vaccineList : List<Vaccine>
+}
+}
+
+DataFromLegacySystemUI ..> DataFromLegacySystemController
+
+DataFromLegacySystemController ..> App
+
+DataFromLegacySystemController ..> ReadLegacyDataFile
+
+ReadLegacyDataFile "1"-->"1" Company : checks
+
+Company"1" --> "1" SNSUserStore : knows
+
+ReadLegacyDataFile "1"-->"1" VaccinationCenter : is related to
+
+VaccinationCenter "1"-->"*" Arrival : has
+
+VaccinationCenter "1"-->"*" Departure : has
+
+DataFromLegacySystemController ..> Company
+
+Company "1"-->"1" vaccinationCenterStore : knows
+
+@enduml

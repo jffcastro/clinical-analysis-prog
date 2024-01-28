@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor "CenterCoordinator" as CC
+actor "System" as SY
+
+activate CC
+CC -> SY: asks to import data from a legacy file
+
+activate SY
+SY -> CC: requests the path of the file
+deactivate SY
+
+CC -> SY: types the path of the file
+
+activate SY
+SY -> CC: requests the selection of the field \n you want to sort
+deactivate SY
+
+CC -> SY: selects field
+
+activate SY
+SY -> CC: requests the selection of the order \n you want to sort
+deactivate SY
+
+CC -> SY: selects order
+
+activate SY
+SY -> CC: shows sorted list
+deactivate SY
+
+deactivate CC
+
+@enduml

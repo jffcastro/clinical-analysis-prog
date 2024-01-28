@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: app.ui.Main
+Class-Path: AuthLib-1.0-20220308.131530-2.jar commons-lang3-3.5.jar bcry
+ pt-0.9.0.jar bytes-1.3.0.jar
+

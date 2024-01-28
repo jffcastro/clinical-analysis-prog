@@ -1,0 +1,115 @@
+@startuml
+
+autonumber
+
+actor Nurse as N
+
+participant ":RecordVaccineAdministrationUI" as UI
+participant ":RecordVaccineAdministrationController" as CTRL
+participant "company\n:Company" as C
+participant "vaccinationCenterStore\n:VaccinationCenterStore" as VS
+participant "vaccinationCenter\n:VaccinationCenter" as VC
+participant "snsUser\n:SnsUser" as SU
+participant "vaccineBulletinList\nList<VaccineBulletin>" as L
+participant "printRecoveryTime\n:PrintRecoveryTime" as PR
+
+activate N
+N -> UI : asks to record the administration of a vaccine to an SNS user
+activate UI
+
+UI -> CTRL** : vaccinationCenterList = getVaccinationCentersNameList()
+activate CTRL
+CTRL -> C : vaccinationCenterList = getVaccinationCenters()
+activate C
+deactivate CTRL
+C -> VS : vaccinationCenterList = getVaccinationCenters()
+activate VS
+deactivate VS
+deactivate C
+UI --> N : shows a list with the available vaccination centers
+deactivate UI
+
+N -> UI : selects one vaccination center
+activate UI
+UI -> CTRL : setVaccinationCenter(vaccinationCenterIndex)
+activate CTRL
+CTRL -> C : vaccinationCenter = getVaccinationCenters().get(index)
+activate C
+C -> VS : vaccinationCenter = getVaccinationCenters().get(index)
+deactivate C
+activate VS
+VS -> VC : vaccinationCenter = getVaccinationCenters().get(index)
+activate VC
+deactivate VC
+deactivate VS
+deactivate CTRL
+
+UI -> CTRL : setArrivalsList = vaccinationCenter.getArrivalsList()
+activate CTRL
+CTRL -> VC : arrivalsList = getArrivalsList()
+
+activate VC
+deactivate VC
+deactivate CTRL
+
+ UI --> N : shows a list with the users available in arrivals list
+deactivate UI
+N -> UI : selects one user
+
+activate UI
+UI -> CTRL : setVaccineType(arrivalsListUserIndex)
+activate CTRL
+CTRL -> CTRL : vaccineType = arrivalsList(arrivalsListUserIndex).getVaccineType()
+CTRL -> CTRL : doseNumber = findLastDoseOfVaccineType()
+alt User´s first dose for Vaccine Type
+UI -> CTRL : vaccineList = getVaccineNameList()
+CTRL -> C : vaccineList = getVaccineList()
+activate C
+deactivate C
+loop Validate User Age Group
+UI --> N : shows a list with the available vaccines
+deactivate UI
+N -> UI : selects one vaccine
+activate UI
+UI -> CTRL : setVaccine(vaccineIndex)
+CTRL -> C : vaccine = getVaccineList().get(vaccineIndex)
+activate C
+deactivate C
+CTRL -> SU : userAge = snsUser.getSnsUserAge()
+activate SU
+deactivate SU
+CTRL -> CTRL : validate user age group
+end
+end
+deactivate CTRL
+UI --> N : shows dosage for respective dose and requests vaccine´s lot
+deactivate UI
+N -> UI : introduces vaccine´s lot number
+activate UI
+
+UI -> CTRL : validateLotNumber(lotNumber)
+activate CTRL
+
+ref over CTRL : SD_CreateVaccineBulletin.puml
+
+
+CTRL -> SU : addVaccineBulletin(VaccineBulletin)
+activate SU
+
+SU -> L : addVaccineBulletin(VaccineBulletin)
+activate L
+deactivate L
+deactivate SU
+UI -> CTRL : printRecoveryTime()
+
+CTRL -> PR : printUserRecoveryTime()
+activate PR
+deactivate PR
+
+UI --> N : informs that vaccine administration is completed
+
+
+deactivate CTRL
+deactivate UI
+deactivate N
+@enduml
